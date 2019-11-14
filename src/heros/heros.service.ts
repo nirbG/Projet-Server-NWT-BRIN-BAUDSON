@@ -8,6 +8,7 @@ import { CreateComicsDto } from '../comics/dto/create-comics.dto';
 import { Comics } from '../comics/interfaces/comics.interface';
 import { HeroCreateDto } from './dto/create-hero.dto';
 import { HeroUpdateDto } from './dto/update-hero.dto';
+import {HeroSimple} from "./interfaces/heroSimple.interfaces";
 
 @Injectable()
 export class HerosService {
@@ -28,7 +29,7 @@ export class HerosService {
   }
   findOne(id: string): Observable<Hero> {
     return from(this._heros).pipe(
-      find(_ => _.id === +id),
+      find(_ => _.id === id),
       flatMap(_ => !!_ ?
         of(_) :
         throwError(new NotFoundException(`hero with id '${id}' not found`)),
@@ -63,8 +64,8 @@ export class HerosService {
     return of(body).pipe(
       map( _ =>
         Object.assign(_, {
-          ennemi: [] as Hero[],
-          allie: [] as Hero[],
+          ennemi: [] as HeroSimple[],
+          allie: [] as HeroSimple[],
         }) as Hero,
       ),
       tap(_ => this._heros = this._heros.concat(_)),
@@ -78,7 +79,7 @@ export class HerosService {
   private _findHeroIndexOfList(id: string): Observable<number> {
     return from(this._heros)
       .pipe(
-        findIndex(_ => _.id === +id),
+        findIndex(_ => _.id === id),
         flatMap(_ => _ > -1 ?
           of(_) :
           throwError(new NotFoundException(`People with id '${id}' not found`)),

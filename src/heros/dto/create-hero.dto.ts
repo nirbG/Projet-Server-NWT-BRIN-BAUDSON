@@ -1,6 +1,7 @@
 export interface HeroCreateDto {
-  id?: number;
+  id?: string;
   photo?: string;
   name?: string;
+  pouvoir: string;
   isHumain?: boolean;
 }

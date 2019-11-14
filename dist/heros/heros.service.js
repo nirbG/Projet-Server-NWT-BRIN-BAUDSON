@@ -24,7 +24,7 @@ let HerosService = class HerosService {
         return rxjs_1.of(this._heros.slice(+start, +end));
     }
     findOne(id) {
-        return rxjs_1.from(this._heros).pipe(operators_1.find(_ => _.id === +id), operators_1.flatMap(_ => !!_ ?
+        return rxjs_1.from(this._heros).pipe(operators_1.find(_ => _.id === id), operators_1.flatMap(_ => !!_ ?
             rxjs_1.of(_) :
             rxjs_1.throwError(new common_1.NotFoundException(`hero with id '${id}' not found`))));
     }
@@ -47,7 +47,7 @@ let HerosService = class HerosService {
     }
     _findHeroIndexOfList(id) {
         return rxjs_1.from(this._heros)
-            .pipe(operators_1.findIndex(_ => _.id === +id), operators_1.flatMap(_ => _ > -1 ?
+            .pipe(operators_1.findIndex(_ => _.id === id), operators_1.flatMap(_ => _ > -1 ?
             rxjs_1.of(_) :
             rxjs_1.throwError(new common_1.NotFoundException(`People with id '${id}' not found`))));
     }

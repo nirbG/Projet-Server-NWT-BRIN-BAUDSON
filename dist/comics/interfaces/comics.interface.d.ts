@@ -1,9 +1,10 @@
+import { HeroSimple } from "../../heros/interfaces/heroSimple.interfaces";
 export interface Comics {
-    isbn?: string;
+    isbn: string;
     photo?: string;
     title: string;
-    mainHeros: [];
-    otherHeros: [];
+    mainHeros: HeroSimple;
+    otherHeros: HeroSimple[];
     price: number;
     wish: boolean;
     inBD: boolean;

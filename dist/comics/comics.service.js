@@ -42,7 +42,7 @@ let ComicsService = class ComicsService {
     _addComics(body) {
         return rxjs_1.of(body).pipe(operators_1.map(_ => Object.assign(_, {
             photo: _.isbn + '.jpg',
-            mainHeros: [],
+            mainHeros: {},
             otherHeros: [],
             wish: false,
             inBD: false,

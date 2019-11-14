@@ -3,10 +3,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ComicsModule } from './comics/comics.module';
 import { HerosModule } from './heros/heros.module';
-import { SeriesModule } from './series/series.module';
 
 @Module({
-  imports: [ComicsModule, HerosModule, SeriesModule],
+  imports: [ComicsModule, HerosModule],
   controllers: [AppController],
   providers: [AppService],
 })

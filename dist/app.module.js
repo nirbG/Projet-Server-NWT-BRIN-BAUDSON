@@ -11,12 +11,11 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const comics_module_1 = require("./comics/comics.module");
 const heros_module_1 = require("./heros/heros.module");
-const series_module_1 = require("./series/series.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [comics_module_1.ComicsModule, heros_module_1.HerosModule, series_module_1.SeriesModule],
+        imports: [comics_module_1.ComicsModule, heros_module_1.HerosModule],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })

@@ -1,10 +1,12 @@
-import { Hero } from '../interfaces/heros.interfaces';
+
+import {HeroSimple} from "../interfaces/heroSimple.interfaces";
 
 export interface HeroUpdateDto {
-  id?: number;
+  id?: string;
   photo?: string;
   name?: string;
-  ennemi?: Hero[];
-  allie?: Hero[];
+  pouvoir: string;
+  ennemi?: HeroSimple[];
+  allie?: HeroSimple[];
   isHumain?: boolean;
 }

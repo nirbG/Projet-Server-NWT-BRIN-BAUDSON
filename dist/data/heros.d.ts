@@ -1,8 +1,10 @@
+import { HeroSimple } from "../heros/interfaces/heroSimple.interfaces";
 export declare const HEROS: {
     id: string;
     photo: string;
     name: string;
-    ennemi: {};
-    allie: {};
-    isHumain: string;
+    pouvoir: string;
+    ennemi: HeroSimple[];
+    allie: HeroSimple[];
+    isHumain: boolean;
 }[];

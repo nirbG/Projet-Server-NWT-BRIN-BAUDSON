@@ -5,161 +5,384 @@ exports.HEROS = [
         id: '1',
         photo: 'deadpool.jpg',
         name: 'Deadpool',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [
+            {
+                id: '7',
+                photo: 'cable.jpg',
+                name: 'Cable',
+            },
+            {
+                id: '14',
+                photo: 'hulk.jpg',
+                name: 'Hulk',
+            },
+        ],
+        allie: [
+            {
+                id: '7',
+                photo: 'cable.jpg',
+                name: 'Cable',
+            },
+        ],
+        isHumain: true,
     },
     {
         id: '2',
         photo: 'antman.jpg',
         name: 'Ant-Man',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [],
+        isHumain: true
     },
     {
         id: '3',
         photo: 'batman.jpg',
         name: 'Batman',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [
+            {
+                id: '5',
+                photo: 'joker.jpg',
+                name: 'Joker',
+            },
+            {
+                id: '19',
+                photo: 'deadsthroke.jpg',
+                name: 'Deadsthroke',
+            },
+            {
+                id: '19',
+                photo: 'doubleface.jpg',
+                name: 'Double-Faces',
+            },
+        ],
+        allie: [
+            {
+                id: '12',
+                photo: 'robin.jpg',
+                name: 'Robin',
+            },
+            {
+                id: '11',
+                photo: 'aquaman.jpg',
+                name: 'Aquaman',
+            },
+            {
+                id: '18',
+                photo: 'superman.jpg',
+                name: 'Superman',
+            },
+        ],
+        isHumain: true
     },
     {
         id: '4',
         photo: 'dardevile.jpg',
         name: 'Dardevile',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [],
+        isHumain: true
     },
     {
         id: '5',
         photo: 'joker.jpg',
         name: 'Joker',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [
+            {
+                id: '3',
+                photo: 'batman.jpg',
+                name: 'Batman',
+            },
+            {
+                id: '12',
+                photo: 'robin.jpg',
+                name: 'Robin',
+            },
+            {
+                id: '9',
+                photo: 'catwoman.jpg',
+                name: 'Catwoman',
+            },
+        ],
+        allie: [
+            {
+                id: '20',
+                photo: 'doubleface.jpg',
+                name: 'Double-Faces',
+            },
+            {
+                id: '19',
+                photo: 'deadsthroke.jpg',
+                name: 'Deadsthroke',
+            }
+        ],
+        isHumain: true
     },
     {
         id: '6',
         photo: 'ironman.jpg',
         name: 'Iron Man',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [
+            {
+                id: '15',
+                photo: 'thor.jpg',
+                name: 'Thor',
+            },
+            {
+                id: '14',
+                photo: 'hulk.jpg',
+                name: 'Hulk',
+            },
+            {
+                id: '16',
+                photo: 'Captain_America.png',
+                name: 'Captain America',
+            }
+        ],
+        isHumain: true
     },
     {
         id: '7',
         photo: 'cable.jpg',
         name: 'Cable',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [],
+        isHumain: true
     },
     {
         id: '8',
         photo: 'spawn.jpg',
         name: 'Spawn',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [],
+        isHumain: true
     },
     {
         id: '9',
         photo: 'catwoman.jpg',
         name: 'Catwoman',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [],
+        isHumain: true
     },
     {
         id: '10',
         photo: 'hellboy.png',
         name: 'Hellboy',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [],
+        isHumain: true
     },
     {
         id: '11',
         photo: 'aquaman.jpg',
         name: 'Aquaman',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [
+            {
+                id: '3',
+                photo: 'batman.jpg',
+                name: 'Batman',
+            },
+            {
+                id: '18',
+                photo: 'superman.jpg',
+                name: 'Superman',
+            },
+        ],
+        isHumain: true
     },
     {
         id: '12',
         photo: 'robin.jpg',
         name: 'Robin',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [
+            {
+                id: '9',
+                photo: 'catwoman.jpg',
+                name: 'Catwoman',
+            },
+            {
+                id: '3',
+                photo: 'batman.jpg',
+                name: 'Batman',
+            },
+        ],
+        isHumain: true
     },
     {
         id: '13',
         photo: 'wolverine.jpg',
         name: 'Wolverine',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [],
+        isHumain: true
     },
     {
         id: '14',
         photo: 'hulk.jpg',
         name: 'Hulk',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [
+            {
+                id: '6',
+                photo: 'ironman.jpg',
+                name: 'Iron Man',
+            },
+            {
+                id: '15',
+                photo: 'thor.jpg',
+                name: 'Thor',
+            },
+            {
+                id: '16',
+                photo: 'Captain_America.png',
+                name: 'Captain America',
+            }
+        ],
+        isHumain: true
     },
     {
         id: '15',
         photo: 'thor.jpg',
         name: 'Thor',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [
+            {
+                id: '6',
+                photo: 'ironman.jpg',
+                name: 'Iron Man',
+            },
+            {
+                id: '14',
+                photo: 'hulk.jpg',
+                name: 'Hulk',
+            },
+            {
+                id: '16',
+                photo: 'Captain_America.png',
+                name: 'Captain America',
+            }
+        ],
+        isHumain: true
     },
     {
         id: '16',
         photo: 'Captain_America.png',
         name: 'Captain America',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [
+            {
+                id: '6',
+                photo: 'ironman.jpg',
+                name: 'Iron Man',
+            },
+            {
+                id: '15',
+                photo: 'thor.jpg',
+                name: 'Thor',
+            },
+            {
+                id: '14',
+                photo: 'hulk.jpg',
+                name: 'Hulk',
+            }
+        ],
+        isHumain: true
     },
     {
         id: '17',
         photo: '4Fan.jpg',
         name: 'Les 4 Fantastique',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [],
+        isHumain: true
     },
     {
         id: '18',
         photo: 'superman.jpg',
         name: 'Superman',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [
+            {
+                id: '11',
+                photo: 'aquaman.jpg',
+                name: 'Aquaman',
+            },
+            {
+                id: '3',
+                photo: 'batman.jpg',
+                name: 'Batman',
+            },
+        ],
+        isHumain: true
     },
     {
         id: '19',
         photo: 'deadsthroke.jpg',
         name: 'Deadsthroke',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [],
+        isHumain: true
     },
     {
         id: '20',
         photo: 'doubleface.jpg',
         name: 'Double-Faces',
-        ennemi: {},
-        allie: {},
-        isHumain: 'true',
+        pouvoir: 'none',
+        ennemi: [],
+        allie: [],
+        isHumain: true
     },
+    {
+        id: '21',
+        photo: 'avengers.jpg',
+        name: 'Avengers',
+        pouvoir: 'none',
+        ennemi: [
+            {
+                id: '6',
+                photo: 'ironman.jpg',
+                name: 'Iron Man',
+            },
+            {
+                id: '15',
+                photo: 'thor.jpg',
+                name: 'Thor',
+            },
+            {
+                id: '14',
+                photo: 'hulk.jpg',
+                name: 'Hulk',
+            },
+            {
+                id: '16',
+                photo: 'Captain_America.png',
+                name: 'Captain America',
+            }
+        ],
+        allie: [],
+        isHumain: true
+    }
 ];
 //# sourceMappingURL=heros.js.map

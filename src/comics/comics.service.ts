@@ -5,6 +5,7 @@ import { from, Observable, of, throwError } from 'rxjs';
 import { find, findIndex, flatMap, map, tap } from 'rxjs/operators';
 import { CreateComicsDto } from './dto/create-comics.dto';
 import { UpdateComicsDto } from './dto/update-comics.dto';
+import {HeroSimple} from "../heros/interfaces/heroSimple.interfaces";
 
 @Injectable()
 export class ComicsService {
@@ -95,8 +96,8 @@ export class ComicsService {
       map( _ =>
         Object.assign(_, {
           photo: _.isbn + '.jpg',
-          mainHeros: [] as any,
-          otherHeros: [] as any,
+          mainHeros: {} as HeroSimple,
+          otherHeros: [] as HeroSimple[],
           wish: false,
           inBD: false,
         }) as Comics,
