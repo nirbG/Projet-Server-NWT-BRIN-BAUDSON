@@ -1,8 +1,11 @@
+import {HeroSimple} from "./heroSimple.interfaces";
+
 export interface Hero {
-  id: number;
-  photo: string;
+  id: string;
+  photo?: string;
   name: string;
-  ennemi: Hero[];
-  allie: Hero[];
+  pouvoir: string;
+  ennemi: HeroSimple[];
+  allie: HeroSimple[];
   isHumain: boolean;
 }
