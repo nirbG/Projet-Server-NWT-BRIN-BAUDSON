@@ -2,6 +2,7 @@ import {IsBoolean, IsNotEmpty, IsString} from "class-validator";
 
 export class HeroCreateDto {
 
+
   @IsString()
   @IsNotEmpty()
   id?: string;
