@@ -4,11 +4,10 @@ import { HEROS } from '../data/heros';
 import { from, Observable, of, throwError } from 'rxjs';
 import { filter, find, findIndex, flatMap, map, tap } from 'rxjs/operators';
 import retryTimes = jest.retryTimes;
-import { CreateComicsDto } from '../comics/dto/create-comics.dto';
-import { Comics } from '../comics/interfaces/comics.interface';
 import { HeroCreateDto } from './dto/create-hero.dto';
 import { HeroUpdateDto } from './dto/update-hero.dto';
 import {HeroSimple} from "./interfaces/heroSimple.interfaces";
+import {HerosEntity} from "./entities/heros.entity";
 
 @Injectable()
 export class HerosService {
@@ -18,40 +17,44 @@ export class HerosService {
     this._heros = [].concat(HEROS);
   }
 
-  findAll(): Observable<Hero[] |void> {
+  findAll(): Observable<HerosEntity[] |void> {
     return of(this._heros).pipe(
-      map(_ => (!!_ && !!_.length) ? _ : undefined),
+      map(_ => (!!_ && !!_.length) ? _.map(__ => new HerosEntity(__)) : undefined),
     );
   }
 
-  findSome(start: string, end: string): Observable<Hero[] | void> {
+  findSome(start: string, end: string): Observable<HerosEntity[] | void> {
     return of(this._heros.slice(+start, +end));
   }
-  findOne(id: string): Observable<Hero> {
+
+  findOne(id: string): Observable<HerosEntity> {
     return from(this._heros).pipe(
       find(_ => _.id === id),
       flatMap(_ => !!_ ?
-        of(_) :
+        of(new HerosEntity(_)) :
         throwError(new NotFoundException(`hero with id '${id}' not found`)),
       ),
     );
   }
-  create(body: HeroCreateDto): Observable<Hero> {
+
+  create(body: HeroCreateDto): Observable<HerosEntity> {
     return from(this._heros).pipe(
       find( _ => _.id === body.id),
       flatMap( _ => !!_ ?
         throwError(
-          new ConflictException(`People with isbn '${body.id}' already exists`))
+          new ConflictException(`People with id '${body.id}' already exists`))
         : this._addComics(body),
       ),
     );
   }
-  update(id: string, body: HeroUpdateDto): Observable<Hero> {
+
+  update(id: string, body: HeroUpdateDto): Observable<HerosEntity> {
     return this._findHeroIndexOfList(id).pipe(
       tap(_ => Object.assign(this._heros[_], body)),
-      map(_ => this._heros[_]),
+      map(_ => new HerosEntity(this._heros[ _ ])),
     );
   }
+
   delete(id: string): Observable<void> {
     return this._findHeroIndexOfList(id).pipe(
       flatMap( _ => this._heros = this._heros.filter(
@@ -60,7 +63,7 @@ export class HerosService {
     );
   }
 
-  private _addComics(body: HeroCreateDto): Observable<Hero> {
+  private _addComics(body: HeroCreateDto): Observable<HerosEntity> {
     return of(body).pipe(
       map( _ =>
         Object.assign(_, {
@@ -68,7 +71,7 @@ export class HerosService {
           allie: [] as HeroSimple[],
         }) as Hero,
       ),
-      tap(_ => this._heros = this._heros.concat(_)),
+      tap(_ => this._heros = this._heros.concat(_)), map(_ => new HerosEntity(_)),
     );
   }
   /**

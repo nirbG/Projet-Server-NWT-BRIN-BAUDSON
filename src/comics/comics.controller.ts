@@ -1,10 +1,10 @@
 import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
 import { Observable, of } from 'rxjs';
 import { ComicsService } from './comics.service';
-import { Comics } from './interfaces/comics.interface';
 import { CreateComicsDto } from './dto/create-comics.dto';
 import { UpdateComicsDto } from './dto/update-comics.dto';
 import {HandlerParams} from "../validators/handler-params";
+import {ComicsEntity} from "./entities/comics.entity";
 
 @Controller('comics')
 export class ComicsController {
@@ -15,7 +15,7 @@ export class ComicsController {
    * findAll
    */
   @Get()
-  findAll(): Observable<Comics[] | void> {
+  findAll(): Observable<ComicsEntity[] | void> {
     return this._comicsService.findAll();
   }
   /*
@@ -23,21 +23,21 @@ export class ComicsController {
    */
   @Get(':start/:end')
   findSome(@Param('start') start: string,
-           @Param('end') end: string): Observable<Comics[] | void> {
+           @Param('end') end: string): Observable<ComicsEntity[] | void> {
     return this._comicsService.findSome(start, end);
   }
   /*
    *findByIsbn
    */
   @Get(':isbn')
-  findByIsbn(@Param() params: HandlerParams): Observable<Comics | void> {
+  findByIsbn(@Param() params: HandlerParams): Observable<ComicsEntity | void> {
     return this._comicsService.findOne(params.isbn);
   }
   /*
    *create
    */
   @Post()
-  create(@Body() createComicsDto: CreateComicsDto): Observable<Comics> {
+  create(@Body() createComicsDto: CreateComicsDto): Observable<ComicsEntity> {
     return this._comicsService.create(createComicsDto);
   }
   /*
@@ -45,7 +45,7 @@ export class ComicsController {
    */
   @Put(':isbn')
   update(@Param() params: HandlerParams,
-         @Body() updateComicsDto: UpdateComicsDto): Observable<Comics> {
+         @Body() updateComicsDto: UpdateComicsDto): Observable<ComicsEntity> {
     return this._comicsService.update(params.isbn, updateComicsDto);
   }
   /*

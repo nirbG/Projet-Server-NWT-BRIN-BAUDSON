@@ -6,6 +6,7 @@ import { find, findIndex, flatMap, map, tap } from 'rxjs/operators';
 import { CreateComicsDto } from './dto/create-comics.dto';
 import { UpdateComicsDto } from './dto/update-comics.dto';
 import {HeroSimple} from "../heros/interfaces/heroSimple.interfaces";
+import {ComicsEntity} from "./entities/comics.entity";
 
 @Injectable()
 export class ComicsService {
@@ -20,9 +21,9 @@ export class ComicsService {
   /**
    * Returns all comics
    */
-  findAll(): Observable<Comics[] | void> {
+  findAll(): Observable<ComicsEntity[] | void> {
     return of(this._comics).pipe(
-      map(_ => (!!_ && !!_.length) ? _ : undefined),
+      map(_ => (!!_ && !!_.length) ? _.map(__ => new ComicsEntity(__)) : undefined),
     );
   }
   /**
@@ -30,18 +31,18 @@ export class ComicsService {
    * @param s index de debut
    * @param e index de fin
    */
-  findSome(s: string, e: string): Observable<Comics[] | void> {
+  findSome(s: string, e: string): Observable<ComicsEntity[] | void> {
     return of(this._comics.slice(+s, +e));
   }
   /**
    * return one comics
    * @param isbn
    */
-  findOne(isbn: string): Observable<Comics> {
+  findOne(isbn: string): Observable<ComicsEntity> {
     return from(this._comics).pipe(
       find(_ => _.isbn === isbn),
       flatMap(_ => !!_ ?
-        of(_) :
+        of(new ComicsEntity(_)) :
         throwError(new NotFoundException(`comics with isbn '${isbn}' not found`)),
       ),
     );
@@ -50,7 +51,7 @@ export class ComicsService {
    * return the comics create
    * @param body
    */
-  create(body: CreateComicsDto): Observable<Comics> {
+  create(body: CreateComicsDto): Observable<ComicsEntity> {
     return from(this._comics).pipe(
       find( _ => _.isbn === body.isbn),
       flatMap( _ => !!_ ?
@@ -65,10 +66,10 @@ export class ComicsService {
    * @param isbn
    * @param body
    */
-  update(isbn: string, body: UpdateComicsDto): Observable<Comics> {
+  update(isbn: string, body: UpdateComicsDto): Observable<ComicsEntity> {
     return this._findComicsIndexOfList(isbn).pipe(
       tap(_ => Object.assign(this._comics[_], body)),
-      map(_ => this._comics[_]),
+      map(_ => new ComicsEntity(this._comics[_])),
     );
   }
 
@@ -91,7 +92,7 @@ export class ComicsService {
    * @param body
    * @private
    */
-  private _addComics(body: CreateComicsDto): Observable<Comics> {
+  private _addComics(body: CreateComicsDto): Observable<ComicsEntity> {
     return of(body).pipe(
       map( _ =>
         Object.assign(_, {
@@ -102,7 +103,7 @@ export class ComicsService {
           inBD: false,
         }) as Comics,
       ),
-      tap(_ => this._comics = this._comics.concat(_)),
+      tap(_ => this._comics = this._comics.concat(_)), map(_ => new ComicsEntity(_)),
     );
   }
 
