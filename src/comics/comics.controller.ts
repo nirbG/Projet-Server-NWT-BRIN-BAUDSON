@@ -4,6 +4,7 @@ import { ComicsService } from './comics.service';
 import { Comics } from './interfaces/comics.interface';
 import { CreateComicsDto } from './dto/create-comics.dto';
 import { UpdateComicsDto } from './dto/update-comics.dto';
+import {HandlerParams} from "../validators/handler-params";
 
 @Controller('comics')
 export class ComicsController {
@@ -29,8 +30,8 @@ export class ComicsController {
    *findByIsbn
    */
   @Get(':isbn')
-  findByIsbn(@Param('isbn') isbn: string): Observable<Comics | void> {
-    return this._comicsService.findOne(isbn);
+  findByIsbn(@Param() params: HandlerParams): Observable<Comics | void> {
+    return this._comicsService.findOne(params.isbn);
   }
   /*
    *create
@@ -43,15 +44,15 @@ export class ComicsController {
    *update
    */
   @Put(':isbn')
-  update(@Param('isbn') isbn: string,
+  update(@Param() params: HandlerParams,
          @Body() updateComicsDto: UpdateComicsDto): Observable<Comics> {
-    return this._comicsService.update(isbn, updateComicsDto);
+    return this._comicsService.update(params.isbn, updateComicsDto);
   }
   /*
    *delete
    */
   @Delete(':isbn')
-  delete(@Param('isbn') isbn: string): Observable<void> {
-    return this._comicsService.delete(isbn);
+  delete(@Param() params: HandlerParams): Observable<void> {
+    return this._comicsService.delete(params.isbn);
   }
 }

@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { FastifyAdapter, NestFastifyApplication } from '@nestjs/platform-fastify';
 import { AppModule } from './app.module';
-import { Logger } from '@nestjs/common';
+import { Logger, ValidationPipe } from '@nestjs/common';
 import * as Config from 'config';
 import { AppConfig } from './app-config.interface';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
@@ -25,10 +25,16 @@ async function bootstrap(config: AppConfig) {
   const document = SwaggerModule.createDocument(app, options, {
     include: [ ComicsModule, HerosModule ],
   });
-
   // setup swagger module
   SwaggerModule.setup('temp', app, document);
 
+
+  //Auto-Validation
+  app.useGlobalPipes(new ValidationPipe({
+        whitelist: true,
+        forbidNonWhitelisted: true,
+      }),
+  );
   app.enableCors();
   await app.listen(config.port, config.host);
   Logger.log(`Application served at http://${config.host}:${config.port}`, 'bootstrap');
