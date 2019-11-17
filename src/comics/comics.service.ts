@@ -1,8 +1,8 @@
-import { ConflictException, Injectable, NotFoundException } from '@nestjs/common';
+import {ConflictException, Injectable, NotFoundException, UnprocessableEntityException} from '@nestjs/common';
 import { Comics } from './interfaces/comics.interface';
 import { COMICS } from '../data/comics';
 import { from, Observable, of, throwError } from 'rxjs';
-import { find, findIndex, flatMap, map, tap } from 'rxjs/operators';
+import {catchError, find, findIndex, flatMap, map, tap} from 'rxjs/operators';
 import { CreateComicsDto } from './dto/create-comics.dto';
 import { UpdateComicsDto } from './dto/update-comics.dto';
 import {HeroSimple} from "../heros/interfaces/heroSimple.interfaces";
@@ -41,8 +41,8 @@ export class ComicsService {
    * @param isbn
    */
   findOne(isbn: string): Observable<ComicsEntity> {
-    return from(this._comics).pipe(
-      find(_ => _.isbn === isbn),
+    return this._comicsDao.findById(isbn).pipe(
+      catchError(e => throwError(new UnprocessableEntityException(e.message))),
       flatMap(_ => !!_ ?
         of(new ComicsEntity(_)) :
         throwError(new NotFoundException(`comics with isbn '${isbn}' not found`)),
@@ -54,13 +54,17 @@ export class ComicsService {
    * @param body
    */
   create(body: CreateComicsDto): Observable<ComicsEntity> {
-    return from(this._comics).pipe(
-      find( _ => _.isbn === body.isbn),
-      flatMap( _ => !!_ ?
-        throwError(
-          new ConflictException(`People with isbn '${body.isbn}' already exists`))
-        : this._addComics(body),
+    //return from(this._comics).pipe(
+    return this._addComics(body).pipe(
+      //find( _ => _.isbn === body.isbn),
+      //flatMap( _ => !!_ ?
+      flatMap(_ => this._comicsDao.create(_)),
+      catchError(e => e.code = 11000 ? throwError(
+        new ConflictException(`People with isbn '${body.isbn}' already exists`),):
+        //: this._addComics(body),
+          throwError(new UnprocessableEntityException(e.message)),
       ),
+        map(_ => new ComicsEntity(_)),
     );
   }
   /**

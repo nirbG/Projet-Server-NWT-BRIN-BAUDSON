@@ -1,14 +1,15 @@
-import { ConflictException, Injectable, NotFoundException } from '@nestjs/common';
+import {ConflictException, Injectable, NotFoundException, UnprocessableEntityException} from '@nestjs/common';
 import { Hero } from './interfaces/heros.interfaces';
 import { HEROS } from '../data/heros';
 import { from, Observable, of, throwError } from 'rxjs';
-import { filter, find, findIndex, flatMap, map, tap } from 'rxjs/operators';
+import {catchError, filter, find, findIndex, flatMap, map, tap} from 'rxjs/operators';
 import retryTimes = jest.retryTimes;
 import { CreateHeroDto } from './dto/create-hero.dto';
 import { UpdateHeroDto } from './dto/update-hero.dto';
 import {HeroSimple} from "./interfaces/heroSimple.interfaces";
 import {HerosEntity} from "./entities/heros.entity";
 import {HerosDao} from "./dao/heros.dao";
+import {ComicsEntity} from "../comics/entities/comics.entity";
 
 @Injectable()
 export class HerosService {
@@ -30,8 +31,8 @@ export class HerosService {
   }
 
   findOne(id: string): Observable<HerosEntity> {
-    return from(this._heros).pipe(
-      find(_ => _.id === id),
+    return this._herosDao.findById(id).pipe(
+      catchError(e => throwError(new UnprocessableEntityException(e.message))),
       flatMap(_ => !!_ ?
         of(new HerosEntity(_)) :
         throwError(new NotFoundException(`hero with id '${id}' not found`)),
@@ -40,13 +41,17 @@ export class HerosService {
   }
 
   create(body: CreateHeroDto): Observable<HerosEntity> {
-    return from(this._heros).pipe(
-      find( _ => _.id === body.id),
-      flatMap( _ => !!_ ?
-        throwError(
-          new ConflictException(`People with id '${body.id}' already exists`))
-        : this._addComics(body),
+    //return from(this._heros).pipe(
+    return this._addHeros(body).pipe(
+      //find( _ => _.id === body.id),
+      //flatMap( _ => !!_ ?
+      flatMap(_ => this._herosDao.create(_)),
+      catchError(e => e.code = 11000 ? throwError(
+        new ConflictException(`People with id '${body.id}' already exists`),):
+        //: this._addComics(body),
+        throwError(new UnprocessableEntityException(e.message)),
       ),
+        map(_ => new HerosEntity(_)),
     );
   }
 
@@ -65,7 +70,7 @@ export class HerosService {
     );
   }
 
-  private _addComics(body: CreateHeroDto): Observable<HerosEntity> {
+  private _addHeros(body: CreateHeroDto): Observable<HerosEntity> {
     return of(body).pipe(
       map( _ =>
         Object.assign(_, {

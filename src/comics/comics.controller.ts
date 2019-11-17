@@ -8,7 +8,7 @@ import {
   ApiBadRequestResponse, ApiConflictResponse, ApiCreatedResponse, ApiImplicitBody,
   ApiImplicitParam,
   ApiNoContentResponse, ApiNotFoundResponse,
-  ApiOkResponse,
+  ApiOkResponse, ApiUnprocessableEntityResponse,
   ApiUseTags
 } from "@nestjs/swagger";
 import {HandlerComics} from "./validators/handler-comics";
@@ -27,6 +27,7 @@ export class ComicsController {
    */
   @ApiOkResponse({description: 'Return an array of comics', type: ComicsEntity, isArray: true})
   @ApiNoContentResponse({description: 'No comics exists in database'})
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @Get()
   findAll(): Observable<ComicsEntity[] | void> {
     return this._comicsService.findAll();
@@ -38,6 +39,7 @@ export class ComicsController {
   @ApiOkResponse({ description: 'Returns some comics', type: ComicsEntity, isArray: true })
   @ApiNoContentResponse({ description: 'No comics exists in database' })
   @ApiBadRequestResponse({ description: 'Parameters provided are not good' })
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @ApiImplicitParam({ name: 'start', description: 'Start of the collection', type: String })
   @ApiImplicitParam({ name: 'end', description: 'End of the collection', type: String })
   @Get(':start/:end')
@@ -52,6 +54,7 @@ export class ComicsController {
   @ApiOkResponse({ description: 'Returns the comics for the given "isbn"', type: ComicsEntity })
   @ApiNotFoundResponse({ description: 'Comics with the given "isbn" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @ApiImplicitParam({ name: 'isbn', description: 'Unique identifier of the comics in the database', type: String })
   @Get(':isbn')
   findByIsbn(@Param() params: HandlerComics): Observable<ComicsEntity | void> {
@@ -64,6 +67,7 @@ export class ComicsController {
   @ApiCreatedResponse({ description: 'The comics has been successfully created', type: ComicsEntity })
   @ApiConflictResponse({ description: 'The comics already exists in the database' })
   @ApiBadRequestResponse({ description: 'Payload provided is not good' })
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @ApiImplicitBody({ name: 'CreateComicsDto', description: 'Payload to create a new comics', type: CreateComicsDto })
   @Post()
   create(@Body() createComicsDto: CreateComicsDto): Observable<ComicsEntity> {

@@ -6,7 +6,7 @@ import {
   ApiBadRequestResponse, ApiConflictResponse, ApiCreatedResponse, ApiImplicitBody,
   ApiImplicitParam,
   ApiNoContentResponse, ApiNotFoundResponse,
-  ApiOkResponse,
+  ApiOkResponse, ApiUnprocessableEntityResponse,
   ApiUseTags
 } from "@nestjs/swagger";
 import {CreateHeroDto} from "./dto/create-hero.dto";
@@ -25,6 +25,7 @@ export class HerosController {
    */
   @ApiOkResponse({ description: 'Returns an array of heros', type: HerosEntity, isArray: true })
   @ApiNoContentResponse({ description: 'No heros exists in database' })
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @Get()
   findAll(): Observable< HerosEntity[] | void > {
     return this._herosService.findAll();
@@ -36,6 +37,7 @@ export class HerosController {
   @ApiOkResponse({ description: 'Returns some heros', type: HerosEntity })
   @ApiNoContentResponse({ description: 'No heros exists in database' })
   @ApiBadRequestResponse({ description: 'Parameters provided are not good' })
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @ApiImplicitParam({ name: 'start', description: 'Start of the collection', type: String })
   @ApiImplicitParam({ name: 'end', description: 'End of the collection', type: String })
   @Get(':start/:end')
@@ -49,6 +51,7 @@ export class HerosController {
   @ApiOkResponse({ description: 'Returns the hero for the given "id"', type: HerosEntity })
   @ApiNotFoundResponse({ description: 'Hero with the given "id" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the hero in the database', type: String })
   @Get(':id')
   findOne(@Param() params: HandlerHeros): Observable<HerosEntity> {
@@ -61,6 +64,7 @@ export class HerosController {
   @ApiCreatedResponse({ description: 'The hero has been successfully created', type: HerosEntity })
   @ApiConflictResponse({ description: 'The hero already exists in the database' })
   @ApiBadRequestResponse({ description: 'Payload provided is not good' })
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @ApiImplicitBody({ name: 'CreateHeroDto', description: 'Payload to create a new hero', type: CreateHeroDto })
   @Post()
   create( @Body() createHerosDto: CreateHeroDto): Observable<HerosEntity> {
