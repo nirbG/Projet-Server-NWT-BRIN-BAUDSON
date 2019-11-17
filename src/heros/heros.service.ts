@@ -8,18 +8,20 @@ import { CreateHeroDto } from './dto/create-hero.dto';
 import { UpdateHeroDto } from './dto/update-hero.dto';
 import {HeroSimple} from "./interfaces/heroSimple.interfaces";
 import {HerosEntity} from "./entities/heros.entity";
+import {HerosDao} from "./dao/heros.dao";
 
 @Injectable()
 export class HerosService {
   private _heros: Hero[];
 
-  constructor() {
+  constructor(private readonly _herosDao: HerosDao) {
     this._heros = [].concat(HEROS);
   }
 
   findAll(): Observable<HerosEntity[] |void> {
-    return of(this._heros).pipe(
+    return this._herosDao.find().pipe(
       map(_ => (!!_ && !!_.length) ? _.map(__ => new HerosEntity(__)) : undefined),
+      //map(_ => !!_ ? _.map(__ => new HerosEntity(__)) : undefined),
     );
   }
 

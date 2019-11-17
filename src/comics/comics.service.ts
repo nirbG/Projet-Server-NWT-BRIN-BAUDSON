@@ -7,6 +7,7 @@ import { CreateComicsDto } from './dto/create-comics.dto';
 import { UpdateComicsDto } from './dto/update-comics.dto';
 import {HeroSimple} from "../heros/interfaces/heroSimple.interfaces";
 import {ComicsEntity} from "./entities/comics.entity";
+import {ComicsDao} from "./dao/comics.dao";
 
 @Injectable()
 export class ComicsService {
@@ -15,15 +16,16 @@ export class ComicsService {
   /**
    * Class constructor
    */
-  constructor() {
+  constructor(private readonly _comicsDao: ComicsDao) {
     this._comics = [].concat(COMICS);
   }
   /**
    * Returns all comics
    */
   findAll(): Observable<ComicsEntity[] | void> {
-    return of(this._comics).pipe(
+    return this._comicsDao.find().pipe(
       map(_ => (!!_ && !!_.length) ? _.map(__ => new ComicsEntity(__)) : undefined),
+      //map(_ => !!_ ? _.map(__ => new ComicsEntity(__)) : undefined),
     );
   }
   /**
