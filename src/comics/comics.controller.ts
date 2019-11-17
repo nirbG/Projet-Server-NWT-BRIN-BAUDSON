@@ -3,7 +3,6 @@ import { Observable, of } from 'rxjs';
 import { ComicsService } from './comics.service';
 import { CreateComicsDto } from './dto/create-comics.dto';
 import { UpdateComicsDto } from './dto/update-comics.dto';
-import {HandlerParams} from "../validators/handler-params";
 import {ComicsEntity} from "./entities/comics.entity";
 import {
   ApiBadRequestResponse, ApiConflictResponse, ApiCreatedResponse, ApiImplicitBody,
@@ -12,6 +11,7 @@ import {
   ApiOkResponse,
   ApiUseTags
 } from "@nestjs/swagger";
+import {HandlerComics} from "./validators/handler-comics";
 
 
 @ApiUseTags('comics')
@@ -54,7 +54,7 @@ export class ComicsController {
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
   @ApiImplicitParam({ name: 'isbn', description: 'Unique identifier of the comics in the database', type: String })
   @Get(':isbn')
-  findByIsbn(@Param() params: HandlerParams): Observable<ComicsEntity | void> {
+  findByIsbn(@Param() params: HandlerComics): Observable<ComicsEntity | void> {
     return this._comicsService.findOne(params.isbn);
   }
 
@@ -79,7 +79,7 @@ export class ComicsController {
   @ApiImplicitParam({ name: 'isbn', description: 'Unique identifier of the comics in the database', type: String })
   @ApiImplicitBody({ name: 'UpdateComicsDto', description: 'Payload to update a comics', type: UpdateComicsDto })
   @Put(':isbn')
-  update(@Param() params: HandlerParams,
+  update(@Param() params: HandlerComics,
          @Body() updateComicsDto: UpdateComicsDto): Observable<ComicsEntity> {
     return this._comicsService.update(params.isbn, updateComicsDto);
   }
@@ -92,7 +92,7 @@ export class ComicsController {
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
   @ApiImplicitParam({ name: 'isbn', description: 'Unique identifier of the comics in the database', type: String })
   @Delete(':isbn')
-  delete(@Param() params: HandlerParams): Observable<void> {
+  delete(@Param() params: HandlerComics): Observable<void> {
     return this._comicsService.delete(params.isbn);
   }
 }

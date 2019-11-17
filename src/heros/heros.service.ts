@@ -76,7 +76,7 @@ export class HerosService {
   }
   /**
    * return l'index du comics
-   * @param isbn
+   * @param id
    * @private
    */
   private _findHeroIndexOfList(id: string): Observable<number> {

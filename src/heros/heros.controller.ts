@@ -1,7 +1,6 @@
 import {Body,  ClassSerializerInterceptor,  Controller,  Delete,  Get,  Param,  Post,  Put,  UseInterceptors} from '@nestjs/common';
 import { HerosService } from './heros.service';
 import { Observable } from 'rxjs';
-import {HandlerParams} from "../validators/handler-params";
 import {HerosEntity} from "./entities/heros.entity";
 import {
   ApiBadRequestResponse, ApiConflictResponse, ApiCreatedResponse, ApiImplicitBody,
@@ -12,6 +11,7 @@ import {
 } from "@nestjs/swagger";
 import {CreateHeroDto} from "./dto/create-hero.dto";
 import {UpdateHeroDto} from "./dto/update-hero.dto";
+import {HandlerHeros} from "./validators/handler-heros";
 
 @ApiUseTags('heros')
 @Controller('heros')
@@ -51,7 +51,7 @@ export class HerosController {
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
   @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the hero in the database', type: String })
   @Get(':id')
-  findOne(@Param() params: HandlerParams): Observable<HerosEntity> {
+  findOne(@Param() params: HandlerHeros): Observable<HerosEntity> {
     return this._herosService.findOne(params.id);
   }
 
@@ -76,7 +76,7 @@ export class HerosController {
   @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the hero in the database', type: String })
   @ApiImplicitBody({ name: 'UpdateHeroDto', description: 'Payload to update a hero', type: UpdateHeroDto })
   @Put(':id')
-  update(@Param() params: HandlerParams, @Body() body): Observable<HerosEntity> {
+  update(@Param() params: HandlerHeros, @Body() body): Observable<HerosEntity> {
     return this._herosService.update(params.id, body);
   }
 
@@ -88,7 +88,7 @@ export class HerosController {
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
   @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the hero in the database', type: String })
   @Delete(':id')
-  delete(@Param() params: HandlerParams): Observable<void> {
+  delete(@Param() params: HandlerHeros): Observable<void> {
     return this._herosService.delete(params.id);
   }
 }
