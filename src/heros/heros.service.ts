@@ -4,8 +4,8 @@ import { HEROS } from '../data/heros';
 import { from, Observable, of, throwError } from 'rxjs';
 import { filter, find, findIndex, flatMap, map, tap } from 'rxjs/operators';
 import retryTimes = jest.retryTimes;
-import { HeroCreateDto } from './dto/create-hero.dto';
-import { HeroUpdateDto } from './dto/update-hero.dto';
+import { CreateHeroDto } from './dto/create-hero.dto';
+import { UpdateHeroDto } from './dto/update-hero.dto';
 import {HeroSimple} from "./interfaces/heroSimple.interfaces";
 import {HerosEntity} from "./entities/heros.entity";
 
@@ -37,7 +37,7 @@ export class HerosService {
     );
   }
 
-  create(body: HeroCreateDto): Observable<HerosEntity> {
+  create(body: CreateHeroDto): Observable<HerosEntity> {
     return from(this._heros).pipe(
       find( _ => _.id === body.id),
       flatMap( _ => !!_ ?
@@ -48,7 +48,7 @@ export class HerosService {
     );
   }
 
-  update(id: string, body: HeroUpdateDto): Observable<HerosEntity> {
+  update(id: string, body: UpdateHeroDto): Observable<HerosEntity> {
     return this._findHeroIndexOfList(id).pipe(
       tap(_ => Object.assign(this._heros[_], body)),
       map(_ => new HerosEntity(this._heros[ _ ])),
@@ -63,7 +63,7 @@ export class HerosService {
     );
   }
 
-  private _addComics(body: HeroCreateDto): Observable<HerosEntity> {
+  private _addComics(body: CreateHeroDto): Observable<HerosEntity> {
     return of(body).pipe(
       map( _ =>
         Object.assign(_, {

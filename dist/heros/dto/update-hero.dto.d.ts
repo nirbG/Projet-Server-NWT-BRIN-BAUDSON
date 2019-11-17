@@ -1,5 +1,5 @@
 import { HeroSimple } from "../interfaces/heroSimple.interfaces";
-export interface HeroUpdateDto {
+export declare class UpdateHeroDto {
     id?: string;
     photo?: string;
     name?: string;

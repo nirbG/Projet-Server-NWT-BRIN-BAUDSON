@@ -10,26 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const class_validator_1 = require("class-validator");
-const swagger_1 = require("@nestjs/swagger");
-class CreateComicsDto {
+class HandlerParams {
 }
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'ISBN number', example: '1082365773' }),
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)
-], CreateComicsDto.prototype, "isbn", void 0);
+], HandlerParams.prototype, "id", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'Title', example: 'Batman: Of Bats and Rats' }),
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)
-], CreateComicsDto.prototype, "title", void 0);
-__decorate([
-    swagger_1.ApiModelProperty({ description: 'Price', example: 12.50 }),
-    class_validator_1.IsNumber(),
-    class_validator_1.IsNotEmpty(),
-    __metadata("design:type", Number)
-], CreateComicsDto.prototype, "price", void 0);
-exports.CreateComicsDto = CreateComicsDto;
-//# sourceMappingURL=create-comics.dto.js.map
+], HandlerParams.prototype, "isbn", void 0);
+exports.HandlerParams = HandlerParams;
+//# sourceMappingURL=handler-params.js.map

@@ -6,13 +6,13 @@ import {ApiModelProperty} from "@nestjs/swagger";
 
 export class UpdateComicsDto {
 
-  @ApiModelProperty({ description: 'ISBN number', example: '978-2-3657-7335-5'})
+  @ApiModelProperty({ description: 'ISBN number', example: '1082365773'})
   @IsOptional()
   @IsString()
   @IsNotEmpty()
   isbn?: string;
 
-  @ApiModelProperty({ description: 'Photo'})
+  @ApiModelProperty({ description: 'Photo', example: '1082365773.jpg'})
   @IsOptional()
   @IsString()
   photo?: string;
@@ -24,31 +24,31 @@ export class UpdateComicsDto {
   title?: string;
 
   @ApiModelProperty({ description: 'Main hero'})
-  //@IsOptional()
+  @IsOptional()
   //@IsInstance()
   //@ValidateNested()
   //@Type(() => )
   mainHeros?: HeroSimple;
 
   @ApiModelProperty({ description: 'Supporting heroes or ennemies'})
-  //@IsOptional()
+  @IsOptional()
   //@IsInstance()
   //@ValidateNested()
   //@Type(() => )
   otherHeros?: HeroSimple[];
 
-  @ApiModelProperty({ description: 'Price', example: '12.50€'})
+  @ApiModelProperty({ description: 'Price', example: 12.50})
   @IsOptional()
   @IsNumber()
   @IsNotEmpty()
   price?: number;
 
-  @ApiModelProperty({ description: 'Wish'})
+  @ApiModelProperty({ description: 'Wish', example: false})
   @IsOptional()
   @IsBoolean()
   wish?: boolean;
 
-  @ApiModelProperty({ description: 'Is it available in BD'})
+  @ApiModelProperty({ description: 'Is it available in BD', example: true})
   @IsOptional()
   @IsBoolean()
   inBD?: boolean;

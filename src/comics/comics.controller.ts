@@ -1,14 +1,4 @@
-import {
-  Body,
-  ClassSerializerInterceptor,
-  Controller,
-  Delete,
-  Get,
-  Param,
-  Post,
-  Put,
-  UseInterceptors
-} from '@nestjs/common';
+import {  Body,  ClassSerializerInterceptor,  Controller,  Delete,  Get,  Param,  Post,  Put,  UseInterceptors} from '@nestjs/common';
 import { Observable, of } from 'rxjs';
 import { ComicsService } from './comics.service';
 import { CreateComicsDto } from './dto/create-comics.dto';

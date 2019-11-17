@@ -13,19 +13,20 @@ const common_1 = require("@nestjs/common");
 const comics_1 = require("../data/comics");
 const rxjs_1 = require("rxjs");
 const operators_1 = require("rxjs/operators");
+const comics_entity_1 = require("./entities/comics.entity");
 let ComicsService = class ComicsService {
     constructor() {
         this._comics = [].concat(comics_1.COMICS);
     }
     findAll() {
-        return rxjs_1.of(this._comics).pipe(operators_1.map(_ => (!!_ && !!_.length) ? _ : undefined));
+        return rxjs_1.of(this._comics).pipe(operators_1.map(_ => (!!_ && !!_.length) ? _.map(__ => new comics_entity_1.ComicsEntity(__)) : undefined));
     }
     findSome(s, e) {
         return rxjs_1.of(this._comics.slice(+s, +e));
     }
     findOne(isbn) {
         return rxjs_1.from(this._comics).pipe(operators_1.find(_ => _.isbn === isbn), operators_1.flatMap(_ => !!_ ?
-            rxjs_1.of(_) :
+            rxjs_1.of(new comics_entity_1.ComicsEntity(_)) :
             rxjs_1.throwError(new common_1.NotFoundException(`comics with isbn '${isbn}' not found`))));
     }
     create(body) {
@@ -34,7 +35,7 @@ let ComicsService = class ComicsService {
             : this._addComics(body)));
     }
     update(isbn, body) {
-        return this._findComicsIndexOfList(isbn).pipe(operators_1.tap(_ => Object.assign(this._comics[_], body)), operators_1.map(_ => this._comics[_]));
+        return this._findComicsIndexOfList(isbn).pipe(operators_1.tap(_ => Object.assign(this._comics[_], body)), operators_1.map(_ => new comics_entity_1.ComicsEntity(this._comics[_])));
     }
     delete(isbn) {
         return this._findComicsIndexOfList(isbn).pipe(operators_1.flatMap(_ => this._comics = this._comics.filter(__ => __.isbn === this._comics[_].isbn)), operators_1.map(_ => undefined));
@@ -46,7 +47,7 @@ let ComicsService = class ComicsService {
             otherHeros: [],
             wish: false,
             inBD: false,
-        })), operators_1.tap(_ => this._comics = this._comics.concat(_)));
+        })), operators_1.tap(_ => this._comics = this._comics.concat(_)), operators_1.map(_ => new comics_entity_1.ComicsEntity(_)));
     }
     _findComicsIndexOfList(isbn) {
         return rxjs_1.from(this._comics)

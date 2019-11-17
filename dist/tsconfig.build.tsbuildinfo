@@ -1541,21 +1541,233 @@
         "version": "8548a1a83c1091e8c7a355b7edf031854b007d10a7fa24e180a95d608c87704e",
         "signature": "8548a1a83c1091e8c7a355b7edf031854b007d10a7fa24e180a95d608c87704e"
       },
+      "../node_modules/class-validator/validation/ValidationError.d.ts": {
+        "version": "8b5ad058f8dab857050fdbb092b9f1267d22641f0f746cd8a7abee85b48bb83a",
+        "signature": "8b5ad058f8dab857050fdbb092b9f1267d22641f0f746cd8a7abee85b48bb83a"
+      },
+      "../node_modules/class-validator/validation/ValidatorOptions.d.ts": {
+        "version": "d3c0c471c298dc7115ada6c07f78d4fafb088523a301cb539c5cb44dae009954",
+        "signature": "d3c0c471c298dc7115ada6c07f78d4fafb088523a301cb539c5cb44dae009954"
+      },
+      "../node_modules/class-validator/validation-schema/ValidationSchema.d.ts": {
+        "version": "86f89124a90fae1b90421bcce1e0ba58614383ca72403bfc03ff89761b050a4d",
+        "signature": "86f89124a90fae1b90421bcce1e0ba58614383ca72403bfc03ff89761b050a4d"
+      },
+      "../node_modules/class-validator/container.d.ts": {
+        "version": "5a6fbec8c8e62c37e9685a91a6ef0f6ecaddb1ee90f7b2c2b71b454b40a0d9a6",
+        "signature": "5a6fbec8c8e62c37e9685a91a6ef0f6ecaddb1ee90f7b2c2b71b454b40a0d9a6"
+      },
+      "../node_modules/@types/validator/index.d.ts": {
+        "version": "930f4dcf2bf161cde0f737e6fb1ee8ad1c54f3b7bdf64d18adc4c2521f48aaa8",
+        "signature": "930f4dcf2bf161cde0f737e6fb1ee8ad1c54f3b7bdf64d18adc4c2521f48aaa8"
+      },
+      "../node_modules/class-validator/validation/ValidationTypeOptions.d.ts": {
+        "version": "367b353f3a003d31a72ad3b1cef5c933b71889ae86cb645520d1681014e79ab9",
+        "signature": "367b353f3a003d31a72ad3b1cef5c933b71889ae86cb645520d1681014e79ab9"
+      },
+      "../node_modules/class-validator/validation/ValidationArguments.d.ts": {
+        "version": "f049af45e62625e0be51a3badd311110abf1ac8b23f56689e1d850923f6d9aac",
+        "signature": "f049af45e62625e0be51a3badd311110abf1ac8b23f56689e1d850923f6d9aac"
+      },
+      "../node_modules/class-validator/decorator/ValidationOptions.d.ts": {
+        "version": "e700a3327eb9f018b9af7a56d9214383919103950141d2e44a4a1cd59bbe67c6",
+        "signature": "e700a3327eb9f018b9af7a56d9214383919103950141d2e44a4a1cd59bbe67c6"
+      },
+      "../node_modules/class-validator/decorator/decorators.d.ts": {
+        "version": "34d83ecda22cb58a70c3c51bb356d94222ed15ba82880dfb7309e74d281804ef",
+        "signature": "34d83ecda22cb58a70c3c51bb356d94222ed15ba82880dfb7309e74d281804ef"
+      },
+      "../node_modules/class-validator/validation/ValidatorConstraintInterface.d.ts": {
+        "version": "8e7c8386c3700086085770ac298d37de34bd290db95938f5c77f1ab83fa67c52",
+        "signature": "8e7c8386c3700086085770ac298d37de34bd290db95938f5c77f1ab83fa67c52"
+      },
+      "../node_modules/class-validator/validation/ValidationTypes.d.ts": {
+        "version": "b9448353389cfb3d7fed5fc0d23ca87b0ac16149b89ba8c9c8ae568d01b8c3ad",
+        "signature": "b9448353389cfb3d7fed5fc0d23ca87b0ac16149b89ba8c9c8ae568d01b8c3ad"
+      },
+      "../node_modules/class-validator/metadata/ValidationMetadataArgs.d.ts": {
+        "version": "8f29f65ce09040175a948aeb38af31f34367123903c49b556a76097bcb8fe813",
+        "signature": "8f29f65ce09040175a948aeb38af31f34367123903c49b556a76097bcb8fe813"
+      },
+      "../node_modules/class-validator/metadata/ValidationMetadata.d.ts": {
+        "version": "8be85fd3849c702cd34aee594b4e9773dceca300cc358c63d75a3118720b12fe",
+        "signature": "8be85fd3849c702cd34aee594b4e9773dceca300cc358c63d75a3118720b12fe"
+      },
+      "../node_modules/class-validator/validation/Validator.d.ts": {
+        "version": "3d0b16232d130758c990594006dd24361a7cf3a5efc86b1ec6d6af61c0b2ea67",
+        "signature": "3d0b16232d130758c990594006dd24361a7cf3a5efc86b1ec6d6af61c0b2ea67"
+      },
+      "../node_modules/class-validator/register-decorator.d.ts": {
+        "version": "ea96782b5b69f29f37be42c51f944a0a4a478cbe3fed1d2ec25cffd5bd3617a4",
+        "signature": "ea96782b5b69f29f37be42c51f944a0a4a478cbe3fed1d2ec25cffd5bd3617a4"
+      },
+      "../node_modules/class-validator/metadata/ConstraintMetadata.d.ts": {
+        "version": "bb71811f328b358d990e298006492de623964862240de7eb6342e5efb8aafae9",
+        "signature": "bb71811f328b358d990e298006492de623964862240de7eb6342e5efb8aafae9"
+      },
+      "../node_modules/class-validator/metadata/MetadataStorage.d.ts": {
+        "version": "c569d4d6f3aa771dc1600a73bd8f1b714e10a75218379d93f9cf6bc13bbc0ab0",
+        "signature": "c569d4d6f3aa771dc1600a73bd8f1b714e10a75218379d93f9cf6bc13bbc0ab0"
+      },
+      "../node_modules/class-validator/index.d.ts": {
+        "version": "70aecfd981af29d74ba7ab6667b9cc2a53459d8eb099c139fd2aa54c3059c71d",
+        "signature": "70aecfd981af29d74ba7ab6667b9cc2a53459d8eb099c139fd2aa54c3059c71d"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts": {
+        "version": "267bc5069099a96c0e4c69c65090d44dc3e724a6991caa335c094edfe46796a5",
+        "signature": "267bc5069099a96c0e4c69c65090d44dc3e724a6991caa335c094edfe46796a5"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts": {
+        "version": "8037c72f27f88e9bcad4d71d37d29575bc74ed7b8c86ab71448d88d2c2b3c1cc",
+        "signature": "8037c72f27f88e9bcad4d71d37d29575bc74ed7b8c86ab71448d88d2c2b3c1cc"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts": {
+        "version": "77b98f9b678d5e31cd169ceba2d46878c07a05d5dae7b3e3a7edbc4c672ad5cc",
+        "signature": "77b98f9b678d5e31cd169ceba2d46878c07a05d5dae7b3e3a7edbc4c672ad5cc"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts": {
+        "version": "1b956d686d04371378d4523551c502fd7251ca52a38b4e2b2f3e39b7db2e15db",
+        "signature": "1b956d686d04371378d4523551c502fd7251ca52a38b4e2b2f3e39b7db2e15db"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts": {
+        "version": "e9db101fa828e52393e2c906f92bd42512bcb2cbae05597cdec026e62b15dcb0",
+        "signature": "e9db101fa828e52393e2c906f92bd42512bcb2cbae05597cdec026e62b15dcb0"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-body.decorator.d.ts": {
+        "version": "97aea0b5ffc757c8eb4d48c4172dd5625ae480e3a6d71329a6d63a244dfca199",
+        "signature": "97aea0b5ffc757c8eb4d48c4172dd5625ae480e3a6d71329a6d63a244dfca199"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-header.decorator.d.ts": {
+        "version": "e1c481222d08072b9d5178c1bfba611d6a8f58395fb14f8695069145c6b3be87",
+        "signature": "e1c481222d08072b9d5178c1bfba611d6a8f58395fb14f8695069145c6b3be87"
+      },
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-enum.interface.d.ts": {
+        "version": "ea490c7c4f744b77e9c4caf410e5d309210c68942399e88ca46890858ef7361e",
+        "signature": "ea490c7c4f744b77e9c4caf410e5d309210c68942399e88ca46890858ef7361e"
+      },
+      "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts": {
+        "version": "2f13178d4971c6847a7f10752d52138da2648f77fdbad44fcbe4495d5d1509d5",
+        "signature": "2f13178d4971c6847a7f10752d52138da2648f77fdbad44fcbe4495d5d1509d5"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-param.decorator.d.ts": {
+        "version": "e7a8dc7608c8ed2e755dec8ad48dcee99472ee2061c0ff74177bb84116529228",
+        "signature": "e7a8dc7608c8ed2e755dec8ad48dcee99472ee2061c0ff74177bb84116529228"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-query.decorator.d.ts": {
+        "version": "517fe0492980112910da622e995b0c8d190bb69282a0973f47ecd0da35675c44",
+        "signature": "517fe0492980112910da622e995b0c8d190bb69282a0973f47ecd0da35675c44"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-model-property.decorator.d.ts": {
+        "version": "dc72484d87d510ca435a173fdda8e850270bb56527d94fcca5c9a7910098e3e4",
+        "signature": "dc72484d87d510ca435a173fdda8e850270bb56527d94fcca5c9a7910098e3e4"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts": {
+        "version": "8d7b642fc51678e55bbc65bfd1dd8ac1d79075dff2520e7efa75340a11594248",
+        "signature": "8d7b642fc51678e55bbc65bfd1dd8ac1d79075dff2520e7efa75340a11594248"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts": {
+        "version": "e1464726b2c5d211849a6f4d9765be6ea8c757474aec9c2742d44f979af35638",
+        "signature": "e1464726b2c5d211849a6f4d9765be6ea8c757474aec9c2742d44f979af35638"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts": {
+        "version": "e10b2cdfd9f8eb05d9198d304782bec56ff21f8b0157f5a54c5340d303491aed",
+        "signature": "e10b2cdfd9f8eb05d9198d304782bec56ff21f8b0157f5a54c5340d303491aed"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-file.decorator.d.ts": {
+        "version": "6c5d493f5b8f097fb9c619f5eb9d9f57370f3977ee802af457800995f00af13d",
+        "signature": "6c5d493f5b8f097fb9c619f5eb9d9f57370f3977ee802af457800995f00af13d"
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts": {
+        "version": "b1066ccbaba3d16e72085cbe51688f2db1520727bb583226c90d8feec32e76a1",
+        "signature": "b1066ccbaba3d16e72085cbe51688f2db1520727bb583226c90d8feec32e76a1"
+      },
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts": {
+        "version": "a6bbd6417418830db1e7651bed348b4c25561d5c94d774a2ead8034043a5be85",
+        "signature": "a6bbd6417418830db1e7651bed348b4c25561d5c94d774a2ead8034043a5be85"
+      },
+      "../node_modules/@nestjs/swagger/dist/document-builder.d.ts": {
+        "version": "69072c6bb6d83e5be67aceeac511156f03c0660d8c030fd3c4245a309b904a4d",
+        "signature": "69072c6bb6d83e5be67aceeac511156f03c0660d8c030fd3c4245a309b904a4d"
+      },
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts": {
+        "version": "7ca85af2355737022faa8e616d91dcc73690a9b92f8b473d2b8c048b7f013de0",
+        "signature": "7ca85af2355737022faa8e616d91dcc73690a9b92f8b473d2b8c048b7f013de0"
+      },
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts": {
+        "version": "c0586d1981d830d2ed5d75b086aa6216703a839d2e09f4866ed7d77772324f67",
+        "signature": "c0586d1981d830d2ed5d75b086aa6216703a839d2e09f4866ed7d77772324f67"
+      },
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document.interface.d.ts": {
+        "version": "4ac1d140583f2e4171fca146ee546ac1c30f584ec60cc69c089052750f544251",
+        "signature": "4ac1d140583f2e4171fca146ee546ac1c30f584ec60cc69c089052750f544251"
+      },
+      "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts": {
+        "version": "b9956d7bdd38366602bbd7223e4cd2d19d7dacbb9951adef4f4f21d039ac4dfb",
+        "signature": "b9956d7bdd38366602bbd7223e4cd2d19d7dacbb9951adef4f4f21d039ac4dfb"
+      },
+      "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts": {
+        "version": "504749af06dc09f2878701631f67a64c744ca6d0806460afad4166bccc1a0e5d",
+        "signature": "504749af06dc09f2878701631f67a64c744ca6d0806460afad4166bccc1a0e5d"
+      },
+      "../node_modules/@nestjs/swagger/dist/index.d.ts": {
+        "version": "2abb0f075c0e72d2494145aa57c9f9470292b452a0265d6d31133ca507e28ee3",
+        "signature": "2abb0f075c0e72d2494145aa57c9f9470292b452a0265d6d31133ca507e28ee3"
+      },
+      "../node_modules/@nestjs/swagger/index.d.ts": {
+        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
+      },
       "../src/comics/dto/create-comics.dto.ts": {
-        "version": "f3084e7943af15fe257825f2e1b744e5885f0589b76ce7a89ded11103b566141",
+        "version": "34bf242b3d157586c8880127eb3116726fd428dda4ebc8ad5e736202120d410c",
         "signature": "cc78591ce9c013e10453b8bdf0d1f1c7f5a9a54581e6e0a3e9487f6681ff0d02"
       },
+      "../node_modules/class-transformer/ClassTransformOptions.d.ts": {
+        "version": "d89af0c250e1424959162beae79f2c2745c729d6ab8028503d322395d96d3a2b",
+        "signature": "d89af0c250e1424959162beae79f2c2745c729d6ab8028503d322395d96d3a2b"
+      },
+      "../node_modules/class-transformer/ClassTransformer.d.ts": {
+        "version": "96589ead67dc132731ddb531c3c7de2e66156df7154b1136d1abd92bdaa27e79",
+        "signature": "96589ead67dc132731ddb531c3c7de2e66156df7154b1136d1abd92bdaa27e79"
+      },
+      "../node_modules/class-transformer/metadata/ExposeExcludeOptions.d.ts": {
+        "version": "1aed251ab92dfd0e4901b3b9ad5eccdeb4d3603d57af947ae5f1de967f5ffa6e",
+        "signature": "1aed251ab92dfd0e4901b3b9ad5eccdeb4d3603d57af947ae5f1de967f5ffa6e"
+      },
+      "../node_modules/class-transformer/metadata/TypeMetadata.d.ts": {
+        "version": "fc14f591b59444c787440f6d8d4df6d96a2eafd8dcb8f3d9773d2d52a88db64f",
+        "signature": "fc14f591b59444c787440f6d8d4df6d96a2eafd8dcb8f3d9773d2d52a88db64f"
+      },
+      "../node_modules/class-transformer/TransformOperationExecutor.d.ts": {
+        "version": "1fa98f06f8163fef61071f77e47ad2b7dd26064a43e219a4468df563e911caf3",
+        "signature": "1fa98f06f8163fef61071f77e47ad2b7dd26064a43e219a4468df563e911caf3"
+      },
+      "../node_modules/class-transformer/decorators.d.ts": {
+        "version": "cc8aa0870a0defda3818676ecb8123b2d8b15dc40cdc130834bc81b01a58f2e4",
+        "signature": "cc8aa0870a0defda3818676ecb8123b2d8b15dc40cdc130834bc81b01a58f2e4"
+      },
+      "../node_modules/class-transformer/index.d.ts": {
+        "version": "097d4bf3331df1e138ffdcf92e1117f6841bc8337170d927fd955d5ee8a1674b",
+        "signature": "097d4bf3331df1e138ffdcf92e1117f6841bc8337170d927fd955d5ee8a1674b"
+      },
       "../src/comics/dto/update-comics.dto.ts": {
-        "version": "a166ac8a31a74da6412d631cd262b537e6ad54cae17c63523f259fcdf45edee0",
-        "signature": "09e42799ca4f1e1d3521cda537920addad1158b3a78ca6a762f008cc55fe8d18"
+        "version": "c32ebf274dbb75cbc326678241d8630baa3cace8061931ec3f59d111620f42fb",
+        "signature": "0b5fd162eb23a98a616350d7818f47e9ac53f17377add2971d77fbd0e383f857"
+      },
+      "../src/comics/entities/comics.entity.ts": {
+        "version": "a5c5a194b93394a9b64d912e90af7343830c4c57192559ae749732a02c87e86c",
+        "signature": "3182387169ba3cf82d5a7a0e251dc042c2f7a99a1948e9ffa126a7e052c8c006"
       },
       "../src/comics/comics.service.ts": {
-        "version": "4ccf814eb081dac834408dc3e09f640d2548ec45c1dc56f146c6d1225a13db5c",
-        "signature": "d3afc6e5fceef61f7384097faaf92eec4570deb9820c094525e3fbff1f3e14be"
+        "version": "44f73525fd7dfb15fad9cb0ddec1db61a8f46f9d002eca70cf04c9793c7f35cf",
+        "signature": "13484098a85479b4a525869b67eb8c6277431f91d25dcb372444ef791f591039"
+      },
+      "../src/validators/handler-params.ts": {
+        "version": "7e7f1868a302c7555dfed3e194263a011a0e537e7ccd116d55b6d9d2fd0c9508",
+        "signature": "141b875f883f7beb605686cf4c549dc235197ff7d02f22633f104ef1fef8da01"
       },
       "../src/comics/comics.controller.ts": {
-        "version": "0d4afdb0077ea97888b8161ab2a27e6333ef2794e2f5938a90a3375d6491bff9",
-        "signature": "c8e4dac7d9981a524086f3468d30304a0c10e58f69966c1b6527140b62b9c7a1"
+        "version": "92286ff63a6f1cf373ae5181f7c456557171e018ad50b018208e1843bc770e26",
+        "signature": "6cacac49a7feb86fd5c3c95c7efc6b39610d6dbb3822c856541ce50a0cfaaeea"
       },
       "../src/comics/comics.module.ts": {
         "version": "3e60f68beff257a2decd8b7639a1a66c3e188b692b92206f06f5c2857652436a",
@@ -1570,20 +1782,24 @@
         "signature": "46fb53b505909a1d53d75a1def1d0a14eab6d8ab0b02e7534cab7632ea7e65c7"
       },
       "../src/heros/dto/create-hero.dto.ts": {
-        "version": "284f9de40d630650af2f9784122c248642194818092cbf43ed1cebef36f50e3f",
-        "signature": "5bdc65c86524081c5c686e3e54d7c8c93dfdd2b25c0d4de574337eb4e880cbf2"
+        "version": "d9246e5bc92566273a3b50f84c06e456ba196ddb341d21df08b9c3ccd6d7c778",
+        "signature": "fc581f1a881462c2a58e5a9561950901359afc167ec8b26e6c49ef58be9b253f"
       },
       "../src/heros/dto/update-hero.dto.ts": {
-        "version": "3bbab4a5ce1c6323090995775309834351005257f66611bd6d0a593dc3d8b055",
-        "signature": "becd7ed788bdf32d19675bbc1d2178f3c8ed28d7302b7eb5998ffac69fdaf53c"
+        "version": "2f3cc621668addcdbbaff91419ccfddabe6c44d73d608117708e813a97fc0e45",
+        "signature": "1f47dd7902c141b3a6489d363021e8d0dafb9967211d4b18512ac04faeb37154"
+      },
+      "../src/heros/entities/heros.entity.ts": {
+        "version": "e7b077228add91483d144910643e17cf0771d6e24c3a904157d55ffb423b2e4f",
+        "signature": "979f5d075d100b787e221b442ea81964db03e167ee94559bb1c145f15173364d"
       },
       "../src/heros/heros.service.ts": {
-        "version": "a0c8a2ddb9ed0065201dad38323316da7070fa50574bf907f027cf0c077afc02",
-        "signature": "d8e50e3b9e9e896aed94b5f6794c5ba8520aece5eb1eee6d0bb8d0c58388d71f"
+        "version": "40f1c076829b4eb7b847778dba1ac698108639ac5dca27ca5262c31222841c4b",
+        "signature": "3f411147b27011f0c4a88025acb3749320ea5ccd1ba19278db46615d62bdc46a"
       },
       "../src/heros/heros.controller.ts": {
-        "version": "0cd5e953fc92d249c8d549131d5e22702a62a8ef3801c98eae909b93eacbb974",
-        "signature": "7152d4bac13b71abd0cd5c327616a4fd9d4b210c81f788542eadbd37b072d077"
+        "version": "2cbac50d9dcabe732dc786df50aa1fe663a7c0562349de1bbaefdeb63633a880",
+        "signature": "2417612b48c3e187420eed178fcf67354b4f241270acab466c393da1e64a43c7"
       },
       "../src/heros/heros.module.ts": {
         "version": "0debfb47d85bb2e50efe35f7120928364b75b9ed5caaa8de94d6dcfd7212ded5",
@@ -1734,7 +1950,7 @@
         "signature": "1526c4260fa14e247f2abfcf26d76fd0c1e3d01ee69007424073c9da4f526b33"
       },
       "../src/main.ts": {
-        "version": "ab37ba3813b8f43d49ccbc51aa1137e3686cecff392cbbae432ee9e97f0a3553",
+        "version": "820e935d1bc39d06a7ada731dae2cd2d7b605b1eef1b31db5c1dfbb76ee172d3",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "../src/comics/interceptors/comics.interceptor.ts": {
@@ -1818,12 +2034,12 @@
         "signature": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538"
       },
       "../node_modules/@types/mongodb/index.d.ts": {
-        "version": "69fe4bf17fd6e29f8f845d126fc0bedba566b4f5e73c3428f03b47cb3e610ac5",
-        "signature": "69fe4bf17fd6e29f8f845d126fc0bedba566b4f5e73c3428f03b47cb3e610ac5"
+        "version": "81a404cae978932b47d8660d7c737c663733934705bea86d28419f0a755adb70",
+        "signature": "81a404cae978932b47d8660d7c737c663733934705bea86d28419f0a755adb70"
       },
       "../node_modules/@types/mongoose/index.d.ts": {
-        "version": "28db39bb450c74ce1cbb3c821ddd114f776285cf163643e1638d538e540481d8",
-        "signature": "28db39bb450c74ce1cbb3c821ddd114f776285cf163643e1638d538e540481d8"
+        "version": "17f6a65bfa8efa1d7ff8b7a9db60cc1e7ee65b3f99bccab1b5840f45ddfc6720",
+        "signature": "17f6a65bfa8efa1d7ff8b7a9db60cc1e7ee65b3f99bccab1b5840f45ddfc6720"
       },
       "../node_modules/@types/source-list-map/index.d.ts": {
         "version": "67fc055eb86a0632e2e072838f889ffe1754083cb13c8c80a06a7d895d877aae",
@@ -1856,10 +2072,6 @@
       "../node_modules/@types/uglify-js/index.d.ts": {
         "version": "bdc18dd47aea9977e419a8e03e7e5d04ed8cf8265e014d8788848b76b969cbba",
         "signature": "bdc18dd47aea9977e419a8e03e7e5d04ed8cf8265e014d8788848b76b969cbba"
-      },
-      "../node_modules/@types/validator/index.d.ts": {
-        "version": "930f4dcf2bf161cde0f737e6fb1ee8ad1c54f3b7bdf64d18adc4c2521f48aaa8",
-        "signature": "930f4dcf2bf161cde0f737e6fb1ee8ad1c54f3b7bdf64d18adc4c2521f48aaa8"
       },
       "../node_modules/@types/webpack-sources/index.d.ts": {
         "version": "7429e36c7e860a83e1166d6f0977fa4938b7a7a346255169a678939594394375",
@@ -5001,7 +5213,391 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/class-validator/validation/ValidationError.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/ValidatorOptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation-schema/ValidationSchema.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/container.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/validator/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/ValidationTypeOptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/ValidationArguments.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/ValidationOptions.d.ts": [
+        "../node_modules/class-validator/validation/ValidationArguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/decorators.d.ts": [
+        "../node_modules/class-validator/validation/ValidationTypeOptions.d.ts",
+        "../node_modules/class-validator/decorator/ValidationOptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/ValidatorConstraintInterface.d.ts": [
+        "../node_modules/class-validator/validation/ValidationArguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/ValidationTypes.d.ts": [
+        "../node_modules/class-validator/validation/ValidationArguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/ValidationMetadataArgs.d.ts": [
+        "../node_modules/class-validator/decorator/ValidationOptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/ValidationMetadata.d.ts": [
+        "../node_modules/class-validator/metadata/ValidationMetadataArgs.d.ts",
+        "../node_modules/class-validator/validation/ValidationArguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/Validator.d.ts": [
+        "../node_modules/class-validator/metadata/ValidationMetadata.d.ts",
+        "../node_modules/class-validator/validation/ValidationError.d.ts",
+        "../node_modules/class-validator/validation/ValidationTypeOptions.d.ts",
+        "../node_modules/class-validator/validation/ValidatorOptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/register-decorator.d.ts": [
+        "../node_modules/class-validator/validation/ValidatorOptions.d.ts",
+        "../node_modules/class-validator/validation/ValidatorConstraintInterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/ConstraintMetadata.d.ts": [
+        "../node_modules/class-validator/validation/ValidatorConstraintInterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/MetadataStorage.d.ts": [
+        "../node_modules/class-validator/metadata/ValidationMetadata.d.ts",
+        "../node_modules/class-validator/metadata/ConstraintMetadata.d.ts",
+        "../node_modules/class-validator/validation-schema/ValidationSchema.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/index.d.ts": [
+        "../node_modules/class-validator/validation/ValidationError.d.ts",
+        "../node_modules/class-validator/validation/ValidatorOptions.d.ts",
+        "../node_modules/class-validator/validation-schema/ValidationSchema.d.ts",
+        "../node_modules/class-validator/container.d.ts",
+        "../node_modules/class-validator/decorator/decorators.d.ts",
+        "../node_modules/class-validator/decorator/ValidationOptions.d.ts",
+        "../node_modules/class-validator/validation/ValidatorConstraintInterface.d.ts",
+        "../node_modules/class-validator/validation/ValidationTypeOptions.d.ts",
+        "../node_modules/class-validator/validation/ValidationArguments.d.ts",
+        "../node_modules/class-validator/validation/ValidationTypes.d.ts",
+        "../node_modules/class-validator/validation/Validator.d.ts",
+        "../node_modules/class-validator/register-decorator.d.ts",
+        "../node_modules/class-validator/metadata/MetadataStorage.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-body.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-header.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-enum.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-enum.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-param.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-query.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-model-property.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-file.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-body.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-header.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-param.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-query.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-model-property.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-file.decorator.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/document-builder.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document.interface.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/index.d.ts": [
+        "../node_modules/reflect-metadata/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/document-builder.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/comics/dto/create-comics.dto.ts": [
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/ClassTransformOptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/ClassTransformer.d.ts": [
+        "../node_modules/class-transformer/ClassTransformOptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/metadata/ExposeExcludeOptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/metadata/TypeMetadata.d.ts": [
+        "../node_modules/class-transformer/metadata/ExposeExcludeOptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/TransformOperationExecutor.d.ts": [
+        "../node_modules/class-transformer/ClassTransformOptions.d.ts",
+        "../node_modules/class-transformer/metadata/TypeMetadata.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/decorators.d.ts": [
+        "../node_modules/class-transformer/metadata/ExposeExcludeOptions.d.ts",
+        "../node_modules/class-transformer/ClassTransformOptions.d.ts",
+        "../node_modules/class-transformer/TransformOperationExecutor.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/index.d.ts": [
+        "../node_modules/class-transformer/ClassTransformer.d.ts",
+        "../node_modules/class-transformer/ClassTransformOptions.d.ts",
+        "../node_modules/class-transformer/metadata/ExposeExcludeOptions.d.ts",
+        "../node_modules/class-transformer/decorators.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5009,6 +5605,18 @@
       ],
       "../src/comics/dto/update-comics.dto.ts": [
         "../src/heros/interfaces/heroSimple.interfaces.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/class-transformer/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/comics/entities/comics.entity.ts": [
+        "../src/heros/interfaces/heroSimple.interfaces.ts",
+        "../node_modules/class-transformer/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5023,6 +5631,14 @@
         "../src/comics/dto/create-comics.dto.ts",
         "../src/comics/dto/update-comics.dto.ts",
         "../src/heros/interfaces/heroSimple.interfaces.ts",
+        "../src/comics/entities/comics.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/validators/handler-params.ts": [
+        "../node_modules/class-validator/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5032,9 +5648,11 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/rxjs/index.d.ts",
         "../src/comics/comics.service.ts",
-        "../src/comics/interfaces/comics.interface.ts",
         "../src/comics/dto/create-comics.dto.ts",
         "../src/comics/dto/update-comics.dto.ts",
+        "../src/validators/handler-params.ts",
+        "../src/comics/entities/comics.entity.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5064,6 +5682,8 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/heros/dto/create-hero.dto.ts": [
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5071,6 +5691,18 @@
       ],
       "../src/heros/dto/update-hero.dto.ts": [
         "../src/heros/interfaces/heroSimple.interfaces.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/class-transformer/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/heros/entities/heros.entity.ts": [
+        "../node_modules/class-transformer/index.d.ts",
+        "../src/heros/interfaces/heroSimple.interfaces.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5082,11 +5714,10 @@
         "../src/data/heros.ts",
         "../node_modules/rxjs/index.d.ts",
         "../node_modules/rxjs/operators/index.d.ts",
-        "../src/comics/dto/create-comics.dto.ts",
-        "../src/comics/interfaces/comics.interface.ts",
         "../src/heros/dto/create-hero.dto.ts",
         "../src/heros/dto/update-hero.dto.ts",
         "../src/heros/interfaces/heroSimple.interfaces.ts",
+        "../src/heros/entities/heros.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5094,10 +5725,13 @@
       ],
       "../src/heros/heros.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/comics/comics.service.ts",
         "../src/heros/heros.service.ts",
         "../node_modules/rxjs/index.d.ts",
-        "../src/heros/interfaces/heros.interfaces.ts",
+        "../src/validators/handler-params.ts",
+        "../src/heros/entities/heros.entity.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../src/heros/dto/create-hero.dto.ts",
+        "../src/heros/dto/update-hero.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5441,6 +6075,9 @@
         "../src/app.module.ts",
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/app-config.interface.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../src/comics/comics.module.ts",
+        "../src/heros/heros.module.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5662,12 +6299,6 @@
       ],
       "../node_modules/@types/uglify-js/index.d.ts": [
         "../node_modules/source-map/source-map.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/validator/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -8780,19 +9411,405 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/class-validator/validation/ValidationError.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/ValidatorOptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation-schema/ValidationSchema.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/container.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/validator/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/ValidationTypeOptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/ValidationArguments.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/ValidationOptions.d.ts": [
+        "../node_modules/class-validator/validation/ValidationArguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/decorators.d.ts": [
+        "../node_modules/class-validator/validation/ValidationTypeOptions.d.ts",
+        "../node_modules/class-validator/decorator/ValidationOptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/ValidatorConstraintInterface.d.ts": [
+        "../node_modules/class-validator/validation/ValidationArguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/ValidationTypes.d.ts": [
+        "../node_modules/class-validator/validation/ValidationArguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/ValidationMetadataArgs.d.ts": [
+        "../node_modules/class-validator/decorator/ValidationOptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/ValidationMetadata.d.ts": [
+        "../node_modules/class-validator/metadata/ValidationMetadataArgs.d.ts",
+        "../node_modules/class-validator/validation/ValidationArguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/Validator.d.ts": [
+        "../node_modules/class-validator/metadata/ValidationMetadata.d.ts",
+        "../node_modules/class-validator/validation/ValidationError.d.ts",
+        "../node_modules/class-validator/validation/ValidationTypeOptions.d.ts",
+        "../node_modules/class-validator/validation/ValidatorOptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/register-decorator.d.ts": [
+        "../node_modules/class-validator/validation/ValidatorOptions.d.ts",
+        "../node_modules/class-validator/validation/ValidatorConstraintInterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/ConstraintMetadata.d.ts": [
+        "../node_modules/class-validator/validation/ValidatorConstraintInterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/MetadataStorage.d.ts": [
+        "../node_modules/class-validator/metadata/ValidationMetadata.d.ts",
+        "../node_modules/class-validator/metadata/ConstraintMetadata.d.ts",
+        "../node_modules/class-validator/validation-schema/ValidationSchema.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/index.d.ts": [
+        "../node_modules/class-validator/validation/ValidationError.d.ts",
+        "../node_modules/class-validator/validation/ValidatorOptions.d.ts",
+        "../node_modules/class-validator/validation-schema/ValidationSchema.d.ts",
+        "../node_modules/class-validator/container.d.ts",
+        "../node_modules/class-validator/decorator/decorators.d.ts",
+        "../node_modules/class-validator/decorator/ValidationOptions.d.ts",
+        "../node_modules/class-validator/validation/ValidatorConstraintInterface.d.ts",
+        "../node_modules/class-validator/validation/ValidationTypeOptions.d.ts",
+        "../node_modules/class-validator/validation/ValidationArguments.d.ts",
+        "../node_modules/class-validator/validation/ValidationTypes.d.ts",
+        "../node_modules/class-validator/validation/Validator.d.ts",
+        "../node_modules/class-validator/register-decorator.d.ts",
+        "../node_modules/class-validator/metadata/MetadataStorage.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-body.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-header.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-enum.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-enum.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-param.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-query.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-model-property.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-file.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-body.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-header.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-param.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-query.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-model-property.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-file.decorator.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/document-builder.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document.interface.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/index.d.ts": [
+        "../node_modules/reflect-metadata/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/document-builder.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/ClassTransformOptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/ClassTransformer.d.ts": [
+        "../node_modules/class-transformer/ClassTransformOptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/metadata/ExposeExcludeOptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/metadata/TypeMetadata.d.ts": [
+        "../node_modules/class-transformer/metadata/ExposeExcludeOptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/TransformOperationExecutor.d.ts": [
+        "../node_modules/class-transformer/ClassTransformOptions.d.ts",
+        "../node_modules/class-transformer/metadata/TypeMetadata.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/decorators.d.ts": [
+        "../node_modules/class-transformer/metadata/ExposeExcludeOptions.d.ts",
+        "../node_modules/class-transformer/ClassTransformOptions.d.ts",
+        "../node_modules/class-transformer/TransformOperationExecutor.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/index.d.ts": [
+        "../node_modules/class-transformer/ClassTransformer.d.ts",
+        "../node_modules/class-transformer/ClassTransformOptions.d.ts",
+        "../node_modules/class-transformer/metadata/ExposeExcludeOptions.d.ts",
+        "../node_modules/class-transformer/decorators.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/comics/dto/update-comics.dto.ts": [
+        "../src/heros/interfaces/heroSimple.interfaces.ts"
+      ],
+      "../src/comics/entities/comics.entity.ts": [
         "../src/heros/interfaces/heroSimple.interfaces.ts"
       ],
       "../src/comics/comics.service.ts": [
         "../node_modules/rxjs/index.d.ts",
-        "../src/comics/interfaces/comics.interface.ts",
+        "../src/comics/entities/comics.entity.ts",
         "../src/comics/dto/create-comics.dto.ts",
         "../src/comics/dto/update-comics.dto.ts"
       ],
       "../src/comics/comics.controller.ts": [
         "../src/comics/comics.service.ts",
         "../node_modules/rxjs/index.d.ts",
-        "../src/comics/interfaces/comics.interface.ts",
+        "../src/comics/entities/comics.entity.ts",
+        "../src/validators/handler-params.ts",
         "../src/comics/dto/create-comics.dto.ts",
         "../src/comics/dto/update-comics.dto.ts"
       ],
@@ -8805,16 +9822,20 @@
       "../src/heros/dto/update-hero.dto.ts": [
         "../src/heros/interfaces/heroSimple.interfaces.ts"
       ],
+      "../src/heros/entities/heros.entity.ts": [
+        "../src/heros/interfaces/heroSimple.interfaces.ts"
+      ],
       "../src/heros/heros.service.ts": [
         "../node_modules/rxjs/index.d.ts",
-        "../src/heros/interfaces/heros.interfaces.ts",
+        "../src/heros/entities/heros.entity.ts",
         "../src/heros/dto/create-hero.dto.ts",
         "../src/heros/dto/update-hero.dto.ts"
       ],
       "../src/heros/heros.controller.ts": [
         "../src/heros/heros.service.ts",
         "../node_modules/rxjs/index.d.ts",
-        "../src/heros/interfaces/heros.interfaces.ts"
+        "../src/heros/entities/heros.entity.ts",
+        "../src/validators/handler-params.ts"
       ],
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -9342,12 +10363,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/validator/index.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/webpack-sources/index.d.ts": [
         "../node_modules/@types/node/crypto.d.ts",
         "../node_modules/source-map/source-map.d.ts",
@@ -9770,18 +10785,9 @@
       "../node_modules/rxjs/internal/operators/zip.d.ts",
       "../node_modules/rxjs/internal/operators/zipAll.d.ts",
       "../node_modules/rxjs/operators/index.d.ts",
-      "../src/comics/dto/create-comics.dto.ts",
-      "../src/comics/dto/update-comics.dto.ts",
-      "../src/comics/comics.service.ts",
-      "../src/comics/comics.controller.ts",
-      "../src/comics/comics.module.ts",
+      "../node_modules/@types/validator/index.d.ts",
       "../src/heros/interfaces/heros.interfaces.ts",
       "../src/data/heros.ts",
-      "../src/heros/dto/create-hero.dto.ts",
-      "../src/heros/dto/update-hero.dto.ts",
-      "../src/heros/heros.controller.ts",
-      "../src/heros/heros.module.ts",
-      "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/constants.d.ts",
@@ -9817,7 +10823,6 @@
       "../node_modules/@nestjs/platform-fastify/interfaces/nest-fastify-application.interface.d.ts",
       "../node_modules/@nestjs/platform-fastify/interfaces/index.d.ts",
       "../node_modules/@nestjs/platform-fastify/index.d.ts",
-      "../src/main.ts",
       "../src/comics/interceptors/comics.interceptor.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
@@ -9838,8 +10843,6 @@
       "../node_modules/jest-diff/build/index.d.ts",
       "../node_modules/@types/jest/index.d.ts",
       "../node_modules/@types/json5/index.d.ts",
-      "../node_modules/@types/mongodb/index.d.ts",
-      "../node_modules/@types/mongoose/index.d.ts",
       "../node_modules/@types/source-list-map/index.d.ts",
       "../node_modules/@types/stack-utils/index.d.ts",
       "../node_modules/@types/superagent/index.d.ts",
@@ -9848,12 +10851,10 @@
       "../node_modules/@types/tapable/index.d.ts",
       "../node_modules/source-map/source-map.d.ts",
       "../node_modules/@types/uglify-js/index.d.ts",
-      "../node_modules/@types/validator/index.d.ts",
       "../node_modules/@types/webpack-sources/index.d.ts",
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
-      "../node_modules/@types/yargs/index.d.ts",
-      "../src/heros/heros.service.ts"
+      "../node_modules/@types/yargs/index.d.ts"
     ]
   },
   "version": "3.7.2"

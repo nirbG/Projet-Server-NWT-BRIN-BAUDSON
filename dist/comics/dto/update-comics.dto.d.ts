@@ -1,5 +1,5 @@
 import { HeroSimple } from "../../heros/interfaces/heroSimple.interfaces";
-export interface UpdateComicsDto {
+export declare class UpdateComicsDto {
     isbn?: string;
     photo?: string;
     title?: string;

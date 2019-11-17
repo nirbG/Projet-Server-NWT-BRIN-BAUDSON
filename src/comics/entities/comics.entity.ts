@@ -7,12 +7,12 @@ import {ApiModelProperty} from "@nestjs/swagger";
 @Exclude()
 export class ComicsEntity{
 
-    @ApiModelProperty({ description: 'ISBN number', example: '978-2-3657-7335-5'})
+    @ApiModelProperty({ description: 'ISBN number', example: '1082365773'})
     @Expose()
     @Type(() => String)
     isbn: string;
 
-    @ApiModelProperty({ description: 'Photo'})
+    @ApiModelProperty({ description: 'Photo', example: '1082365773.jpg'})
     @Expose()
     @Type(() => String)
     photo?: string;
@@ -32,17 +32,17 @@ export class ComicsEntity{
     //@Type(() => )
     otherHeros: HeroSimple[];
 
-    @ApiModelProperty({ description: 'Price', example: '12.50€'})
+    @ApiModelProperty({ description: 'Price', example: 12.50})
     @Expose()
     @Type(() => Number)
     price: number;
 
-    @ApiModelProperty({ description: 'Wish'})
+    @ApiModelProperty({ description: 'Wish', example: false})
     @Expose()
     @Type(() => Boolean)
     wish: boolean;
 
-    @ApiModelProperty({ description: 'Is it available in BD'})
+    @ApiModelProperty({ description: 'Is it available in BD', example: true})
     @Expose()
     @Type(() => Boolean)
     inBD: boolean;

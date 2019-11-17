@@ -1,15 +1,15 @@
-import { Hero } from './interfaces/heros.interfaces';
 import { Observable } from 'rxjs';
-import { HeroCreateDto } from './dto/create-hero.dto';
-import { HeroUpdateDto } from './dto/update-hero.dto';
+import { CreateHeroDto } from './dto/create-hero.dto';
+import { UpdateHeroDto } from './dto/update-hero.dto';
+import { HerosEntity } from "./entities/heros.entity";
 export declare class HerosService {
     private _heros;
     constructor();
-    findAll(): Observable<Hero[] | void>;
-    findSome(start: string, end: string): Observable<Hero[] | void>;
-    findOne(id: string): Observable<Hero>;
-    create(body: HeroCreateDto): Observable<Hero>;
-    update(id: string, body: HeroUpdateDto): Observable<Hero>;
+    findAll(): Observable<HerosEntity[] | void>;
+    findSome(start: string, end: string): Observable<HerosEntity[] | void>;
+    findOne(id: string): Observable<HerosEntity>;
+    create(body: CreateHeroDto): Observable<HerosEntity>;
+    update(id: string, body: UpdateHeroDto): Observable<HerosEntity>;
     delete(id: string): Observable<void>;
     private _addComics;
     private _findHeroIndexOfList;

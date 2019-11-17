@@ -9,58 +9,62 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const class_validator_1 = require("class-validator");
+const class_transformer_1 = require("class-transformer");
 const swagger_1 = require("@nestjs/swagger");
-class UpdateComicsDto {
-}
+let ComicsEntity = class ComicsEntity {
+    constructor(partial) {
+        Object.assign(this, partial);
+    }
+};
 __decorate([
     swagger_1.ApiModelProperty({ description: 'ISBN number', example: '1082365773' }),
-    class_validator_1.IsOptional(),
-    class_validator_1.IsString(),
-    class_validator_1.IsNotEmpty(),
+    class_transformer_1.Expose(),
+    class_transformer_1.Type(() => String),
     __metadata("design:type", String)
-], UpdateComicsDto.prototype, "isbn", void 0);
+], ComicsEntity.prototype, "isbn", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: 'Photo', example: '1082365773.jpg' }),
-    class_validator_1.IsOptional(),
-    class_validator_1.IsString(),
+    class_transformer_1.Expose(),
+    class_transformer_1.Type(() => String),
     __metadata("design:type", String)
-], UpdateComicsDto.prototype, "photo", void 0);
+], ComicsEntity.prototype, "photo", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: 'Title', example: 'Batman: Of Bats and Rats' }),
-    class_validator_1.IsOptional(),
-    class_validator_1.IsString(),
-    class_validator_1.IsNotEmpty(),
+    class_transformer_1.Expose(),
+    class_transformer_1.Type(() => String),
     __metadata("design:type", String)
-], UpdateComicsDto.prototype, "title", void 0);
+], ComicsEntity.prototype, "title", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: 'Main hero' }),
-    class_validator_1.IsOptional(),
+    class_transformer_1.Expose(),
     __metadata("design:type", Object)
-], UpdateComicsDto.prototype, "mainHeros", void 0);
+], ComicsEntity.prototype, "mainHeros", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: 'Supporting heroes or ennemies' }),
-    class_validator_1.IsOptional(),
+    class_transformer_1.Expose(),
     __metadata("design:type", Array)
-], UpdateComicsDto.prototype, "otherHeros", void 0);
+], ComicsEntity.prototype, "otherHeros", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: 'Price', example: 12.50 }),
-    class_validator_1.IsOptional(),
-    class_validator_1.IsNumber(),
-    class_validator_1.IsNotEmpty(),
+    class_transformer_1.Expose(),
+    class_transformer_1.Type(() => Number),
     __metadata("design:type", Number)
-], UpdateComicsDto.prototype, "price", void 0);
+], ComicsEntity.prototype, "price", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: 'Wish', example: false }),
-    class_validator_1.IsOptional(),
-    class_validator_1.IsBoolean(),
+    class_transformer_1.Expose(),
+    class_transformer_1.Type(() => Boolean),
     __metadata("design:type", Boolean)
-], UpdateComicsDto.prototype, "wish", void 0);
+], ComicsEntity.prototype, "wish", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: 'Is it available in BD', example: true }),
-    class_validator_1.IsOptional(),
-    class_validator_1.IsBoolean(),
+    class_transformer_1.Expose(),
+    class_transformer_1.Type(() => Boolean),
     __metadata("design:type", Boolean)
-], UpdateComicsDto.prototype, "inBD", void 0);
-exports.UpdateComicsDto = UpdateComicsDto;
-//# sourceMappingURL=update-comics.dto.js.map
+], ComicsEntity.prototype, "inBD", void 0);
+ComicsEntity = __decorate([
+    class_transformer_1.Exclude(),
+    __metadata("design:paramtypes", [Object])
+], ComicsEntity);
+exports.ComicsEntity = ComicsEntity;
+//# sourceMappingURL=comics.entity.js.map
