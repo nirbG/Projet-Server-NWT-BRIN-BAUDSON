@@ -77,6 +77,7 @@ export class HerosController {
   @ApiOkResponse({ description: 'The hero has been successfully updated', type: HerosEntity })
   @ApiNotFoundResponse({ description: 'Hero with the given "id" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter and/or payload provided are not good' })
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the hero in the database', type: String })
   @ApiImplicitBody({ name: 'UpdateHeroDto', description: 'Payload to update a hero', type: UpdateHeroDto })
   @Put(':id')
@@ -90,6 +91,7 @@ export class HerosController {
   @ApiNoContentResponse({ description: 'The hero has been successfully deleted' })
   @ApiNotFoundResponse({ description: 'Hero with the given "id" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the hero in the database', type: String })
   @Delete(':id')
   delete(@Param() params: HandlerHeros): Observable<void> {

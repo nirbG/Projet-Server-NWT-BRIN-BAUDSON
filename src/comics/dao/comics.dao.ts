@@ -5,6 +5,7 @@ import { from, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import {Comics} from "../interfaces/comics.interface";
 import {CreateComicsDto} from "../dto/create-comics.dto";
+import {UpdateComicsDto} from "../dto/update-comics.dto";
 
 @Injectable()
 export class ComicsDao {
@@ -28,6 +29,18 @@ export class ComicsDao {
     create(comics: CreateComicsDto): Observable<Comics> {
         return from(this._comicsModel.create(comics)).pipe(
             map((doc: MongooseDocument) => doc.toJSON()),
+        );
+    }
+
+    findByIdAndUpdate(isbn: string, body: UpdateComicsDto): Observable<Comics | void> {
+        return from(this._comicsModel.findByIdAndUpdate(isbn, body, { new: true })).pipe(
+            map((doc: MongooseDocument) => !!doc ? doc.toJSON() : undefined),
+        );
+    }
+
+    findByIdAndRemove(isbn: string): Observable<Comics | void> {
+        return from(this._comicsModel.findByIdAndRemove(isbn)).pipe(
+            map((doc: MongooseDocument) => !!doc ? doc.toJSON() : undefined),
         );
     }
 }

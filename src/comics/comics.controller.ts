@@ -80,6 +80,7 @@ export class ComicsController {
   @ApiOkResponse({ description: 'The comics has been successfully updated', type: ComicsEntity })
   @ApiNotFoundResponse({ description: 'Comics with the given "isbn" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter and/or payload provided are not good' })
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @ApiImplicitParam({ name: 'isbn', description: 'Unique identifier of the comics in the database', type: String })
   @ApiImplicitBody({ name: 'UpdateComicsDto', description: 'Payload to update a comics', type: UpdateComicsDto })
   @Put(':isbn')
@@ -93,6 +94,7 @@ export class ComicsController {
   @ApiNoContentResponse({ description: 'The comics has been successfully deleted' })
   @ApiNotFoundResponse({ description: 'Comics with the given "isbn" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
+  @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
   @ApiImplicitParam({ name: 'isbn', description: 'Unique identifier of the comics in the database', type: String })
   @Delete(':isbn')
   delete(@Param() params: HandlerComics): Observable<void> {

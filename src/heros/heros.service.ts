@@ -56,17 +56,27 @@ export class HerosService {
   }
 
   update(id: string, body: UpdateHeroDto): Observable<HerosEntity> {
-    return this._findHeroIndexOfList(id).pipe(
-      tap(_ => Object.assign(this._heros[_], body)),
-      map(_ => new HerosEntity(this._heros[ _ ])),
+    return this._herosDao.findByIdAndUpdate(id, body).pipe(
+      /*catchError(e => e.code = 11000 ? throwError(
+          new ConflictException(`Hero with id '${body.id}' already exists`),) :
+          throwError(new UnprocessableEntityException(e.message)),
+      ),*/
+      flatMap(_ => !!_ ? of(new HerosEntity((_))) :
+          throwError(new NotFoundException(`Hero with id '${id}' not found`)),
+      ),
     );
   }
 
   delete(id: string): Observable<void> {
-    return this._findHeroIndexOfList(id).pipe(
-      flatMap( _ => this._heros = this._heros.filter(
-        __ => __.id === this._heros[_].id)),
-      map( _ => undefined),
+    //return this._findHeroIndexOfList(id).pipe(
+    return this._herosDao.findByIdAndRemove(id).pipe(
+      //flatMap( _ => this._heros = this._heros.filter(
+      //  __ => __.id === this._heros[_].id)),
+      //map( _ => undefined),
+      catchError(e => throwError(new NotFoundException(e.message))),
+      flatMap(_ => !!_ ? of(undefined) :
+        throwError(new NotFoundException(`Hero with id '${id}' not found`)),
+      ),
     );
   }
 

@@ -5,6 +5,7 @@ import { from, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import {Hero} from "../interfaces/heros.interfaces";
 import {CreateHeroDto} from "../dto/create-hero.dto";
+import {UpdateHeroDto} from "../dto/update-hero.dto";
 
 @Injectable()
 export class HerosDao {
@@ -28,6 +29,18 @@ export class HerosDao {
     create(person: CreateHeroDto): Observable<Hero> {
         return from(this._heroModel.create(person)).pipe(
             map((doc: MongooseDocument) => doc.toJSON()),
+        );
+    }
+
+    findByIdAndUpdate(id: string, body: UpdateHeroDto): Observable<Hero | void> {
+        return from(this._heroModel.findByIdAndUpdate(id, body, { new: true })).pipe(
+            map((doc: MongooseDocument) => !!doc ? doc.toJSON() : undefined),
+        );
+    }
+
+    findByIdAndRemove(id: string): Observable<Hero | void> {
+        return from(this._heroModel.findByIdAndRemove(id)).pipe(
+            map((doc: MongooseDocument) => !!doc ? doc.toJSON() : undefined),
         );
     }
 }
