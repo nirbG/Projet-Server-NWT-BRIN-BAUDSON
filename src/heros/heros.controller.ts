@@ -76,8 +76,8 @@ export class HerosController {
   @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the hero in the database', type: String })
   @ApiImplicitBody({ name: 'UpdateHeroDto', description: 'Payload to update a hero', type: UpdateHeroDto })
   @Put(':id')
-  update(@Param() params: HandlerHeros, @Body() createHerosDto: CreateHeroDto): Observable<HerosEntity> {
-    return this._herosService.update(params.id, createHerosDto);
+  update(@Param() params: HandlerHeros, @Body() updateHerosDto: UpdateHeroDto): Observable<HerosEntity> {
+    return this._herosService.update(params.id, updateHerosDto);
   }
 
   /*

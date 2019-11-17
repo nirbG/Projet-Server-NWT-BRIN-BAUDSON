@@ -8,7 +8,7 @@ export class CreateHeroDto {
   @IsNotEmpty()
   id?: string;
 
-  @ApiModelProperty({ description: 'Photo', example: 'Superboy.jpg'})
+  @ApiModelProperty({ description: 'Photo', example: 'superboy.jpg'})
   @IsString()
   @IsNotEmpty()
   photo?: string;

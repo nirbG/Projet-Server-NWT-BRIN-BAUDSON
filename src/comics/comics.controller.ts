@@ -64,7 +64,7 @@ export class ComicsController {
   @ApiCreatedResponse({ description: 'The comics has been successfully created', type: ComicsEntity })
   @ApiConflictResponse({ description: 'The comics already exists in the database' })
   @ApiBadRequestResponse({ description: 'Payload provided is not good' })
-  @ApiImplicitBody({ name: 'CreateComicsDto', description: 'Payload to create a new person', type: CreateComicsDto })
+  @ApiImplicitBody({ name: 'CreateComicsDto', description: 'Payload to create a new comics', type: CreateComicsDto })
   @Post()
   create(@Body() createComicsDto: CreateComicsDto): Observable<ComicsEntity> {
     return this._comicsService.create(createComicsDto);

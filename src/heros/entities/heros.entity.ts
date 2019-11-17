@@ -1,6 +1,8 @@
 import {Exclude, Expose, Type} from "class-transformer";
 import {HeroSimple} from "../interfaces/heroSimple.interfaces";
 import {ApiModelProperty} from "@nestjs/swagger";
+import {HeroSimpleDto} from "../dto/hero-simple.dto";
+import {IsInstance} from "class-validator";
 
 @Exclude()
 export class HerosEntity{
@@ -10,7 +12,7 @@ export class HerosEntity{
     @Type(() => String)
     id: string;
 
-    @ApiModelProperty({ description: 'Photo', example: 'Superboy.jpg'})
+    @ApiModelProperty({ description: 'Photo', example: 'superboy.jpg'})
     @Expose()
     @Type(() => String)
     photo?: string;
@@ -25,15 +27,24 @@ export class HerosEntity{
     @Type(() => String)
     pouvoir: string;
 
-    @ApiModelProperty({ description: "Hero's nemesis"})
+    @ApiModelProperty({ description: "Hero's ennemies",  example: [{
+            "id": "5",
+            "photo": "joker.jpg",
+            "name": "Joker"}]})
     @Expose()
-    //@Type(() => )
-    ennemi: HeroSimple[];
+    @IsInstance(HeroSimpleDto,{each:true})
+    @Type(() => HeroSimpleDto)
+    ennemi: HeroSimpleDto[];
 
-    @ApiModelProperty({ description: "Hero's allies"})
+    @ApiModelProperty({ description: "Hero's allies",  example: [{
+            id: '3',
+            photo: 'batman.jpg',
+            name: 'Batman',
+        }]})
     @Expose()
-    //@Type(() => )
-    allie: HeroSimple[];
+    @IsInstance(HeroSimpleDto,{each:true})
+    @Type(() => HeroSimpleDto)
+    allie: HeroSimpleDto[];
 
     @ApiModelProperty({ description: 'Is the Hero human ?', example: true})
     @Expose()

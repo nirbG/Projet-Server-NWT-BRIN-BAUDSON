@@ -3,6 +3,7 @@ import {HeroSimple} from "../interfaces/heroSimple.interfaces";
 import {IsBoolean, IsInstance, IsNotEmpty, IsOptional, IsString, ValidateNested} from "class-validator";
 import {Type} from "class-transformer";
 import {ApiModelProperty} from "@nestjs/swagger";
+import {HeroSimpleDto} from "./hero-simple.dto";
 
 export class UpdateHeroDto {
 
@@ -12,7 +13,7 @@ export class UpdateHeroDto {
   @IsNotEmpty()
   id?: string;
 
-  @ApiModelProperty({ description: 'Photo', example: 'Superboy.jpg'})
+  @ApiModelProperty({ description: 'Photo', example: 'superboy.jpg'})
   @IsOptional()
   @IsString()
   @IsNotEmpty()
@@ -29,19 +30,26 @@ export class UpdateHeroDto {
   @IsString()
   pouvoir: string;
 
-  @ApiModelProperty({ description: "Hero's nemesis"})
+  @ApiModelProperty({ description: "Hero's ennemies",  example: [{
+      "id": "5",
+      "photo": "joker.jpg",
+      "name": "Joker"}]})
   @IsOptional()
-  //@IsInstance()
-  //@ValidateNested()
-  //@Type(() => )
-  ennemi?: HeroSimple[];
+  @IsInstance(HeroSimpleDto,{each:true})
+  @Type(() => HeroSimpleDto)
+  @ValidateNested({each: true})
+  ennemi?: HeroSimpleDto[];
 
-  @ApiModelProperty({ description: "Hero's allies"})
+  @ApiModelProperty({ description: "Hero's allies",  example: [{
+      id: '3',
+      photo: 'batman.jpg',
+      name: 'Batman',
+    }]})
   @IsOptional()
-  //@IsInstance()
-  //@ValidateNested()
-  //@Type(() => )
-  allie?: HeroSimple[];
+  @IsInstance(HeroSimpleDto,{each:true})
+  @Type(() => HeroSimpleDto)
+  @ValidateNested({each: true})
+  allie?: HeroSimpleDto[];
 
   @ApiModelProperty({ description: 'Is the Hero human ?', example: true})
   @IsOptional()
