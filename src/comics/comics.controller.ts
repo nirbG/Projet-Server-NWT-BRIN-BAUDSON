@@ -79,8 +79,7 @@ export class ComicsController {
   @ApiImplicitParam({ name: 'isbn', description: 'Unique identifier of the comics in the database', type: String })
   @ApiImplicitBody({ name: 'UpdateComicsDto', description: 'Payload to update a comics', type: UpdateComicsDto })
   @Put(':isbn')
-  update(@Param() params: HandlerComics,
-         @Body() updateComicsDto: UpdateComicsDto): Observable<ComicsEntity> {
+  update(@Param() params: HandlerComics, @Body() updateComicsDto: UpdateComicsDto): Observable<ComicsEntity> {
     return this._comicsService.update(params.isbn, updateComicsDto);
   }
 

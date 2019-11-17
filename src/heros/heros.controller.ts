@@ -63,8 +63,8 @@ export class HerosController {
   @ApiBadRequestResponse({ description: 'Payload provided is not good' })
   @ApiImplicitBody({ name: 'CreateHeroDto', description: 'Payload to create a new hero', type: CreateHeroDto })
   @Post()
-  create( @Body() body): Observable<HerosEntity> {
-    return this.create(body);
+  create( @Body() createHerosDto: CreateHeroDto): Observable<HerosEntity> {
+    return this._herosService.create(createHerosDto);
   }
 
   /*
@@ -76,8 +76,8 @@ export class HerosController {
   @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the hero in the database', type: String })
   @ApiImplicitBody({ name: 'UpdateHeroDto', description: 'Payload to update a hero', type: UpdateHeroDto })
   @Put(':id')
-  update(@Param() params: HandlerHeros, @Body() body): Observable<HerosEntity> {
-    return this._herosService.update(params.id, body);
+  update(@Param() params: HandlerHeros, @Body() createHerosDto: CreateHeroDto): Observable<HerosEntity> {
+    return this._herosService.update(params.id, createHerosDto);
   }
 
   /*
