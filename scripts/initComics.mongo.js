@@ -5,7 +5,7 @@ db.getCollection('comics').insertMany([
         photo: '2809481067.jpg',
         title: 'Wolverine - Tome 7 : Fresh start',
         mainHeros: {
-            id: '13',
+            _id: '13',
             photo: 'wolverine.jpg',
             name: 'Wolverine',
         },
@@ -19,7 +19,7 @@ db.getCollection('comics').insertMany([
         photo: '2809479011.jpg',
         title: 'Avengers - Tome 9 : Fresh Start',
         mainHeros: {
-            id: '21',
+            _id: '21',
             photo: 'avengers.jpg',
             name: 'Avengers',
         },
@@ -33,7 +33,7 @@ db.getCollection('comics').insertMany([
         photo: '1026816750.jpg',
         title: 'Batman - Tome 0 : Damned ',
         mainHeros: {
-            id: '3',
+            _id: '3',
             photo: 'batman.jpg',
             name: 'Batman',
         },
@@ -47,7 +47,7 @@ db.getCollection('comics').insertMany([
         photo: '1026814243.jpg',
         title: 'KILLING JOKE édition limitée',
         mainHeros: {
-            id: '3',
+            _id: '3',
             photo: 'batman.jpg',
             name: 'Batman',
         },
@@ -61,7 +61,7 @@ db.getCollection('comics').insertMany([
         photo: '280947902X.jpg',
         title: 'Deadpool - Tome 9 : Fresh Start',
         mainHeros: {
-            id: '1',
+            _id: '1',
             photo: 'deadpool.jpg',
             name: 'Deadpool',
         },
@@ -75,7 +75,7 @@ db.getCollection('comics').insertMany([
         photo: '1026819644.jpg',
         title: 'Joker - nouvelle édition ',
         mainHeros: {
-            id: '5',
+            _id: '5',
             photo: 'joker.jpg',
             name: 'Joker',
         },
@@ -89,7 +89,7 @@ db.getCollection('comics').insertMany([
         photo: '1026817315.jpg',
         title: 'Batman - Tome 7 : Detective comics',
         mainHeros: {
-            id: '3',
+            _id: '3',
             photo: 'batman.jpg',
             name: 'Batman',
         },
@@ -103,7 +103,7 @@ db.getCollection('comics').insertMany([
         photo: '1026819695.jpg',
         title: 'Joker L\'homme qui rit',
         mainHeros: {
-            id: '5',
+            _id: '5',
             photo: 'joker.jpg',
             name: 'Joker',
         },
@@ -117,7 +117,7 @@ db.getCollection('comics').insertMany([
         photo: '2809478708.jpg',
         title: 'Avengers - Tome 8 : Fresh start',
         mainHeros: {
-            id: '21',
+            _id: '21',
             photo: 'avengers.jpg',
             name: 'Avengers',
         },
@@ -131,7 +131,7 @@ db.getCollection('comics').insertMany([
         photo: '102681622X.jpg',
         title: 'Superman - Tome 2 : New Metropolis',
         mainHeros: {
-            id: '18',
+            _id: '18',
             photo: 'superman.jpg',
             name: 'Superman',
         },
@@ -145,7 +145,7 @@ db.getCollection('comics').insertMany([
         photo: '2809478716.jpg',
         title: 'Deadpool - Tome 8 : Fresh start',
         mainHeros: {
-            id: '1',
+            _id: '1',
             photo: 'deadpool.jpg',
             name: 'Deadpool',
         },
@@ -159,7 +159,7 @@ db.getCollection('comics').insertMany([
         photo: '2365773540.jpg',
         title: 'Aquaman - Tome 3 : Aquaman',
         mainHeros: {
-            id: '11',
+            _id: '11',
             photo: 'aquaman.jpg',
             name: 'Aquaman',
         },
@@ -173,7 +173,7 @@ db.getCollection('comics').insertMany([
         photo: '1026824109.jpg',
         title: ' Batman - Tome 3 : Batman metal',
         mainHeros: {
-            id: '3',
+            _id: '3',
             photo: 'batman.jpg',
             name: 'Batman',
         },
@@ -187,7 +187,7 @@ db.getCollection('comics').insertMany([
         photo: '1026814367.jpg',
         title: 'Batman - : White Knight',
         mainHeros: {
-            id: '3',
+            _id: '3',
             photo: 'batman.jpg',
             name: 'Batman',
         },
@@ -201,7 +201,7 @@ db.getCollection('comics').insertMany([
         photo: '2365773567.jpg',
         title: '    Batman - Tome 3 : Le deuil de la famille',
         mainHeros: {
-            id: '3',
+            _id: '3',
             photo: 'batman.jpg',
             name: 'Batman',
         },

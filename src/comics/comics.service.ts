@@ -18,18 +18,24 @@ export class ComicsService {
   constructor(private readonly _comicsDao: ComicsDao) {
     this._comics = [];
   }
+
   /**
    * Returns all comics
+   *
+   * @returns  Observable<ComicsEntity[] | void>
    */
   findAll(): Observable<ComicsEntity[] | void> {
     return this._comicsDao.find().pipe(
       map(_ => (!!_ && !!_.length) ? _.map(__ => new ComicsEntity(__)) : undefined),
     );
   }
+
   /**
    * returns some comics
+   *
    * @param s index de debut
    * @param e index de fin
+   * @returns Observable<ComicsEntity[] | void>
    */
   findSome(s: string, e: string): Observable<ComicsEntity[] | void> {
     //return of(this._comics.slice(+s, +e));
@@ -37,9 +43,12 @@ export class ComicsService {
         map(_ => (!!_ && !!_.length) ? _.map(__ => new ComicsEntity(__)) : undefined),
     );
   }
+
   /**
    * return one comics
-   * @param _id
+   *
+   * @param _id: string
+   * @returns Observable<ComicsEntity>
    */
   findOne(_id: string): Observable<ComicsEntity> {
     return this._comicsDao.findById(_id).pipe(
@@ -50,9 +59,12 @@ export class ComicsService {
       ),
     );
   }
+
   /**
-   * return the comics create
-   * @param body
+   * Retourne the comics created
+   *
+   * @param body: CreateComicsDto
+   * @returns Observable<ComicsEntity>
    */
   create(body: CreateComicsDto): Observable<ComicsEntity> {
     return this._addComics(body).pipe(
@@ -64,10 +76,13 @@ export class ComicsService {
         map(_ => new ComicsEntity(_)),
     );
   }
+
   /**
-   * return le comics modifier
-   * @param _id
-   * @param body
+   * Retourne le comics modifie
+   *
+   * @param _id: string
+   * @param body: UpdateComicsDto
+   * @returns Observable<ComicsEntity>
    */
   update(_id: string, body: UpdateComicsDto): Observable<ComicsEntity> {
     return this._comicsDao.findByIdAndUpdate(_id, body).pipe(
@@ -78,8 +93,10 @@ export class ComicsService {
   }
 
   /**
-   * supprimer le comics
-   * @param id
+   * Supprimer le comics
+   *
+   * @param _id: string
+   * @returns Observable<void>
    */
   delete(_id: string): Observable<void> {
     return this._comicsDao.findByIdAndRemove(_id).pipe(
@@ -94,8 +111,10 @@ export class ComicsService {
 
   /**
    * ajoute le comics
-   * @param body
+   *
+   * @param body: CreateComicsDto
    * @private
+   * @returns Observable<ComicsEntity>
    */
   private _addComics(body: CreateComicsDto): Observable<ComicsEntity> {
     return of(body).pipe(

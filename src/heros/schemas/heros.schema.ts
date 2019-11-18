@@ -1,6 +1,4 @@
 import * as mongoose from "mongoose";
-import {HeroSimple} from "../interfaces/heroSimple.interfaces";
-import {HeroSimpleDto} from "../dto/hero-simple.dto";
 
 export const HerosSchema = new mongoose.Schema({
     _id: {

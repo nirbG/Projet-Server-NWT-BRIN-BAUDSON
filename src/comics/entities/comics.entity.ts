@@ -9,13 +9,13 @@ import {IsInstance, IsNotEmpty, IsString} from "class-validator";
 @Exclude()
 export class ComicsEntity{
 
-    @ApiModelProperty({ description: 'ISBN number', example: '85'})
+    @ApiModelProperty({ description: 'ISBN number', example: '2365773545'})
     @Expose()
     @IsString()
     @IsNotEmpty()
     _id?: string;
 
-    @ApiModelProperty({ description: 'Photo', example: '1082365773.jpg'})
+    @ApiModelProperty({ description: 'Photo', example: 'default.jpg'})
     @Expose()
     @Type(() => String)
     photo?: string;

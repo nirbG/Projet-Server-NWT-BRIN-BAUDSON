@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import {Logger, Module} from '@nestjs/common';
 import { ComicsController } from './comics.controller';
 import { ComicsService } from './comics.service';
 import {MongooseModule} from "@nestjs/mongoose";
@@ -8,6 +8,6 @@ import {ComicsDao} from "./dao/comics.dao";
 @Module({
   imports: [ MongooseModule.forFeature([ { name: 'Comics', schema: ComicsSchema } ]) ],
   controllers: [ComicsController],
-  providers: [ComicsService, ComicsDao],
+  providers: [ComicsService, Logger, ComicsDao],
 })
 export class ComicsModule {}

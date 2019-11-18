@@ -19,11 +19,17 @@ import {HandlerComics} from "./validators/handler-comics";
 @UseInterceptors(ClassSerializerInterceptor)
 export class ComicsController {
 
+  /**
+   * Class constructor
+   * @param _comicsService
+   */
   constructor(private readonly _comicsService: ComicsService) {
   }
 
-  /*
+  /**
    * findAll
+   *
+   * @returns Observable<ComicsEntity[] | void>
    */
   @ApiOkResponse({description: 'Return an array of comics', type: ComicsEntity, isArray: true})
   @ApiNoContentResponse({description: 'No comics exists in database'})
@@ -33,8 +39,12 @@ export class ComicsController {
     return this._comicsService.findAll();
   }
 
-  /*
-   *findSome
+  /**
+   * findSome
+   *
+   * @param start
+   * @param end
+   * @returns Observable<ComicsEntity[] | void>
    */
   @ApiOkResponse({ description: 'Returns some comics', type: ComicsEntity, isArray: true })
   @ApiNoContentResponse({ description: 'No comics exists in database' })
@@ -48,8 +58,11 @@ export class ComicsController {
     return this._comicsService.findSome(start._id, end._id);
   }
 
-  /*
-   *findById
+  /**
+   * findById
+   *
+   * @param params
+   * @returns Observable<ComicsEntity | void>
    */
   @ApiOkResponse({ description: 'Returns the comics for the given "id"', type: ComicsEntity })
   @ApiNotFoundResponse({ description: 'Comics with the given "id" doesn\'t exist in the database' })
@@ -61,8 +74,11 @@ export class ComicsController {
     return this._comicsService.findOne(params._id);
   }
 
-  /*
-   *create
+  /**
+   * create
+   *
+   * @param createComicsDto
+   * @returns Observable<ComicsEntity>
    */
   @ApiCreatedResponse({ description: 'The comics has been successfully created', type: ComicsEntity })
   @ApiConflictResponse({ description: 'The comics already exists in the database' })
@@ -74,8 +90,12 @@ export class ComicsController {
     return this._comicsService.create(createComicsDto);
   }
 
-  /*
-   *update
+  /**
+   * update
+   *
+   * @param params
+   * @param updateComicsDto
+   * @returns Observable<ComicsEntity>
    */
   @ApiOkResponse({ description: 'The comics has been successfully updated', type: ComicsEntity })
   @ApiNotFoundResponse({ description: 'Comics with the given "id" doesn\'t exist in the database' })
@@ -88,8 +108,11 @@ export class ComicsController {
     return this._comicsService.update(params._id, updateComicsDto);
   }
 
-  /*
-   *delete
+  /**
+   * delete
+   *
+   * @param params
+   * @returns Observable<void>
    */
   @ApiNoContentResponse({ description: 'The comics has been successfully deleted' })
   @ApiNotFoundResponse({ description: 'Comics with the given "id" doesn\'t exist in the database' })

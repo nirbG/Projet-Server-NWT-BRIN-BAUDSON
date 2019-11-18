@@ -12,10 +12,18 @@ import {HerosDao} from "./dao/heros.dao";
 export class HerosService {
   private _heros: Hero[];
 
+  /**
+   * Class constructor
+   */
   constructor(private readonly _herosDao: HerosDao) {
     this._heros = [];
   }
 
+  /**
+   * Returns all heros
+   *
+   * @returns  Observable<HerosEntity[] | void>
+   */
   findAll(): Observable<HerosEntity[] |void> {
     return this._herosDao.find().pipe(
       map(_ => (!!_ && !!_.length) ? _.map(__ => new HerosEntity(__)) : undefined),
@@ -23,6 +31,13 @@ export class HerosService {
     );
   }
 
+  /**
+   * returns some heros
+   *
+   * @param s index de debut
+   * @param e index de fin
+   * @returns Observable<HerosEntity[] | void>
+   */
   findSome(start: string, end: string): Observable<HerosEntity[] | void> {
     //return of(this._heros.slice(+start, +end));
     return this._herosDao.find().pipe(
@@ -30,6 +45,12 @@ export class HerosService {
     );
   }
 
+  /**
+   * returns one hero
+   *
+   * @param id: string
+   * @returns Observable<HerosEntity>
+   */
   findOne(id: string): Observable<HerosEntity> {
     return this._herosDao.findById(id).pipe(
       catchError(e => throwError(new UnprocessableEntityException(e.message))),
@@ -40,6 +61,12 @@ export class HerosService {
     );
   }
 
+  /**
+   * return the hero created
+   *
+   * @param body: CreateHeroDto
+   * @returns Observable<HerosEntity>
+   */
   create(body: CreateHeroDto): Observable<HerosEntity> {
     return this._addHeros(body).pipe(
       flatMap(_ => this._herosDao.create(_)),
@@ -52,8 +79,13 @@ export class HerosService {
     );
   }
 
-
-
+  /**
+   * Retourne le hero modifie
+   *
+   * @param id: string
+   * @param body: UpdateHeroDto
+   * @returns Observable<HerosEntity>
+   */
   update(id: string, body: UpdateHeroDto): Observable<HerosEntity> {
     return this._herosDao.findByIdAndUpdate(id, body).pipe(
       /*catchError(e => e.code = 11000 ? throwError(
@@ -66,6 +98,12 @@ export class HerosService {
     );
   }
 
+  /**
+   * Supprimer le hero
+   *
+   * @param _id: string
+   * @returns Observable<void>
+   */
   delete(_id: string): Observable<void> {
     return this._herosDao.findByIdAndRemove(_id).pipe(
       catchError(e => throwError(new NotFoundException(e.message))),
@@ -75,6 +113,16 @@ export class HerosService {
     );
   }
 
+
+  /************************************************ PRIVATE METHODS ******************/
+
+  /**
+   * ajoute le hero
+   *
+   * @param body: CreateHeroDto
+   * @private
+   * @returns Observable<HerosEntity>
+   */
   private _addHeros(body: CreateHeroDto): Observable<HerosEntity> {
     var mongoose = require('mongoose');
     return of(body).pipe(
@@ -88,6 +136,7 @@ export class HerosService {
       tap(_ => this._heros = this._heros.concat(_)), map(_ => new HerosEntity(_)),
     );
   }
+
   /**
    * return l'index du heros
    * @param id

@@ -17,11 +17,18 @@ import {HandlerHeros} from "./validators/handler-heros";
 @Controller('heros')
 @UseInterceptors(ClassSerializerInterceptor)
 export class HerosController {
+
+  /**
+   * Class constructor
+   * @param _herosService
+   */
   constructor(private readonly _herosService: HerosService) {
   }
 
-  /*
-   * find all
+  /**
+   * findAll
+   *
+   * @returns Observable<HerosEntity[] | void>
    */
   @ApiOkResponse({ description: 'Returns an array of heros', type: HerosEntity, isArray: true })
   @ApiNoContentResponse({ description: 'No heros exists in database' })
@@ -31,8 +38,12 @@ export class HerosController {
     return this._herosService.findAll();
   }
 
-  /*
-   * find Some
+  /**
+   * findSome
+   *
+   * @param start
+   * @param end
+   * @returns Observable<HerossEntity[] | void>
    */
   @ApiOkResponse({ description: 'Returns some heros', type: HerosEntity })
   @ApiNoContentResponse({ description: 'No heros exists in database' })
@@ -45,8 +56,11 @@ export class HerosController {
     return this._herosService.findSome(start._id, end._id);
   }
 
-  /*
-   * find One
+  /**
+   * findOne
+   *
+   * @param params
+   * @returns Observable<HerosEntity | void>
    */
   @ApiOkResponse({ description: 'Returns the hero for the given "id"', type: HerosEntity })
   @ApiNotFoundResponse({ description: 'Hero with the given "id" doesn\'t exist in the database' })
@@ -58,8 +72,11 @@ export class HerosController {
     return this._herosService.findOne(params._id);
   }
 
-  /*
-   * Create
+  /**
+   * create
+   *
+   * @param createHerosDto
+   * @returns Observable<HerosEntity>
    */
   @ApiCreatedResponse({ description: 'The hero has been successfully created', type: HerosEntity })
   @ApiConflictResponse({ description: 'The hero already exists in the database' })
@@ -71,8 +88,12 @@ export class HerosController {
     return this._herosService.create(createHerosDto);
   }
 
-  /*
+  /**
    * update
+   *
+   * @param params
+   * @param updateHerosDto
+   * @returns Observable<HerosEntity>
    */
   @ApiOkResponse({ description: 'The hero has been successfully updated', type: HerosEntity })
   @ApiNotFoundResponse({ description: 'Hero with the given "id" doesn\'t exist in the database' })
@@ -85,8 +106,11 @@ export class HerosController {
     return this._herosService.update(params._id, updateHerosDto);
   }
 
-  /*
+  /**
    * delete
+   *
+   * @param params
+   * @returns Observable<void>
    */
   @ApiNoContentResponse({ description: 'The hero has been successfully deleted' })
   @ApiNotFoundResponse({ description: 'Hero with the given "id" doesn\'t exist in the database' })

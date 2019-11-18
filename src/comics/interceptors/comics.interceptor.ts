@@ -25,25 +25,14 @@ export class ComicsInterceptor implements NestInterceptor {
     const response: FastifyReply<ServerResponse> = context.switchToHttp().getResponse<FastifyReply<ServerResponse>>();
     const logCtx: string = `ComicsInterceptor => ${cls.name}.${handler.name}`;
 
-    return next.handle()
-      .pipe(
-        map(_ => of(_)),
-        flatMap((obs: Observable<any>) =>
-          merge(
-            obs
-              .pipe(
-                filter(_ => !!_),
-                map(_ => _),
-              ),
-            obs
-              .pipe(
-                filter(_ => !_),
-                tap(_ => response.status(204) ),
+    return next.handle().pipe(
+        map(_ => of(_)), flatMap((obs: Observable<any>) => merge(
+            obs.pipe(filter(_ => !!_), map(_ => _),
+              ), obs.pipe(filter(_ => !_), tap(_ => response.status(204) ),
                 map(_ => _),
               ),
           )),
-        tap(
-          _ => this._logger.log(!!_ ? _ : 'NO CONTENT', logCtx),
+        tap(_ => this._logger.log(!!_ ? _ : 'NO CONTENT', logCtx),
           _ => this._logger.error(_.message, JSON.stringify(_), logCtx),
         ),
       );

@@ -1,5 +1,4 @@
 import * as mongoose from "mongoose";
-import {HeroSimpleDto} from "../../heros/dto/hero-simple.dto";
 
 export const ComicsSchema = new mongoose.Schema({
     _id: {

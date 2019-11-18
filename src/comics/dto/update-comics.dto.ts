@@ -13,7 +13,7 @@ export class UpdateComicsDto {
   @IsNotEmpty()
   _id?: string;
 
-  @ApiModelProperty({ description: 'Photo', example: '1082365773.jpg'})
+  @ApiModelProperty({ description: 'Photo', example: 'default.jpg'})
   @IsOptional()
   @IsString()
   photo?: string;
