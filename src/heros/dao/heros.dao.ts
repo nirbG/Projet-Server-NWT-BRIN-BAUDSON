@@ -32,14 +32,14 @@ export class HerosDao {
         );
     }
 
-    findByIdAndUpdate(id: string, body: UpdateHeroDto): Observable<Hero | void> {
-        return from(this._heroModel.findByIdAndUpdate(id, body, { new: true })).pipe(
+    findByIdAndUpdate(_id: string, body: UpdateHeroDto): Observable<Hero | void> {
+        return from(this._heroModel.findByIdAndUpdate(_id, body, { new: true })).pipe(
             map((doc: MongooseDocument) => !!doc ? doc.toJSON() : undefined),
         );
     }
 
-    findByIdAndRemove(id: string): Observable<Hero | void> {
-        return from(this._heroModel.findByIdAndRemove(id)).pipe(
+    findByIdAndRemove(_id: string): Observable<Hero | void> {
+        return from(this._heroModel.findByIdAndRemove(_id)).pipe(
             map((doc: MongooseDocument) => !!doc ? doc.toJSON() : undefined),
         );
     }

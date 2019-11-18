@@ -6,9 +6,9 @@ export class HeroSimpleDto {
     @ApiModelProperty({ description: 'ID', example: '85'})
     @IsString()
     @IsNotEmpty()
-    id: string;
+    _id: string;
 
-    @ApiModelProperty({ description: 'Photo', example: 'superboy.jpg'})
+    @ApiModelProperty({ description: 'Photo', example: 'default.jpg'})
     @IsString()
     @IsNotEmpty()
     photo?: string;

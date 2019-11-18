@@ -3,7 +3,7 @@ import {HeroSimple} from "../interfaces/heroSimple.interfaces";
 import {HeroSimpleDto} from "../dto/hero-simple.dto";
 
 export const HerosSchema = new mongoose.Schema({
-    id: {
+    _id: {
         type: String,
         required: true
     },
@@ -19,7 +19,7 @@ export const HerosSchema = new mongoose.Schema({
         type: String,
     },
     ennemi: [{
-        id: {
+        _id: {
             type: String,
             required: true
         },
@@ -33,7 +33,7 @@ export const HerosSchema = new mongoose.Schema({
         }
     }],
     allie: [{
-        id: {
+        _id: {
             type: String,
             required: true
         },

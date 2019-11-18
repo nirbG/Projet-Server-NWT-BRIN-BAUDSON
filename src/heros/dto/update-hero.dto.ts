@@ -11,9 +11,9 @@ export class UpdateHeroDto {
   @IsOptional()
   @IsString()
   @IsNotEmpty()
-  id?: string;
+  _id?: string;
 
-  @ApiModelProperty({ description: 'Photo', example: 'superboy.jpg'})
+  @ApiModelProperty({ description: 'Photo', example: 'default.jpg'})
   @IsOptional()
   @IsString()
   @IsNotEmpty()
@@ -31,9 +31,9 @@ export class UpdateHeroDto {
   pouvoir: string;
 
   @ApiModelProperty({ description: "Hero's ennemies",  example: [{
-      "id": "5",
-      "photo": "joker.jpg",
-      "name": "Joker"}]})
+      _id: "5",
+      photo: "joker.jpg",
+      name: "Joker"}]})
   @IsOptional()
   @IsInstance(HeroSimpleDto,{each:true})
   @Type(() => HeroSimpleDto)
@@ -41,7 +41,7 @@ export class UpdateHeroDto {
   ennemi?: HeroSimpleDto[];
 
   @ApiModelProperty({ description: "Hero's allies",  example: [{
-      id: '3',
+      _id: '3',
       photo: 'batman.jpg',
       name: 'Batman',
     }]})

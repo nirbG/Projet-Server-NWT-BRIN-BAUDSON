@@ -50,7 +50,7 @@ export class HerosService {
       //flatMap( _ => !!_ ?
       flatMap(_ => this._herosDao.create(_)),
       catchError(e => e.code = 11000 ? throwError(
-        new ConflictException(`People with id '${body.id}' already exists`),):
+        new ConflictException(`People with id '${body._id}' already exists`),):
         //: this._addComics(body),
         throwError(new UnprocessableEntityException(e.message)),
       ),
@@ -70,15 +70,11 @@ export class HerosService {
     );
   }
 
-  delete(id: string): Observable<void> {
-    //return this._findHeroIndexOfList(id).pipe(
-    return this._herosDao.findByIdAndRemove(id).pipe(
-      //flatMap( _ => this._heros = this._heros.filter(
-      //  __ => __.id === this._heros[_].id)),
-      //map( _ => undefined),
+  delete(_id: string): Observable<void> {
+    return this._herosDao.findByIdAndRemove(_id).pipe(
       catchError(e => throwError(new NotFoundException(e.message))),
       flatMap(_ => !!_ ? of(undefined) :
-        throwError(new NotFoundException(`Hero with id '${id}' not found`)),
+        throwError(new NotFoundException(`Hero with id '${_id}' not found`)),
       ),
     );
   }

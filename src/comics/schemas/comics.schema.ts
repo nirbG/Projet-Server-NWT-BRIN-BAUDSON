@@ -2,7 +2,7 @@ import * as mongoose from "mongoose";
 import {HeroSimpleDto} from "../../heros/dto/hero-simple.dto";
 
 export const ComicsSchema = new mongoose.Schema({
-    isbn: {
+    _id: {
         type: String,
         required: true
     },
@@ -15,32 +15,32 @@ export const ComicsSchema = new mongoose.Schema({
         required: true
     },
     mainHeros:{
-        id: {
+        _id: {
             type: String,
-            required: true
+            //required: true
         },
         photo: {
             type: String,
-            required: true
+            //required: true
         },
         name: {
             type: String,
-            required: true
-        }
+            //required: true
+        },
     },
     otherHeros:  [{
-        id: {
+        _id: {
             type: String,
-            required: true
+            //required: true
         },
         photo: {
             type: String,
-            required: true
+            //required: true
         },
         name: {
             type: String,
-            required: true
-        }
+            //required: true
+        },
     }],
     price: {
         type: Number,

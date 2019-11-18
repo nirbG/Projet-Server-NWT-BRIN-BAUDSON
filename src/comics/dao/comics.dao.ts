@@ -32,14 +32,14 @@ export class ComicsDao {
         );
     }
 
-    findByIdAndUpdate(isbn: string, body: UpdateComicsDto): Observable<Comics | void> {
-        return from(this._comicsModel.findByIdAndUpdate(isbn, body, { new: true })).pipe(
+    findByIdAndUpdate(_id: string, body: UpdateComicsDto): Observable<Comics | void> {
+        return from(this._comicsModel.findByIdAndUpdate(_id, body, { new: true })).pipe(
             map((doc: MongooseDocument) => !!doc ? doc.toJSON() : undefined),
         );
     }
 
-    findByIdAndRemove(isbn: string): Observable<Comics | void> {
-        return from(this._comicsModel.findByIdAndRemove(isbn)).pipe(
+    findByIdAndRemove(_id: string): Observable<Comics | void> {
+        return from(this._comicsModel.findByIdAndRemove(_id)).pipe(
             map((doc: MongooseDocument) => !!doc ? doc.toJSON() : undefined),
         );
     }

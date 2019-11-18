@@ -10,9 +10,9 @@ export class HerosEntity{
     @ApiModelProperty({ description: 'ID', example: '85'})
     @Expose()
     @Type(() => String)
-    id: string;
+    _id: string;
 
-    @ApiModelProperty({ description: 'Photo', example: 'superboy.jpg'})
+    @ApiModelProperty({ description: 'Photo', example: 'default.jpg'})
     @Expose()
     @Type(() => String)
     photo?: string;
@@ -28,16 +28,16 @@ export class HerosEntity{
     pouvoir: string;
 
     @ApiModelProperty({ description: "Hero's ennemies",  example: [{
-            "id": "5",
-            "photo": "joker.jpg",
-            "name": "Joker"}]})
+            _id: "5",
+            photo: "joker.jpg",
+            name: "Joker"}]})
     @Expose()
     @IsInstance(HeroSimpleDto,{each:true})
     @Type(() => HeroSimpleDto)
     ennemi: HeroSimpleDto[];
 
     @ApiModelProperty({ description: "Hero's allies",  example: [{
-            id: '3',
+            _id: '3',
             photo: 'batman.jpg',
             name: 'Batman',
         }]})

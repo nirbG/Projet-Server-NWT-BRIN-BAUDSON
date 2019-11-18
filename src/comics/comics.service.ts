@@ -40,14 +40,14 @@ export class ComicsService {
   }
   /**
    * return one comics
-   * @param isbn
+   * @param _id
    */
-  findOne(isbn: string): Observable<ComicsEntity> {
-    return this._comicsDao.findById(isbn).pipe(
+  findOne(_id: string): Observable<ComicsEntity> {
+    return this._comicsDao.findById(_id).pipe(
       catchError(e => throwError(new UnprocessableEntityException(e.message))),
       flatMap(_ => !!_ ?
         of(new ComicsEntity(_)) :
-        throwError(new NotFoundException(`comics with isbn '${isbn}' not found`)),
+        throwError(new NotFoundException(`comics with id '${_id}' not found`)),
       ),
     );
   }
@@ -59,7 +59,7 @@ export class ComicsService {
     return this._addComics(body).pipe(
       flatMap(_ => this._comicsDao.create(_)),
       catchError(e => e.code = 11000 ? throwError(
-        new ConflictException(`comics with isbn '${body.isbn}' already exists`),):
+        new ConflictException(`comics with id '${body._id}' already exists`),):
           throwError(new UnprocessableEntityException(e.message)),
       ),
         map(_ => new ComicsEntity(_)),
@@ -67,34 +67,26 @@ export class ComicsService {
   }
   /**
    * return le comics modifier
-   * @param isbn
+   * @param _id
    * @param body
    */
-  update(isbn: string, body: UpdateComicsDto): Observable<ComicsEntity> {
-    return this._comicsDao.findByIdAndUpdate(isbn, body).pipe(
-      /*catchError(e => e.code = 11000 ? throwError(
-        new ConflictException(`Comics with isbn '${body.isbn}' already exists`),) :
-        throwError(new UnprocessableEntityException(e.message)),
-      ),*/
+  update(_id: string, body: UpdateComicsDto): Observable<ComicsEntity> {
+    return this._comicsDao.findByIdAndUpdate(_id, body).pipe(
         flatMap(_ => !!_ ? of(new ComicsEntity((_))) :
-        throwError(new NotFoundException(`Comics with isbn '${isbn}' not found`)),
+        throwError(new NotFoundException(`Comics with id '${_id}' not found`)),
       ),
     );
   }
 
   /**
    * supprimer le comics
-   * @param isbn
+   * @param id
    */
-  delete(isbn: string): Observable<void> {
-    //return this._findComicsIndexOfList(isbn).pipe(
-    return this._comicsDao.findByIdAndRemove(isbn).pipe(
-      /*flatMap( _ => this._comics = this._comics.filter(
-        __ => __.isbn === this._comics[_].isbn)),
-      map(_ => undefined),*/
+  delete(_id: string): Observable<void> {
+    return this._comicsDao.findByIdAndRemove(_id).pipe(
       catchError(e => throwError(new NotFoundException(e.message))),
       flatMap(_ => !!_ ? of(undefined) :
-        throwError(new NotFoundException(`Comics with isbn '${isbn}' not found`)),
+        throwError(new NotFoundException(`Comics with id '${_id}' not found`)),
       ),
     );
   }
@@ -110,7 +102,7 @@ export class ComicsService {
     return of(body).pipe(
       map( _ =>
         Object.assign(_, {
-          photo: _.isbn + '.jpg',
+          photo: _._id + '.jpg',
           mainHeros: {} as HeroSimple,
           otherHeros: [] as HeroSimple[],
           wish: false,
@@ -123,16 +115,16 @@ export class ComicsService {
 
   /**
    * return l'index du comics
-   * @param isbn
+   * @param _id
    * @private
    */
-  private _findComicsIndexOfList(isbn: string): Observable<number> {
+  private _findComicsIndexOfList(_id: string): Observable<number> {
     return from(this._comics)
       .pipe(
-        findIndex(_ => _.isbn === isbn),
+        findIndex(_ => _._id === _id),
         flatMap(_ => _ > -1 ?
           of(_) :
-          throwError(new NotFoundException(`People with id '${isbn}' not found`)),
+          throwError(new NotFoundException(`People with id '${_id}' not found`)),
         ),
       );
   }

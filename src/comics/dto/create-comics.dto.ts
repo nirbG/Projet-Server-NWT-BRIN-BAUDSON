@@ -3,10 +3,10 @@ import {ApiModelProperty} from "@nestjs/swagger";
 
 export class CreateComicsDto {
 
-  @ApiModelProperty({ description: 'ISBN number', example: '1082365773'})
+  @ApiModelProperty({ description: 'ISBN number', example: '85'})
   @IsString()
   @IsNotEmpty()
-  isbn?: string;
+  _id?: string;
 
   @ApiModelProperty({ description: 'Title', example: 'Batman: Of Bats and Rats'})
   @IsString()

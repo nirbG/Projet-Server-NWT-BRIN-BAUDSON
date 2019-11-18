@@ -45,20 +45,20 @@ export class ComicsController {
   @Get(':start/:end')
   findSome(@Param() start: HandlerComics,
            @Param() end: HandlerComics): Observable<ComicsEntity[] | void> {
-    return this._comicsService.findSome(start.isbn, end.isbn);
+    return this._comicsService.findSome(start._id, end._id);
   }
 
   /*
-   *findByIsbn
+   *findById
    */
-  @ApiOkResponse({ description: 'Returns the comics for the given "isbn"', type: ComicsEntity })
-  @ApiNotFoundResponse({ description: 'Comics with the given "isbn" doesn\'t exist in the database' })
+  @ApiOkResponse({ description: 'Returns the comics for the given "id"', type: ComicsEntity })
+  @ApiNotFoundResponse({ description: 'Comics with the given "id" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
   @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
-  @ApiImplicitParam({ name: 'isbn', description: 'Unique identifier of the comics in the database', type: String })
-  @Get(':isbn')
-  findByIsbn(@Param() params: HandlerComics): Observable<ComicsEntity | void> {
-    return this._comicsService.findOne(params.isbn);
+  @ApiImplicitParam({ name: '_id', description: 'Unique identifier of the comics in the database', type: String })
+  @Get(':_id')
+  findById(@Param() params: HandlerComics): Observable<ComicsEntity | void> {
+    return this._comicsService.findOne(params._id);
   }
 
   /*
@@ -78,26 +78,26 @@ export class ComicsController {
    *update
    */
   @ApiOkResponse({ description: 'The comics has been successfully updated', type: ComicsEntity })
-  @ApiNotFoundResponse({ description: 'Comics with the given "isbn" doesn\'t exist in the database' })
+  @ApiNotFoundResponse({ description: 'Comics with the given "id" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter and/or payload provided are not good' })
   @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
-  @ApiImplicitParam({ name: 'isbn', description: 'Unique identifier of the comics in the database', type: String })
+  @ApiImplicitParam({ name: '_id', description: 'Unique identifier of the comics in the database', type: String })
   @ApiImplicitBody({ name: 'UpdateComicsDto', description: 'Payload to update a comics', type: UpdateComicsDto })
-  @Put(':isbn')
+  @Put(':_id')
   update(@Param() params: HandlerComics, @Body() updateComicsDto: UpdateComicsDto): Observable<ComicsEntity> {
-    return this._comicsService.update(params.isbn, updateComicsDto);
+    return this._comicsService.update(params._id, updateComicsDto);
   }
 
   /*
    *delete
    */
   @ApiNoContentResponse({ description: 'The comics has been successfully deleted' })
-  @ApiNotFoundResponse({ description: 'Comics with the given "isbn" doesn\'t exist in the database' })
+  @ApiNotFoundResponse({ description: 'Comics with the given "id" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
   @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
-  @ApiImplicitParam({ name: 'isbn', description: 'Unique identifier of the comics in the database', type: String })
-  @Delete(':isbn')
+  @ApiImplicitParam({ name: '_id', description: 'Unique identifier of the comics in the database', type: String })
+  @Delete(':_id')
   delete(@Param() params: HandlerComics): Observable<void> {
-    return this._comicsService.delete(params.isbn);
+    return this._comicsService.delete(params._id);
   }
 }

@@ -42,7 +42,7 @@ export class HerosController {
   @ApiImplicitParam({ name: 'end', description: 'End of the collection', type: String })
   @Get(':start/:end')
   findSome(@Param() start: HandlerHeros, @Param() end: HandlerHeros): Observable< HerosEntity[] | void> {
-    return this._herosService.findSome(start.id, end.id);
+    return this._herosService.findSome(start._id, end._id);
   }
 
   /*
@@ -52,10 +52,10 @@ export class HerosController {
   @ApiNotFoundResponse({ description: 'Hero with the given "id" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
   @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
-  @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the hero in the database', type: String })
-  @Get(':id')
+  @ApiImplicitParam({ name: '_id', description: 'Unique identifier of the hero in the database', type: String })
+  @Get(':_id')
   findOne(@Param() params: HandlerHeros): Observable<HerosEntity> {
-    return this._herosService.findOne(params.id);
+    return this._herosService.findOne(params._id);
   }
 
   /*
@@ -78,11 +78,11 @@ export class HerosController {
   @ApiNotFoundResponse({ description: 'Hero with the given "id" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter and/or payload provided are not good' })
   @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
-  @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the hero in the database', type: String })
+  @ApiImplicitParam({ name: '_id', description: 'Unique identifier of the hero in the database', type: String })
   @ApiImplicitBody({ name: 'UpdateHeroDto', description: 'Payload to update a hero', type: UpdateHeroDto })
-  @Put(':id')
+  @Put(':_id')
   update(@Param() params: HandlerHeros, @Body() updateHerosDto: UpdateHeroDto): Observable<HerosEntity> {
-    return this._herosService.update(params.id, updateHerosDto);
+    return this._herosService.update(params._id, updateHerosDto);
   }
 
   /*
@@ -92,9 +92,9 @@ export class HerosController {
   @ApiNotFoundResponse({ description: 'Hero with the given "id" doesn\'t exist in the database' })
   @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
   @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
-  @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the hero in the database', type: String })
-  @Delete(':id')
+  @ApiImplicitParam({ name: '_id', description: 'Unique identifier of the hero in the database', type: String })
+  @Delete(':_id')
   delete(@Param() params: HandlerHeros): Observable<void> {
-    return this._herosService.delete(params.id);
+    return this._herosService.delete(params._id);
   }
 }

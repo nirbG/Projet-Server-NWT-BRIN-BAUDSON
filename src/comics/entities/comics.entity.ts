@@ -2,17 +2,17 @@ import {HeroSimple} from "../../heros/interfaces/heroSimple.interfaces";
 import {Exclude, Expose, Type} from "class-transformer";
 import {ApiModelProperty} from "@nestjs/swagger";
 import {HeroSimpleDto} from "../../heros/dto/hero-simple.dto";
-import {IsInstance} from "class-validator";
+import {IsInstance, IsNotEmpty, IsString} from "class-validator";
 
 
 
 @Exclude()
 export class ComicsEntity{
 
-    @ApiModelProperty({ description: 'ISBN number', example: '1082365773'})
-    @Expose()
-    @Type(() => String)
-    isbn: string;
+    @ApiModelProperty({ description: 'ISBN number', example: '85'})
+    @IsString()
+    @IsNotEmpty()
+    _id?: string;
 
     @ApiModelProperty({ description: 'Photo', example: '1082365773.jpg'})
     @Expose()
