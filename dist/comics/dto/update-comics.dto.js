@@ -10,7 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const class_validator_1 = require("class-validator");
+const class_transformer_1 = require("class-transformer");
 const swagger_1 = require("@nestjs/swagger");
+const hero_simple_dto_1 = require("../../heros/dto/hero-simple.dto");
 class UpdateComicsDto {
 }
 __decorate([
@@ -34,13 +36,32 @@ __decorate([
     __metadata("design:type", String)
 ], UpdateComicsDto.prototype, "title", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'Main hero' }),
+    swagger_1.ApiModelProperty({ description: 'Main hero', example: {
+            id: '3',
+            photo: 'batman.jpg',
+            name: 'Batman',
+        } }),
     class_validator_1.IsOptional(),
-    __metadata("design:type", Object)
+    class_validator_1.IsInstance(hero_simple_dto_1.HeroSimpleDto),
+    class_transformer_1.Type(() => hero_simple_dto_1.HeroSimpleDto),
+    class_validator_1.ValidateNested(),
+    __metadata("design:type", hero_simple_dto_1.HeroSimpleDto)
 ], UpdateComicsDto.prototype, "mainHeros", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'Supporting heroes or ennemies' }),
+    swagger_1.ApiModelProperty({ description: 'Supporting heroes or ennemies', example: [{
+                "id": "85",
+                "photo": "superboy.jpg",
+                "name": "Superboy"
+            },
+            {
+                "id": "5",
+                "photo": "joker.jpg",
+                "name": "Joker"
+            }] }),
     class_validator_1.IsOptional(),
+    class_validator_1.IsInstance(hero_simple_dto_1.HeroSimpleDto, { each: true }),
+    class_transformer_1.Type(() => hero_simple_dto_1.HeroSimpleDto),
+    class_validator_1.ValidateNested({ each: true }),
     __metadata("design:type", Array)
 ], UpdateComicsDto.prototype, "otherHeros", void 0);
 __decorate([

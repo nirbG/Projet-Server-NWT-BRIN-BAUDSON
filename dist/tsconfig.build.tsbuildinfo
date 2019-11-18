@@ -1117,13 +1117,25 @@
         "version": "260f889b9e2b69f77be1155348eb345166aec664b3efff6720053c6844a41f28",
         "signature": "ef022c91ea9e75ab4082f2e881f9c4db7b346be2da706e876b253bebce5e6140"
       },
+      "../node_modules/@types/bson/index.d.ts": {
+        "version": "64118c8a43189b10dfe9d96a9478bcf7cd5b01c9d0f7838ee1454ece8a687253",
+        "signature": "64118c8a43189b10dfe9d96a9478bcf7cd5b01c9d0f7838ee1454ece8a687253"
+      },
+      "../node_modules/@types/mongodb/index.d.ts": {
+        "version": "81a404cae978932b47d8660d7c737c663733934705bea86d28419f0a755adb70",
+        "signature": "81a404cae978932b47d8660d7c737c663733934705bea86d28419f0a755adb70"
+      },
+      "../node_modules/@types/mongoose/index.d.ts": {
+        "version": "17f6a65bfa8efa1d7ff8b7a9db60cc1e7ee65b3f99bccab1b5840f45ddfc6720",
+        "signature": "17f6a65bfa8efa1d7ff8b7a9db60cc1e7ee65b3f99bccab1b5840f45ddfc6720"
+      },
       "../src/heros/interfaces/heroSimple.interfaces.ts": {
-        "version": "b62f4905c4e2f9e93e57ac8752db110ecba3ed20814548a70cfe9448884785b3",
-        "signature": "b62f4905c4e2f9e93e57ac8752db110ecba3ed20814548a70cfe9448884785b3"
+        "version": "6da80a640cee776f30110b321a596e767d70ac4ea2bf4950d424969676aed26d",
+        "signature": "d5b0590a78dc2be486de91fd90022d6f41ef6eb6aa910e536a302d18b1d2c55c"
       },
       "../src/comics/interfaces/comics.interface.ts": {
-        "version": "92e952c49d6139c72a41d563eb01d836ab957126c5944e5bfd23c351a5ba4197",
-        "signature": "f191b7af62d01ac6cdfe98267c863c2a72b8da50c28169f16de5f53828f4b964"
+        "version": "dbc00f53bc4fc688c032a87792102c17d9c6fc3a567a8a51c12d692397c3d9d0",
+        "signature": "5de592b331a4c56486fd4d43938ad731dcab3c4e170a5fb672d0a05bbed52b30"
       },
       "../src/data/comics.ts": {
         "version": "9a221d8f69f1623b2f90d9e897ae886004274eab715f997e9920c0334a81e889",
@@ -1749,64 +1761,120 @@
         "version": "097d4bf3331df1e138ffdcf92e1117f6841bc8337170d927fd955d5ee8a1674b",
         "signature": "097d4bf3331df1e138ffdcf92e1117f6841bc8337170d927fd955d5ee8a1674b"
       },
+      "../src/heros/dto/hero-simple.dto.ts": {
+        "version": "ae626452acae23e509d83b993fd568541e89721492561ff40bc327040a19b06f",
+        "signature": "d8a96fcf456d3aef26c87972eed8bf67812d9f128be2c3d8d04c53d047cb24f9"
+      },
       "../src/comics/dto/update-comics.dto.ts": {
-        "version": "c32ebf274dbb75cbc326678241d8630baa3cace8061931ec3f59d111620f42fb",
-        "signature": "0b5fd162eb23a98a616350d7818f47e9ac53f17377add2971d77fbd0e383f857"
+        "version": "2f5b4e4a9657823ea18b143f8c63f32e80c1a04a4ef456034e900ca6ba4e3999",
+        "signature": "c168ebe4b80cfe84785ed7a86dc189fee6b7c0a3879a3dd52705d49ff0fa03b6"
       },
       "../src/comics/entities/comics.entity.ts": {
-        "version": "a5c5a194b93394a9b64d912e90af7343830c4c57192559ae749732a02c87e86c",
-        "signature": "3182387169ba3cf82d5a7a0e251dc042c2f7a99a1948e9ffa126a7e052c8c006"
+        "version": "303f1bfae6e3992645e6a4b4372b0f91726397890b7d8c22574fafe1a799aa13",
+        "signature": "a6ded39cbcd697b44c2e0bd9c00f93bb05b49a6551334e2baa238cf16ffdcff3"
+      },
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": {
+        "version": "120fe6ff3f553b3d2a0e065b6fea421698be40a802273652871273338085873c",
+        "signature": "120fe6ff3f553b3d2a0e065b6fea421698be40a802273652871273338085873c"
+      },
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": {
+        "version": "94f798f2ee81af6b0767403ef94fbc6d7d7a5e2dc0953a2ea3de98f2cab587c2",
+        "signature": "94f798f2ee81af6b0767403ef94fbc6d7d7a5e2dc0953a2ea3de98f2cab587c2"
+      },
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": {
+        "version": "23dbd21c1fe8ee7c2e1b260de8610d1ce67a785cd40d349520306c8d876385c4",
+        "signature": "23dbd21c1fe8ee7c2e1b260de8610d1ce67a785cd40d349520306c8d876385c4"
+      },
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": {
+        "version": "bea1e44197be52c026ebffdc129afc6cac229b9ec6a86ab3ebdc07bec77ebe23",
+        "signature": "bea1e44197be52c026ebffdc129afc6cac229b9ec6a86ab3ebdc07bec77ebe23"
+      },
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": {
+        "version": "69c9dd7f908cc12704299ad7ab4b667692800279d4df885ec9793f0317234b57",
+        "signature": "69c9dd7f908cc12704299ad7ab4b667692800279d4df885ec9793f0317234b57"
+      },
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": {
+        "version": "729bc6ae2f8b0a4f973660582b6fca33247e82733ea44162dfc98cfae6f81059",
+        "signature": "729bc6ae2f8b0a4f973660582b6fca33247e82733ea44162dfc98cfae6f81059"
+      },
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts": {
+        "version": "1566c3bf94fd979425350fd0d2dd2e814c9399c7217f58186467c548f7711e58",
+        "signature": "1566c3bf94fd979425350fd0d2dd2e814c9399c7217f58186467c548f7711e58"
+      },
+      "../node_modules/@nestjs/mongoose/index.d.ts": {
+        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
+      },
+      "../src/comics/dao/comics.dao.ts": {
+        "version": "240c69ddc4b03935043d1e165acdf2abe3f79b63de43bde6580fabb070ab6b49",
+        "signature": "c31403e9b5e887b84d4e387647617178fb1369c8d69348ee678e6a379be769f9"
       },
       "../src/comics/comics.service.ts": {
-        "version": "44f73525fd7dfb15fad9cb0ddec1db61a8f46f9d002eca70cf04c9793c7f35cf",
-        "signature": "13484098a85479b4a525869b67eb8c6277431f91d25dcb372444ef791f591039"
+        "version": "776519bbebda20edb3fa4e4a7a8a57adf0c65a3bcd27ed63802fffbbfb226851",
+        "signature": "7ff4a9548417c2c72d8eb8c97046fe3a6b897423575e8939b867d65cd85f2eb5"
       },
-      "../src/validators/handler-params.ts": {
-        "version": "7e7f1868a302c7555dfed3e194263a011a0e537e7ccd116d55b6d9d2fd0c9508",
-        "signature": "141b875f883f7beb605686cf4c549dc235197ff7d02f22633f104ef1fef8da01"
+      "../src/comics/validators/handler-comics.ts": {
+        "version": "4e449ec5d2d3fca7265b1f8ccf52a8fe9becd1cd29a27cf8dace17428129d127",
+        "signature": "f8307bb111d58173c0bb36cbfec238d6cda4cc732c7adcee358e42538254231d"
       },
       "../src/comics/comics.controller.ts": {
-        "version": "92286ff63a6f1cf373ae5181f7c456557171e018ad50b018208e1843bc770e26",
-        "signature": "6cacac49a7feb86fd5c3c95c7efc6b39610d6dbb3822c856541ce50a0cfaaeea"
+        "version": "b305d0ef28cfe669933bad7c3578f253680e3f1db93cd9c632fe443d527d5e98",
+        "signature": "673493c67952857b643d76123bc9ab38390de31f337070880179d91b4fe9aa73"
+      },
+      "../src/comics/schemas/comics.schema.ts": {
+        "version": "c4c6825776ea001189c0d00801d9a25e54235000b38a23b9e64750c48d8af16b",
+        "signature": "62883cd56de7cc65964915732ba55557c6e681fd5a1f2348788d7ceb4b49b94a"
       },
       "../src/comics/comics.module.ts": {
-        "version": "3e60f68beff257a2decd8b7639a1a66c3e188b692b92206f06f5c2857652436a",
+        "version": "810bad1b857fea4c424d6b475d2aeef97fc5737f355bd3ef4f49b62d7ace8915",
         "signature": "d155714d55a7ba0001523be48af758195e05c9fda9d0247244ebf4614e16a7f9"
       },
       "../src/heros/interfaces/heros.interfaces.ts": {
-        "version": "4b2d9f04f0e01805e4ab3337dca0a069af5b200a8b91efe5bf2eba2fa72002a1",
-        "signature": "05fdb6fc5fd4962fd0d9349a890da226f21006dde5308165299cad792fb63146"
+        "version": "68e8e787262b55b2e893cf00d893240eb5c3bb63969accf505e3f61e38fa223a",
+        "signature": "d543632bdccb85be0058799be84ab5e50db2d6a741d2887e5276765e795a1a6b"
       },
       "../src/data/heros.ts": {
         "version": "9b75b8f4a77004886958bf8f6f842ce518407a28dddb9b6a413d01d74fa5b8a1",
-        "signature": "46fb53b505909a1d53d75a1def1d0a14eab6d8ab0b02e7534cab7632ea7e65c7"
+        "signature": "214b90ff87fb211d8f557d59b2c8291744046451513a9316942336f7054f2f1d"
       },
       "../src/heros/dto/create-hero.dto.ts": {
-        "version": "d9246e5bc92566273a3b50f84c06e456ba196ddb341d21df08b9c3ccd6d7c778",
+        "version": "adf6c3c5e2f6f744427da9b1b1a52391398346422483a0bd9d38ab9be7e82497",
         "signature": "fc581f1a881462c2a58e5a9561950901359afc167ec8b26e6c49ef58be9b253f"
       },
       "../src/heros/dto/update-hero.dto.ts": {
-        "version": "2f3cc621668addcdbbaff91419ccfddabe6c44d73d608117708e813a97fc0e45",
-        "signature": "1f47dd7902c141b3a6489d363021e8d0dafb9967211d4b18512ac04faeb37154"
+        "version": "1b788d964da79b66aa45fa5be979d4396990566a1a37bca6f536b40c49912ba6",
+        "signature": "2dcc4f6de24b223f648f7190e9ae235abe97e987c80323dd27ad57fadfb49a15"
       },
       "../src/heros/entities/heros.entity.ts": {
-        "version": "e7b077228add91483d144910643e17cf0771d6e24c3a904157d55ffb423b2e4f",
-        "signature": "979f5d075d100b787e221b442ea81964db03e167ee94559bb1c145f15173364d"
+        "version": "ff447a60a9017524135f1ba29b782dbb0999346eff83632997d14afaad94c561",
+        "signature": "878de3b55e828ecc7d69935eb2a363bf9a609a0ab2cbd1dc49fcbefefac43be5"
+      },
+      "../src/heros/dao/heros.dao.ts": {
+        "version": "86e98290ae20932afffacc6905e08b70d40ee8e661bd7ff3fe2d9ef285405577",
+        "signature": "c12bef36756c39947c680f37655c37bc3b6c51ebaa502ae7992201a47f1c82fd"
       },
       "../src/heros/heros.service.ts": {
-        "version": "40f1c076829b4eb7b847778dba1ac698108639ac5dca27ca5262c31222841c4b",
-        "signature": "3f411147b27011f0c4a88025acb3749320ea5ccd1ba19278db46615d62bdc46a"
+        "version": "f8d6f970758f436421a3e927238a0fa8e876098dee802f60500eaa9b5bc00654",
+        "signature": "43a1c8fdbd154bfafb29c22c4f8cac7453b901eed414378e13bafefd1f6f288d"
+      },
+      "../src/heros/validators/handler-heros.ts": {
+        "version": "08ee9a365e2adf10e5ee4e407a5714d9e58a83f860d7abeb50cf7722e4bda569",
+        "signature": "a36e8d4fd6ef4853e1d79ed66e0f2321c24f8f8ad8de277c8e71c30bbb2a0008"
       },
       "../src/heros/heros.controller.ts": {
-        "version": "2cbac50d9dcabe732dc786df50aa1fe663a7c0562349de1bbaefdeb63633a880",
-        "signature": "2417612b48c3e187420eed178fcf67354b4f241270acab466c393da1e64a43c7"
+        "version": "c7c05241f100af7111261fbd4509c235d602975ff7596f9916049fc32d76f239",
+        "signature": "f3f4ecca36b5711e6103892a44245763bb2ff2246bf0034af806b029f7358305"
+      },
+      "../src/heros/schemas/heros.schema.ts": {
+        "version": "489328867c3ebae413163bdf005eea0ce145270e8b3691295690cf5afc4988fe",
+        "signature": "78e4569a518d1d730cc52894387ff6816de2e4f901b652b1f12aea2f0563f0d1"
       },
       "../src/heros/heros.module.ts": {
-        "version": "0debfb47d85bb2e50efe35f7120928364b75b9ed5caaa8de94d6dcfd7212ded5",
+        "version": "1fdf6014ca083661684169498f934eeebfb49b2e7ba0d1bd0dbdb70113cb2b68",
         "signature": "17c9fa5e2612fa961ab390d7612e6a7503b9ee2c1836ca848528f4062621c456"
       },
       "../src/app.module.ts": {
-        "version": "b35ae528995a75d885b1b13b62d8ac589154183dfb84ae4f4e3beeb2f343611b",
+        "version": "49cbeea71efc15be745bbde1909face211d793766104bfe6abaf0564cb5fdcc9",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -1985,10 +2053,6 @@
         "version": "8b6748f9e15ad7bac494dc3cd3b13ba0a8be195aca97f7c10a96b1c74a956f32",
         "signature": "8b6748f9e15ad7bac494dc3cd3b13ba0a8be195aca97f7c10a96b1c74a956f32"
       },
-      "../node_modules/@types/bson/index.d.ts": {
-        "version": "64118c8a43189b10dfe9d96a9478bcf7cd5b01c9d0f7838ee1454ece8a687253",
-        "signature": "64118c8a43189b10dfe9d96a9478bcf7cd5b01c9d0f7838ee1454ece8a687253"
-      },
       "../node_modules/@types/cookiejar/index.d.ts": {
         "version": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
         "signature": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56"
@@ -2032,14 +2096,6 @@
       "../node_modules/@types/json5/index.d.ts": {
         "version": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
         "signature": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538"
-      },
-      "../node_modules/@types/mongodb/index.d.ts": {
-        "version": "81a404cae978932b47d8660d7c737c663733934705bea86d28419f0a755adb70",
-        "signature": "81a404cae978932b47d8660d7c737c663733934705bea86d28419f0a755adb70"
-      },
-      "../node_modules/@types/mongoose/index.d.ts": {
-        "version": "17f6a65bfa8efa1d7ff8b7a9db60cc1e7ee65b3f99bccab1b5840f45ddfc6720",
-        "signature": "17f6a65bfa8efa1d7ff8b7a9db60cc1e7ee65b3f99bccab1b5840f45ddfc6720"
       },
       "../node_modules/@types/source-list-map/index.d.ts": {
         "version": "67fc055eb86a0632e2e072838f889ffe1754083cb13c8c80a06a7d895d877aae",
@@ -4302,7 +4358,37 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@types/bson/index.d.ts": [
+        "../node_modules/@types/node/ts3.2/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mongodb/index.d.ts": [
+        "../node_modules/@types/bson/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/tls.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mongoose/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/mongodb/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/heros/interfaces/heroSimple.interfaces.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -4310,6 +4396,7 @@
       ],
       "../src/comics/interfaces/comics.interface.ts": [
         "../src/heros/interfaces/heroSimple.interfaces.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5603,11 +5690,20 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/heros/dto/hero-simple.dto.ts": [
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/comics/dto/update-comics.dto.ts": [
         "../src/heros/interfaces/heroSimple.interfaces.ts",
         "../node_modules/class-validator/index.d.ts",
         "../node_modules/class-transformer/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
+        "../src/heros/dto/hero-simple.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5617,6 +5713,82 @@
         "../src/heros/interfaces/heroSimple.interfaces.ts",
         "../node_modules/class-transformer/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
+        "../src/heros/dto/hero-simple.dto.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": [
+        "../node_modules/rxjs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/comics/dao/comics.dao.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/rxjs/index.d.ts",
+        "../node_modules/rxjs/operators/index.d.ts",
+        "../src/comics/interfaces/comics.interface.ts",
+        "../src/comics/dto/create-comics.dto.ts",
+        "../src/comics/dto/update-comics.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5632,12 +5804,13 @@
         "../src/comics/dto/update-comics.dto.ts",
         "../src/heros/interfaces/heroSimple.interfaces.ts",
         "../src/comics/entities/comics.entity.ts",
+        "../src/comics/dao/comics.dao.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/validators/handler-params.ts": [
+      "../src/comics/validators/handler-comics.ts": [
         "../node_modules/class-validator/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -5650,9 +5823,17 @@
         "../src/comics/comics.service.ts",
         "../src/comics/dto/create-comics.dto.ts",
         "../src/comics/dto/update-comics.dto.ts",
-        "../src/validators/handler-params.ts",
         "../src/comics/entities/comics.entity.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
+        "../src/comics/validators/handler-comics.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/comics/schemas/comics.schema.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/heros/dto/hero-simple.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5662,6 +5843,9 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/comics/comics.controller.ts",
         "../src/comics/comics.service.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/comics/schemas/comics.schema.ts",
+        "../src/comics/dao/comics.dao.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5669,6 +5853,7 @@
       ],
       "../src/heros/interfaces/heros.interfaces.ts": [
         "../src/heros/interfaces/heroSimple.interfaces.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5694,6 +5879,7 @@
         "../node_modules/class-validator/index.d.ts",
         "../node_modules/class-transformer/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
+        "../src/heros/dto/hero-simple.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5703,6 +5889,22 @@
         "../node_modules/class-transformer/index.d.ts",
         "../src/heros/interfaces/heroSimple.interfaces.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
+        "../src/heros/dto/hero-simple.dto.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/heros/dao/heros.dao.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/rxjs/index.d.ts",
+        "../node_modules/rxjs/operators/index.d.ts",
+        "../src/heros/interfaces/heros.interfaces.ts",
+        "../src/heros/dto/create-hero.dto.ts",
+        "../src/heros/dto/update-hero.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5718,6 +5920,15 @@
         "../src/heros/dto/update-hero.dto.ts",
         "../src/heros/interfaces/heroSimple.interfaces.ts",
         "../src/heros/entities/heros.entity.ts",
+        "../src/heros/dao/heros.dao.ts",
+        "../src/comics/entities/comics.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/heros/validators/handler-heros.ts": [
+        "../node_modules/class-validator/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5727,11 +5938,20 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/heros/heros.service.ts",
         "../node_modules/rxjs/index.d.ts",
-        "../src/validators/handler-params.ts",
         "../src/heros/entities/heros.entity.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
         "../src/heros/dto/create-hero.dto.ts",
         "../src/heros/dto/update-hero.dto.ts",
+        "../src/heros/validators/handler-heros.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/heros/schemas/heros.schema.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/heros/interfaces/heroSimple.interfaces.ts",
+        "../src/heros/dto/hero-simple.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5741,6 +5961,9 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/heros/heros.service.ts",
         "../src/heros/heros.controller.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/heros/schemas/heros.schema.ts",
+        "../src/heros/dao/heros.dao.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5752,6 +5975,7 @@
         "../src/app.service.ts",
         "../src/comics/comics.module.ts",
         "../src/heros/heros.module.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -6146,13 +6370,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/bson/index.d.ts": [
-        "../node_modules/@types/node/ts3.2/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/cookiejar/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -6223,28 +6440,6 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@types/json5/index.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mongodb/index.d.ts": [
-        "../node_modules/@types/bson/index.d.ts",
-        "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/node/stream.d.ts",
-        "../node_modules/@types/node/tls.d.ts",
-        "../node_modules/@types/node/ts3.2/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mongoose/index.d.ts": [
-        "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/mongodb/index.d.ts",
-        "../node_modules/@types/node/stream.d.ts",
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/@types/node/ts3.2/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -8514,7 +8709,40 @@
       "../src/app.controller.ts": [
         "../src/app.service.ts"
       ],
+      "../node_modules/@types/bson/index.d.ts": [
+        "../node_modules/@types/node/ts3.2/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mongodb/index.d.ts": [
+        "../node_modules/@types/bson/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/tls.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mongoose/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/mongodb/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/heros/interfaces/heroSimple.interfaces.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
       "../src/comics/interfaces/comics.interface.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
         "../src/heros/interfaces/heroSimple.interfaces.ts"
       ],
       "../src/data/comics.ts": [
@@ -9794,12 +10022,80 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/comics/dto/update-comics.dto.ts": [
-        "../src/heros/interfaces/heroSimple.interfaces.ts"
+        "../src/heros/dto/hero-simple.dto.ts"
       ],
       "../src/comics/entities/comics.entity.ts": [
-        "../src/heros/interfaces/heroSimple.interfaces.ts"
+        "../src/heros/dto/hero-simple.dto.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": [
+        "../node_modules/rxjs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/comics/dao/comics.dao.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/comics/interfaces/comics.interface.ts",
+        "../node_modules/rxjs/index.d.ts",
+        "../src/comics/dto/create-comics.dto.ts",
+        "../src/comics/dto/update-comics.dto.ts"
       ],
       "../src/comics/comics.service.ts": [
+        "../src/comics/dao/comics.dao.ts",
         "../node_modules/rxjs/index.d.ts",
         "../src/comics/entities/comics.entity.ts",
         "../src/comics/dto/create-comics.dto.ts",
@@ -9809,23 +10105,35 @@
         "../src/comics/comics.service.ts",
         "../node_modules/rxjs/index.d.ts",
         "../src/comics/entities/comics.entity.ts",
-        "../src/validators/handler-params.ts",
+        "../src/comics/validators/handler-comics.ts",
         "../src/comics/dto/create-comics.dto.ts",
         "../src/comics/dto/update-comics.dto.ts"
       ],
+      "../src/comics/schemas/comics.schema.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
       "../src/heros/interfaces/heros.interfaces.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
         "../src/heros/interfaces/heroSimple.interfaces.ts"
       ],
       "../src/data/heros.ts": [
         "../src/heros/interfaces/heroSimple.interfaces.ts"
       ],
       "../src/heros/dto/update-hero.dto.ts": [
-        "../src/heros/interfaces/heroSimple.interfaces.ts"
+        "../src/heros/dto/hero-simple.dto.ts"
       ],
       "../src/heros/entities/heros.entity.ts": [
-        "../src/heros/interfaces/heroSimple.interfaces.ts"
+        "../src/heros/dto/hero-simple.dto.ts"
+      ],
+      "../src/heros/dao/heros.dao.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/heros/interfaces/heros.interfaces.ts",
+        "../node_modules/rxjs/index.d.ts",
+        "../src/heros/dto/create-hero.dto.ts",
+        "../src/heros/dto/update-hero.dto.ts"
       ],
       "../src/heros/heros.service.ts": [
+        "../src/heros/dao/heros.dao.ts",
         "../node_modules/rxjs/index.d.ts",
         "../src/heros/entities/heros.entity.ts",
         "../src/heros/dto/create-hero.dto.ts",
@@ -9835,7 +10143,12 @@
         "../src/heros/heros.service.ts",
         "../node_modules/rxjs/index.d.ts",
         "../src/heros/entities/heros.entity.ts",
-        "../src/validators/handler-params.ts"
+        "../src/heros/validators/handler-heros.ts",
+        "../src/heros/dto/create-hero.dto.ts",
+        "../src/heros/dto/update-hero.dto.ts"
+      ],
+      "../src/heros/schemas/heros.schema.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
       ],
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10205,13 +10518,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/bson/index.d.ts": [
-        "../node_modules/@types/node/ts3.2/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/cookiejar/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -10282,28 +10588,6 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@types/json5/index.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mongodb/index.d.ts": [
-        "../node_modules/@types/bson/index.d.ts",
-        "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/node/stream.d.ts",
-        "../node_modules/@types/node/tls.d.ts",
-        "../node_modules/@types/node/ts3.2/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mongoose/index.d.ts": [
-        "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/mongodb/index.d.ts",
-        "../node_modules/@types/node/stream.d.ts",
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/@types/node/ts3.2/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -10679,9 +10963,7 @@
       "../node_modules/@nestjs/common/index.d.ts",
       "../src/app.service.ts",
       "../src/app.controller.ts",
-      "../src/heros/interfaces/heroSimple.interfaces.ts",
-      "../src/comics/interfaces/comics.interface.ts",
-      "../src/data/comics.ts",
+      "../node_modules/@types/bson/index.d.ts",
       "../node_modules/rxjs/internal/operators/audit.d.ts",
       "../node_modules/rxjs/internal/operators/auditTime.d.ts",
       "../node_modules/rxjs/internal/operators/buffer.d.ts",
@@ -10786,8 +11068,6 @@
       "../node_modules/rxjs/internal/operators/zipAll.d.ts",
       "../node_modules/rxjs/operators/index.d.ts",
       "../node_modules/@types/validator/index.d.ts",
-      "../src/heros/interfaces/heros.interfaces.ts",
-      "../src/data/heros.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/constants.d.ts",
@@ -10831,7 +11111,6 @@
       "../node_modules/@babel/parser/typings/babel-parser.d.ts",
       "../node_modules/@types/babel__template/index.d.ts",
       "../node_modules/@types/babel__core/index.d.ts",
-      "../node_modules/@types/bson/index.d.ts",
       "../node_modules/@types/cookiejar/index.d.ts",
       "../node_modules/@types/minimatch/index.d.ts",
       "../node_modules/@types/glob/index.d.ts",

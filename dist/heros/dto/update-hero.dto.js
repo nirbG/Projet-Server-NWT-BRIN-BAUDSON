@@ -10,7 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const class_validator_1 = require("class-validator");
+const class_transformer_1 = require("class-transformer");
 const swagger_1 = require("@nestjs/swagger");
+const hero_simple_dto_1 = require("./hero-simple.dto");
 class UpdateHeroDto {
 }
 __decorate([
@@ -21,7 +23,7 @@ __decorate([
     __metadata("design:type", String)
 ], UpdateHeroDto.prototype, "id", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'Photo', example: 'Superboy.jpg' }),
+    swagger_1.ApiModelProperty({ description: 'Photo', example: 'superboy.jpg' }),
     class_validator_1.IsOptional(),
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
@@ -41,13 +43,27 @@ __decorate([
     __metadata("design:type", String)
 ], UpdateHeroDto.prototype, "pouvoir", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: "Hero's nemesis" }),
+    swagger_1.ApiModelProperty({ description: "Hero's ennemies", example: [{
+                "id": "5",
+                "photo": "joker.jpg",
+                "name": "Joker"
+            }] }),
     class_validator_1.IsOptional(),
+    class_validator_1.IsInstance(hero_simple_dto_1.HeroSimpleDto, { each: true }),
+    class_transformer_1.Type(() => hero_simple_dto_1.HeroSimpleDto),
+    class_validator_1.ValidateNested({ each: true }),
     __metadata("design:type", Array)
 ], UpdateHeroDto.prototype, "ennemi", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: "Hero's allies" }),
+    swagger_1.ApiModelProperty({ description: "Hero's allies", example: [{
+                id: '3',
+                photo: 'batman.jpg',
+                name: 'Batman',
+            }] }),
     class_validator_1.IsOptional(),
+    class_validator_1.IsInstance(hero_simple_dto_1.HeroSimpleDto, { each: true }),
+    class_transformer_1.Type(() => hero_simple_dto_1.HeroSimpleDto),
+    class_validator_1.ValidateNested({ each: true }),
     __metadata("design:type", Array)
 ], UpdateHeroDto.prototype, "allie", void 0);
 __decorate([

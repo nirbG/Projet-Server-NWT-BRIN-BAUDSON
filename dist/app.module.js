@@ -11,11 +11,13 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const comics_module_1 = require("./comics/comics.module");
 const heros_module_1 = require("./heros/heros.module");
+const mongoose_1 = require("@nestjs/mongoose");
+const Config = require("config");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [comics_module_1.ComicsModule, heros_module_1.HerosModule],
+        imports: [comics_module_1.ComicsModule, heros_module_1.HerosModule, mongoose_1.MongooseModule.forRoot(Config.get('mongodb.uri'), Config.get('mongodb.options')),],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })

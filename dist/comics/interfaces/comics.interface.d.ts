@@ -1,5 +1,6 @@
 import { HeroSimple } from "../../heros/interfaces/heroSimple.interfaces";
-export interface Comics {
+import { Document } from 'mongoose';
+export interface Comics extends Document {
     isbn: string;
     photo?: string;
     title: string;

@@ -1,0 +1,1 @@
+{"version":3,"file":"heros2dao.js","sourceRoot":"","sources":["../../src/heros/heros2dao.ts"],"names":[],"mappings":";;;;;;;;;;;;;;AAAA,2CAA4C;AAC5C,+CAA6C;AAC7C,uCAA+B;AAI/B,IAAa,SAAS,GAAtB,MAAa,SAAS;IAElB,YAAmD,WAAwB;QAAxB,gBAAW,GAAX,WAAW,CAAa;IAC3E,CAAC;CAEJ,CAAA;AALY,SAAS;IADrB,mBAAU,EAAE;IAGI,WAAA,sBAAW,CAAC,OAAO,CAAC,CAAA;qCAA+B,gBAAK;GAF5D,SAAS,CAKrB;AALY,8BAAS"}

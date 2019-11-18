@@ -14,31 +14,34 @@ const comics_1 = require("../data/comics");
 const rxjs_1 = require("rxjs");
 const operators_1 = require("rxjs/operators");
 const comics_entity_1 = require("./entities/comics.entity");
+const comics_dao_1 = require("./dao/comics.dao");
 let ComicsService = class ComicsService {
-    constructor() {
+    constructor(_comicsDao) {
+        this._comicsDao = _comicsDao;
         this._comics = [].concat(comics_1.COMICS);
     }
     findAll() {
-        return rxjs_1.of(this._comics).pipe(operators_1.map(_ => (!!_ && !!_.length) ? _.map(__ => new comics_entity_1.ComicsEntity(__)) : undefined));
+        return this._comicsDao.find().pipe(operators_1.map(_ => (!!_ && !!_.length) ? _.map(__ => new comics_entity_1.ComicsEntity(__)) : undefined));
     }
     findSome(s, e) {
         return rxjs_1.of(this._comics.slice(+s, +e));
     }
     findOne(isbn) {
-        return rxjs_1.from(this._comics).pipe(operators_1.find(_ => _.isbn === isbn), operators_1.flatMap(_ => !!_ ?
+        return this._comicsDao.findById(isbn).pipe(operators_1.catchError(e => rxjs_1.throwError(new common_1.UnprocessableEntityException(e.message))), operators_1.flatMap(_ => !!_ ?
             rxjs_1.of(new comics_entity_1.ComicsEntity(_)) :
             rxjs_1.throwError(new common_1.NotFoundException(`comics with isbn '${isbn}' not found`))));
     }
     create(body) {
-        return rxjs_1.from(this._comics).pipe(operators_1.find(_ => _.isbn === body.isbn), operators_1.flatMap(_ => !!_ ?
-            rxjs_1.throwError(new common_1.ConflictException(`People with isbn '${body.isbn}' already exists`))
-            : this._addComics(body)));
+        return this._addComics(body).pipe(operators_1.flatMap(_ => this._comicsDao.create(_)), operators_1.catchError(e => e.code = 11000 ? rxjs_1.throwError(new common_1.ConflictException(`comics with isbn '${body.isbn}' already exists`)) :
+            rxjs_1.throwError(new common_1.UnprocessableEntityException(e.message))), operators_1.map(_ => new comics_entity_1.ComicsEntity(_)));
     }
     update(isbn, body) {
-        return this._findComicsIndexOfList(isbn).pipe(operators_1.tap(_ => Object.assign(this._comics[_], body)), operators_1.map(_ => new comics_entity_1.ComicsEntity(this._comics[_])));
+        return this._comicsDao.findByIdAndUpdate(isbn, body).pipe(operators_1.flatMap(_ => !!_ ? rxjs_1.of(new comics_entity_1.ComicsEntity((_))) :
+            rxjs_1.throwError(new common_1.NotFoundException(`Comics with isbn '${isbn}' not found`))));
     }
     delete(isbn) {
-        return this._findComicsIndexOfList(isbn).pipe(operators_1.flatMap(_ => this._comics = this._comics.filter(__ => __.isbn === this._comics[_].isbn)), operators_1.map(_ => undefined));
+        return this._comicsDao.findByIdAndRemove(isbn).pipe(operators_1.catchError(e => rxjs_1.throwError(new common_1.NotFoundException(e.message))), operators_1.flatMap(_ => !!_ ? rxjs_1.of(undefined) :
+            rxjs_1.throwError(new common_1.NotFoundException(`Comics with isbn '${isbn}' not found`))));
     }
     _addComics(body) {
         return rxjs_1.of(body).pipe(operators_1.map(_ => Object.assign(_, {
@@ -58,7 +61,7 @@ let ComicsService = class ComicsService {
 };
 ComicsService = __decorate([
     common_1.Injectable(),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [comics_dao_1.ComicsDao])
 ], ComicsService);
 exports.ComicsService = ComicsService;
 //# sourceMappingURL=comics.service.js.map

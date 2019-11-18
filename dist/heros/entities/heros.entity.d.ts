@@ -1,11 +1,11 @@
-import { HeroSimple } from "../interfaces/heroSimple.interfaces";
+import { HeroSimpleDto } from "../dto/hero-simple.dto";
 export declare class HerosEntity {
     id: string;
     photo?: string;
     name: string;
     pouvoir: string;
-    ennemi: HeroSimple[];
-    allie: HeroSimple[];
+    ennemi: HeroSimpleDto[];
+    allie: HeroSimpleDto[];
     isHumain: boolean;
     constructor(partial: Partial<HerosEntity>);
 }

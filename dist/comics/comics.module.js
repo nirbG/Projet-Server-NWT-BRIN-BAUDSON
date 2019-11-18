@@ -9,12 +9,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const comics_controller_1 = require("./comics.controller");
 const comics_service_1 = require("./comics.service");
+const mongoose_1 = require("@nestjs/mongoose");
+const comics_schema_1 = require("./schemas/comics.schema");
+const comics_dao_1 = require("./dao/comics.dao");
 let ComicsModule = class ComicsModule {
 };
 ComicsModule = __decorate([
     common_1.Module({
+        imports: [mongoose_1.MongooseModule.forFeature([{ name: 'Comics', schema: comics_schema_1.ComicsSchema }])],
         controllers: [comics_controller_1.ComicsController],
-        providers: [comics_service_1.ComicsService],
+        providers: [comics_service_1.ComicsService, comics_dao_1.ComicsDao],
     })
 ], ComicsModule);
 exports.ComicsModule = ComicsModule;

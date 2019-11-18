@@ -20,7 +20,7 @@ __decorate([
     __metadata("design:type", String)
 ], CreateHeroDto.prototype, "id", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'Photo', example: 'Superboy.jpg' }),
+    swagger_1.ApiModelProperty({ description: 'Photo', example: 'superboy.jpg' }),
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)

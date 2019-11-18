@@ -11,6 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const class_transformer_1 = require("class-transformer");
 const swagger_1 = require("@nestjs/swagger");
+const hero_simple_dto_1 = require("../dto/hero-simple.dto");
+const class_validator_1 = require("class-validator");
 let HerosEntity = class HerosEntity {
     constructor(partial) {
         Object.assign(this, partial);
@@ -23,7 +25,7 @@ __decorate([
     __metadata("design:type", String)
 ], HerosEntity.prototype, "id", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'Photo', example: 'Superboy.jpg' }),
+    swagger_1.ApiModelProperty({ description: 'Photo', example: 'superboy.jpg' }),
     class_transformer_1.Expose(),
     class_transformer_1.Type(() => String),
     __metadata("design:type", String)
@@ -41,13 +43,25 @@ __decorate([
     __metadata("design:type", String)
 ], HerosEntity.prototype, "pouvoir", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: "Hero's nemesis" }),
+    swagger_1.ApiModelProperty({ description: "Hero's ennemies", example: [{
+                "id": "5",
+                "photo": "joker.jpg",
+                "name": "Joker"
+            }] }),
     class_transformer_1.Expose(),
+    class_validator_1.IsInstance(hero_simple_dto_1.HeroSimpleDto, { each: true }),
+    class_transformer_1.Type(() => hero_simple_dto_1.HeroSimpleDto),
     __metadata("design:type", Array)
 ], HerosEntity.prototype, "ennemi", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: "Hero's allies" }),
+    swagger_1.ApiModelProperty({ description: "Hero's allies", example: [{
+                id: '3',
+                photo: 'batman.jpg',
+                name: 'Batman',
+            }] }),
     class_transformer_1.Expose(),
+    class_validator_1.IsInstance(hero_simple_dto_1.HeroSimpleDto, { each: true }),
+    class_transformer_1.Type(() => hero_simple_dto_1.HeroSimpleDto),
     __metadata("design:type", Array)
 ], HerosEntity.prototype, "allie", void 0);
 __decorate([

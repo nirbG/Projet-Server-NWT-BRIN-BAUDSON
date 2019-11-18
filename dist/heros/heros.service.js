@@ -14,33 +14,36 @@ const heros_1 = require("../data/heros");
 const rxjs_1 = require("rxjs");
 const operators_1 = require("rxjs/operators");
 const heros_entity_1 = require("./entities/heros.entity");
+const heros_dao_1 = require("./dao/heros.dao");
 let HerosService = class HerosService {
-    constructor() {
+    constructor(_herosDao) {
+        this._herosDao = _herosDao;
         this._heros = [].concat(heros_1.HEROS);
     }
     findAll() {
-        return rxjs_1.of(this._heros).pipe(operators_1.map(_ => (!!_ && !!_.length) ? _.map(__ => new heros_entity_1.HerosEntity(__)) : undefined));
+        return this._herosDao.find().pipe(operators_1.map(_ => (!!_ && !!_.length) ? _.map(__ => new heros_entity_1.HerosEntity(__)) : undefined));
     }
     findSome(start, end) {
         return rxjs_1.of(this._heros.slice(+start, +end));
     }
     findOne(id) {
-        return rxjs_1.from(this._heros).pipe(operators_1.find(_ => _.id === id), operators_1.flatMap(_ => !!_ ?
+        return this._herosDao.findById(id).pipe(operators_1.catchError(e => rxjs_1.throwError(new common_1.UnprocessableEntityException(e.message))), operators_1.flatMap(_ => !!_ ?
             rxjs_1.of(new heros_entity_1.HerosEntity(_)) :
             rxjs_1.throwError(new common_1.NotFoundException(`hero with id '${id}' not found`))));
     }
     create(body) {
-        return rxjs_1.from(this._heros).pipe(operators_1.find(_ => _.id === body.id), operators_1.flatMap(_ => !!_ ?
-            rxjs_1.throwError(new common_1.ConflictException(`People with id '${body.id}' already exists`))
-            : this._addComics(body)));
+        return this._addHeros(body).pipe(operators_1.flatMap(_ => this._herosDao.create(_)), operators_1.catchError(e => e.code = 11000 ? rxjs_1.throwError(new common_1.ConflictException(`People with id '${body.id}' already exists`)) :
+            rxjs_1.throwError(new common_1.UnprocessableEntityException(e.message))), operators_1.map(_ => new heros_entity_1.HerosEntity(_)));
     }
     update(id, body) {
-        return this._findHeroIndexOfList(id).pipe(operators_1.tap(_ => Object.assign(this._heros[_], body)), operators_1.map(_ => new heros_entity_1.HerosEntity(this._heros[_])));
+        return this._herosDao.findByIdAndUpdate(id, body).pipe(operators_1.flatMap(_ => !!_ ? rxjs_1.of(new heros_entity_1.HerosEntity((_))) :
+            rxjs_1.throwError(new common_1.NotFoundException(`Hero with id '${id}' not found`))));
     }
     delete(id) {
-        return this._findHeroIndexOfList(id).pipe(operators_1.flatMap(_ => this._heros = this._heros.filter(__ => __.id === this._heros[_].id)), operators_1.map(_ => undefined));
+        return this._herosDao.findByIdAndRemove(id).pipe(operators_1.catchError(e => rxjs_1.throwError(new common_1.NotFoundException(e.message))), operators_1.flatMap(_ => !!_ ? rxjs_1.of(undefined) :
+            rxjs_1.throwError(new common_1.NotFoundException(`Hero with id '${id}' not found`))));
     }
-    _addComics(body) {
+    _addHeros(body) {
         return rxjs_1.of(body).pipe(operators_1.map(_ => Object.assign(_, {
             ennemi: [],
             allie: [],
@@ -55,7 +58,7 @@ let HerosService = class HerosService {
 };
 HerosService = __decorate([
     common_1.Injectable(),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [heros_dao_1.HerosDao])
 ], HerosService);
 exports.HerosService = HerosService;
 //# sourceMappingURL=heros.service.js.map
