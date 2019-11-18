@@ -1,7 +1,7 @@
 // Insert comics array
 db.getCollection('comics').insertMany([
     {
-        isbn: '2809481067',
+        _id: '2809481067',
         photo: '2809481067.jpg',
         title: 'Wolverine - Tome 7 : Fresh start',
         mainHeros: {
@@ -15,7 +15,7 @@ db.getCollection('comics').insertMany([
         inBD: false
     },
     {
-        isbn: '2809479011',
+        _id: '2809479011',
         photo: '2809479011.jpg',
         title: 'Avengers - Tome 9 : Fresh Start',
         mainHeros: {
@@ -29,7 +29,7 @@ db.getCollection('comics').insertMany([
         inBD: false
     },
     {
-        isbn: '1026816750',
+        _id: '1026816750',
         photo: '1026816750.jpg',
         title: 'Batman - Tome 0 : Damned ',
         mainHeros: {
@@ -43,7 +43,7 @@ db.getCollection('comics').insertMany([
         inBD: true
     },
     {
-        isbn: '1026814243',
+        _id: '1026814243',
         photo: '1026814243.jpg',
         title: 'KILLING JOKE édition limitée',
         mainHeros: {
@@ -57,7 +57,7 @@ db.getCollection('comics').insertMany([
         inBD: false
     },
     {
-        isbn: '280947902X',
+        _id: '280947902X',
         photo: '280947902X.jpg',
         title: 'Deadpool - Tome 9 : Fresh Start',
         mainHeros: {
@@ -71,7 +71,7 @@ db.getCollection('comics').insertMany([
         inBD: true
     },
     {
-        isbn: '1026819644',
+        _id: '1026819644',
         photo: '1026819644.jpg',
         title: 'Joker - nouvelle édition ',
         mainHeros: {
@@ -85,7 +85,7 @@ db.getCollection('comics').insertMany([
         inBD: true
     },
     {
-        isbn: '1026817315',
+        _id: '1026817315',
         photo: '1026817315.jpg',
         title: 'Batman - Tome 7 : Detective comics',
         mainHeros: {
@@ -99,7 +99,7 @@ db.getCollection('comics').insertMany([
         inBD: false
     },
     {
-        isbn: '1026819695',
+        _id: '1026819695',
         photo: '1026819695.jpg',
         title: 'Joker L\'homme qui rit',
         mainHeros: {
@@ -113,7 +113,7 @@ db.getCollection('comics').insertMany([
         inBD: false
     },
     {
-        isbn: '2809478708',
+        _id: '2809478708',
         photo: '2809478708.jpg',
         title: 'Avengers - Tome 8 : Fresh start',
         mainHeros: {
@@ -127,7 +127,7 @@ db.getCollection('comics').insertMany([
         inBD: false
     },
     {
-        isbn: '102681622X',
+        _id: '102681622X',
         photo: '102681622X.jpg',
         title: 'Superman - Tome 2 : New Metropolis',
         mainHeros: {
@@ -141,7 +141,7 @@ db.getCollection('comics').insertMany([
         inBD: false
     },
     {
-        isbn: '2809478716',
+        _id: '2809478716',
         photo: '2809478716.jpg',
         title: 'Deadpool - Tome 8 : Fresh start',
         mainHeros: {
@@ -155,7 +155,7 @@ db.getCollection('comics').insertMany([
         inBD: false
     },
     {
-        isbn: '2365773540',
+        _id: '2365773540',
         photo: '2365773540.jpg',
         title: 'Aquaman - Tome 3 : Aquaman',
         mainHeros: {
@@ -169,7 +169,7 @@ db.getCollection('comics').insertMany([
         inBD: false
     },
     {
-        isbn: '1026824109',
+        _id: '1026824109',
         photo: '1026824109.jpg',
         title: ' Batman - Tome 3 : Batman metal',
         mainHeros: {
@@ -183,7 +183,7 @@ db.getCollection('comics').insertMany([
         inBD: false
     },
     {
-        isbn: '1026814367',
+        _id: '1026814367',
         photo: '1026814367.jpg',
         title: 'Batman - : White Knight',
         mainHeros: {
@@ -197,7 +197,7 @@ db.getCollection('comics').insertMany([
         inBD: false
     },
     {
-        isbn: '2365773567',
+        _id: '2365773567',
         photo: '2365773567.jpg',
         title: '    Batman - Tome 3 : Le deuil de la famille',
         mainHeros: {
