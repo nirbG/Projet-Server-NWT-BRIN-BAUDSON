@@ -23,7 +23,28 @@ db.getCollection('comics').insertMany([
             photo: 'avengers.jpg',
             name: 'Avengers',
         },
-        otherHeros: [],
+        otherHeros: [
+            {
+                _id: '6',
+                photo: 'ironman.jpg',
+                name: 'Iron Man',
+            },
+            {
+                _id: '15',
+                photo: 'thor.jpg',
+                name: 'Thor',
+            },
+            {
+                _id: '14',
+                photo: 'hulk.jpg',
+                name: 'Hulk',
+            },
+            {
+                _id: '16',
+                photo: 'Captain_America.png',
+                name: 'Captain America',
+            }
+        ],
         price: 7.5,
         wish: false,
         inBD: false
@@ -51,7 +72,13 @@ db.getCollection('comics').insertMany([
             photo: 'batman.jpg',
             name: 'Batman',
         },
-        otherHeros:  [],
+        otherHeros:  [
+            {
+                _id: '5',
+                photo: 'joker.jpg',
+                name: 'Joker',
+            }
+        ],
         price: 28,
         wish: false,
         inBD: false
@@ -93,7 +120,13 @@ db.getCollection('comics').insertMany([
             photo: 'batman.jpg',
             name: 'Batman',
         },
-        otherHeros:  [],
+        otherHeros:  [
+            {
+                _id: '12',
+                photo: 'robin.jpg',
+                name: 'Robin',
+            }
+        ],
         price: 17.5,
         wish: false,
         inBD: false
@@ -121,7 +154,28 @@ db.getCollection('comics').insertMany([
             photo: 'avengers.jpg',
             name: 'Avengers',
         },
-        otherHeros:  [],
+        otherHeros:  [
+            {
+                _id: '6',
+                photo: 'ironman.jpg',
+                name: 'Iron Man',
+            },
+            {
+                _id: '15',
+                photo: 'thor.jpg',
+                name: 'Thor',
+            },
+            {
+                _id: '14',
+                photo: 'hulk.jpg',
+                name: 'Hulk',
+            },
+            {
+                _id: '16',
+                photo: 'Captain_America.png',
+                name: 'Captain America',
+            }
+        ],
         price: 7.50,
         wish: false,
         inBD: false
@@ -177,7 +231,33 @@ db.getCollection('comics').insertMany([
             photo: 'batman.jpg',
             name: 'Batman',
         },
-        otherHeros: [],
+        otherHeros: [
+            {
+                _id: '5',
+                photo: 'joker.jpg',
+                name: 'Joker',
+            },
+            {
+                _id: '9',
+                photo: 'catwoman.jpg',
+                name: 'Catwoman',
+            },
+            {
+                _id: '12',
+                photo: 'robin.jpg',
+                name: 'Robin',
+            },
+            {
+                _id: '18',
+                photo: 'superman.jpg',
+                name: 'Superman',
+            },
+            {
+                _id: '11',
+                photo: 'aquaman.jpg',
+                name: 'Aquaman',
+            }
+        ],
         price: 22.50,
         wish: false,
         inBD: false
@@ -191,7 +271,23 @@ db.getCollection('comics').insertMany([
             photo: 'batman.jpg',
             name: 'Batman',
         },
-        otherHeros: [],
+        otherHeros: [
+            {
+                _id: '5',
+                photo: 'joker.jpg',
+                name: 'Joker',
+            },
+            {
+                _id: '9',
+                photo: 'catwoman.jpg',
+                name: 'Catwoman',
+            },
+            {
+                _id: '12',
+                photo: 'robin.jpg',
+                name: 'Robin',
+            },
+        ],
         price: 22.50,
         wish: false,
         inBD: false
@@ -205,12 +301,28 @@ db.getCollection('comics').insertMany([
             photo: 'batman.jpg',
             name: 'Batman',
         },
-        otherHeros: [],
+        otherHeros: [
+            {
+                _id: '5',
+                photo: 'joker.jpg',
+                name: 'Joker',
+            },
+            {
+                _id: '9',
+                photo: 'catwoman.jpg',
+                name: 'Catwoman',
+            },
+            {
+                _id: '12',
+                photo: 'robin.jpg',
+                name: 'Robin',
+            },
+        ],
         price: 22.50,
         wish: false,
         inBD: false
-    }
-]);
+    },
 
+]);
 // display the final initial data
 db.getCollection('comics').find({});

@@ -48,11 +48,11 @@ db.getCollection('heros').insertMany([
             },
             {
                 _id: '19',
-                photo: 'deadsthroke.jpg',
-                name: 'Deadsthroke',
+                photo: 'deathstroke.jpg',
+                name: 'deathstroke',
             },
             {
-                _id: '19',
+                _id: '20',
                 photo: 'doubleface.jpg',
                 name: 'Double-Faces',
             },
@@ -116,8 +116,8 @@ db.getCollection('heros').insertMany([
             },
             {
                 _id: '19',
-                photo: 'deadsthroke.jpg',
-                name: 'Deadsthroke',
+                photo: 'deathstroke.jpg',
+                name: 'deathstroke',
             }
         ],
         isHumain: true
@@ -309,7 +309,7 @@ db.getCollection('heros').insertMany([
     },
     {
         _id: '17',
-        photo: '4Fan.jpg',
+        photo: '4fan.jpg',
         name: 'Les 4 Fantastique',
         pouvoir: 'none',
         ennemi: [],
@@ -338,8 +338,8 @@ db.getCollection('heros').insertMany([
     },
     {
         _id: '19',
-        photo: 'deadsthroke.jpg',
-        name: 'Deadsthroke',
+        photo: 'deathstroke.jpg',
+        name: 'Deathstroke',
         pouvoir: 'none',
         ennemi: [],
         allie: [],
@@ -384,7 +384,6 @@ db.getCollection('heros').insertMany([
         allie: [],
         isHumain: true
     }
-]);
-
+    ]);
 // display the final initial data
 db.getCollection('heros').find({});
