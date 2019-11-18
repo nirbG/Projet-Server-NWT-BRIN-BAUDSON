@@ -27,7 +27,10 @@ export class HerosService {
   }
 
   findSome(start: string, end: string): Observable<HerosEntity[] | void> {
-    return of(this._heros.slice(+start, +end));
+    //return of(this._heros.slice(+start, +end));
+    return this._herosDao.find().pipe(
+        map(_ => (!!_ && !!_.length) ? _.map(__ => new HerosEntity(__)) : undefined),
+    );
   }
 
   findOne(id: string): Observable<HerosEntity> {

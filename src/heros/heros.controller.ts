@@ -41,8 +41,8 @@ export class HerosController {
   @ApiImplicitParam({ name: 'start', description: 'Start of the collection', type: String })
   @ApiImplicitParam({ name: 'end', description: 'End of the collection', type: String })
   @Get(':start/:end')
-  findSome(@Param('start') start, @Param('end') end): Observable< HerosEntity[] | void> {
-    return this._herosService.findSome(start, end);
+  findSome(@Param() start: HandlerHeros, @Param() end: HandlerHeros): Observable< HerosEntity[] | void> {
+    return this._herosService.findSome(start.id, end.id);
   }
 
   /*

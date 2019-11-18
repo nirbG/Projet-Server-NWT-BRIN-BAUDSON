@@ -43,9 +43,9 @@ export class ComicsController {
   @ApiImplicitParam({ name: 'start', description: 'Start of the collection', type: String })
   @ApiImplicitParam({ name: 'end', description: 'End of the collection', type: String })
   @Get(':start/:end')
-  findSome(@Param('start') start: string,
-           @Param('end') end: string): Observable<ComicsEntity[] | void> {
-    return this._comicsService.findSome(start, end);
+  findSome(@Param() start: HandlerComics,
+           @Param() end: HandlerComics): Observable<ComicsEntity[] | void> {
+    return this._comicsService.findSome(start.isbn, end.isbn);
   }
 
   /*
