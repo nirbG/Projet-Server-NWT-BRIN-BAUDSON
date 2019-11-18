@@ -13,6 +13,7 @@ export class HerosService {
   private _heros: Hero[];
 
   constructor(private readonly _herosDao: HerosDao) {
+    this._heros = [];
   }
 
   findAll(): Observable<HerosEntity[] |void> {
@@ -40,19 +41,18 @@ export class HerosService {
   }
 
   create(body: CreateHeroDto): Observable<HerosEntity> {
-    //return from(this._heros).pipe(
     return this._addHeros(body).pipe(
-      //find( _ => _.id === body.id),
-      //flatMap( _ => !!_ ?
       flatMap(_ => this._herosDao.create(_)),
       catchError(e => e.code = 11000 ? throwError(
-        new ConflictException(`People with id '${body._id} already exists`),):
-        //: this._addComics(body),
+        //new ConflictException(`Hero with id '${body._id}' already exists`),):
+        new ConflictException(`Hero with id already exists`),):
         throwError(new UnprocessableEntityException(e.message)),
       ),
         map(_ => new HerosEntity(_)),
     );
   }
+
+
 
   update(id: string, body: UpdateHeroDto): Observable<HerosEntity> {
     return this._herosDao.findByIdAndUpdate(id, body).pipe(
@@ -76,9 +76,11 @@ export class HerosService {
   }
 
   private _addHeros(body: CreateHeroDto): Observable<HerosEntity> {
+    var mongoose = require('mongoose');
     return of(body).pipe(
       map( _ =>
         Object.assign(_, {
+          _id: mongoose.Types.ObjectId(),
           ennemi: [] as HeroSimple[],
           allie: [] as HeroSimple[],
         }) as Hero,
@@ -87,7 +89,7 @@ export class HerosService {
     );
   }
   /**
-   * return l'index du comics
+   * return l'index du heros
    * @param id
    * @private
    */
@@ -97,7 +99,7 @@ export class HerosService {
         findIndex(_ => _.id === id),
         flatMap(_ => _ > -1 ?
           of(_) :
-          throwError(new NotFoundException(`People with id '${id}' not found`)),
+          throwError(new NotFoundException(`Hero with id '${id}' not found`)),
         ),
       );
   }

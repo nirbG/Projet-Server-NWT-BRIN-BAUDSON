@@ -1,6 +1,5 @@
 import {ConflictException, Injectable, NotFoundException, UnprocessableEntityException} from '@nestjs/common';
 import { Comics } from './interfaces/comics.interface';
-import { COMICS } from '../data/comics';
 import { from, Observable, of, throwError } from 'rxjs';
 import {catchError, find, findIndex, flatMap, map, tap} from 'rxjs/operators';
 import { CreateComicsDto } from './dto/create-comics.dto';
@@ -17,7 +16,7 @@ export class ComicsService {
    * Class constructor
    */
   constructor(private readonly _comicsDao: ComicsDao) {
-    this._comics = [].concat(COMICS);
+    this._comics = [];
   }
   /**
    * Returns all comics

@@ -26,8 +26,8 @@ export class HerosDao {
         );
     }
 
-    create(person: CreateHeroDto): Observable<Hero> {
-        return from(this._heroModel.create(person)).pipe(
+    create(heros: CreateHeroDto): Observable<Hero> {
+        return from(this._heroModel.create(heros)).pipe(
             map((doc: MongooseDocument) => doc.toJSON()),
         );
     }

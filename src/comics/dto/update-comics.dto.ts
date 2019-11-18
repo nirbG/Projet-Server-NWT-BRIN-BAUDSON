@@ -7,11 +7,11 @@ import {HeroSimpleDto} from "../../heros/dto/hero-simple.dto";
 
 export class UpdateComicsDto {
 
-  @ApiModelProperty({ description: 'ISBN number', example: '85'})
+  /*@ApiModelProperty({ description: 'ISBN number', example: '85'})
   @IsOptional()
   @IsString()
   @IsNotEmpty()
-  _id?: string;
+  _id?: string;*/
 
   @ApiModelProperty({ description: 'Photo', example: '1082365773.jpg'})
   @IsOptional()
