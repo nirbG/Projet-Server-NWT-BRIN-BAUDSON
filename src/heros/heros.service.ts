@@ -1,22 +1,18 @@
 import {ConflictException, Injectable, NotFoundException, UnprocessableEntityException} from '@nestjs/common';
 import { Hero } from './interfaces/heros.interfaces';
-import { HEROS } from '../data/heros';
 import { from, Observable, of, throwError } from 'rxjs';
 import {catchError, filter, find, findIndex, flatMap, map, tap} from 'rxjs/operators';
-import retryTimes = jest.retryTimes;
 import { CreateHeroDto } from './dto/create-hero.dto';
 import { UpdateHeroDto } from './dto/update-hero.dto';
 import {HeroSimple} from "./interfaces/heroSimple.interfaces";
 import {HerosEntity} from "./entities/heros.entity";
 import {HerosDao} from "./dao/heros.dao";
-import {ComicsEntity} from "../comics/entities/comics.entity";
 
 @Injectable()
 export class HerosService {
   private _heros: Hero[];
 
   constructor(private readonly _herosDao: HerosDao) {
-    this._heros = [].concat(HEROS);
   }
 
   findAll(): Observable<HerosEntity[] |void> {
@@ -50,7 +46,7 @@ export class HerosService {
       //flatMap( _ => !!_ ?
       flatMap(_ => this._herosDao.create(_)),
       catchError(e => e.code = 11000 ? throwError(
-        new ConflictException(`People with id '${body._id}' already exists`),):
+        new ConflictException(`People with id '${body._id} already exists`),):
         //: this._addComics(body),
         throwError(new UnprocessableEntityException(e.message)),
       ),

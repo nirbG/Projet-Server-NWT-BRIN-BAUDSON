@@ -10,6 +10,7 @@ import {IsInstance, IsNotEmpty, IsString} from "class-validator";
 export class ComicsEntity{
 
     @ApiModelProperty({ description: 'ISBN number', example: '85'})
+    @Expose()
     @IsString()
     @IsNotEmpty()
     _id?: string;
