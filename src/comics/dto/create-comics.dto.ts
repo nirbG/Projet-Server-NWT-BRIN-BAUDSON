@@ -1,4 +1,4 @@
-import {IsNotEmpty, IsNumber, IsString} from "class-validator";
+import {IsNotEmpty, IsNumber, IsOptional, IsString} from "class-validator";
 import {ApiModelProperty} from "@nestjs/swagger";
 
 export class CreateComicsDto {
@@ -7,6 +7,11 @@ export class CreateComicsDto {
   @IsString()
   @IsNotEmpty()
   _id?: string;
+
+  @ApiModelProperty({ description: 'Photo', example: 'default.jpg'})
+  @IsString()
+  @IsNotEmpty()
+  photo?: string;
 
   @ApiModelProperty({ description: 'Title', example: 'Batman: Of Bats and Rats'})
   @IsString()
