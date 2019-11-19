@@ -45,7 +45,7 @@ export const HerosSchema = new mongoose.Schema({
         }
     }],
     isHumain: {
-        type: String,
+        type: Boolean,
         required: true
     }
 }, {
