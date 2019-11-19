@@ -120,8 +120,10 @@ export class ComicsService {
     return of(body).pipe(
       map( _ =>
         Object.assign(_, {
-          photo: _._id + '.jpg',
-          mainHeros: {} as HeroSimple,
+          //photo: _._id + '.jpg',
+          mainHeros: {_id: 'none',
+          name: 'none',
+          photo: 'none.jpg'} as HeroSimple,
           otherHeros: [] as HeroSimple[],
           wish: false,
           inBD: false,
