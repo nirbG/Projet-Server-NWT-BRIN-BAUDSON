@@ -30,6 +30,18 @@ export class HerosDao {
     }
 
     /**
+     * Return some Heros or undefined
+     *
+     * @returns Observable<Heros[] | void>
+     */
+    findSome(start: number, nb: number): Observable<Hero[] | void> {
+
+        return from(this._heroModel.find({}).skip(parseInt(start.toString())).limit(parseInt(nb.toString()))).pipe(
+            map((docs: MongooseDocument[]) => (!!docs && docs.length > 0) ? docs.map(_ => _.toJSON()) : undefined),
+        );
+    }
+
+    /**
      * Return one Hero found by id or undefined
      *
      * @param id: string

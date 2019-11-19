@@ -34,13 +34,13 @@ export class HerosService {
   /**
    * returns some heros
    *
-   * @param s index de debut
-   * @param e index de fin
+   * @param start index de debut
+   * @param nb number of heros returned
    * @returns Observable<HerosEntity[] | void>
    */
-  findSome(start: string, end: string): Observable<HerosEntity[] | void> {
+  findSome(start: number, nb: number): Observable<HerosEntity[] | void> {
     //return of(this._heros.slice(+start, +end));
-    return this._herosDao.find().pipe(
+    return this._herosDao.findSome(start, nb).pipe(
         map(_ => (!!_ && !!_.length) ? _.map(__ => new HerosEntity(__)) : undefined),
     );
   }

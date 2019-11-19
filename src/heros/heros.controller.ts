@@ -42,18 +42,18 @@ export class HerosController {
    * findSome
    *
    * @param start
-   * @param end
+   * @param nb
    * @returns Observable<HerossEntity[] | void>
    */
   @ApiOkResponse({ description: 'Returns some heros', type: HerosEntity })
   @ApiNoContentResponse({ description: 'No heros exists in database' })
   @ApiBadRequestResponse({ description: 'Parameters provided are not good' })
   @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
-  @ApiImplicitParam({ name: 'start', description: 'Start of the collection', type: String })
-  @ApiImplicitParam({ name: 'end', description: 'End of the collection', type: String })
-  @Get(':start/:end')
-  findSome(@Param() start: HandlerHeros, @Param() end: HandlerHeros): Observable< HerosEntity[] | void> {
-    return this._herosService.findSome(start._id, end._id);
+  @ApiImplicitParam({ name: 'start', description: 'Start of the collection', type: Number })
+  @ApiImplicitParam({ name: 'nb', description: 'Number of hero in the collection', type: Number })
+  @Get('/:start/:nb')
+  findSome(@Param('start') start: number, @Param('nb') nb: number): Observable< HerosEntity[] | void> {
+    return this._herosService.findSome(parseInt(start.toString()), parseInt(nb.toString()));
   }
 
   /**

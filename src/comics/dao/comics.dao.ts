@@ -30,6 +30,17 @@ export class ComicsDao {
     }
 
     /**
+     * Return some Comics or undefined
+     *
+     * @returns Observable<Comics[] | void>
+     */
+    findSome(start: number, nb: number): Observable<Comics[] | void> {
+        return from(this._comicsModel.find({}).skip(start).limit(nb)).pipe(
+            map((docs: MongooseDocument[]) => (!!docs && docs.length > 0) ? docs.map(_ => _.toJSON()) : undefined),
+        );
+    }
+
+    /**
      * Return one Comics found by id or undefined
      *
      * @param id: string

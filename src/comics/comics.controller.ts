@@ -1,4 +1,15 @@
-import {  Body,  ClassSerializerInterceptor,  Controller,  Delete,  Get,  Param,  Post,  Put,  UseInterceptors} from '@nestjs/common';
+import {
+  Body,
+  ClassSerializerInterceptor,
+  Controller,
+  Delete,
+  Get,
+  Logger,
+  Param,
+  Post,
+  Put,
+  UseInterceptors
+} from '@nestjs/common';
 import { Observable, of } from 'rxjs';
 import { ComicsService } from './comics.service';
 import { CreateComicsDto } from './dto/create-comics.dto';
@@ -18,6 +29,7 @@ import {HandlerComics} from "./validators/handler-comics";
 @Controller('comics')
 @UseInterceptors(ClassSerializerInterceptor)
 export class ComicsController {
+  private readonly logger = new Logger(ComicsController.name);
 
   /**
    * Class constructor
@@ -43,19 +55,18 @@ export class ComicsController {
    * findSome
    *
    * @param start
-   * @param end
+   * @param nb
    * @returns Observable<ComicsEntity[] | void>
    */
   @ApiOkResponse({ description: 'Returns some comics', type: ComicsEntity, isArray: true })
   @ApiNoContentResponse({ description: 'No comics exists in database' })
   @ApiBadRequestResponse({ description: 'Parameters provided are not good' })
   @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
-  @ApiImplicitParam({ name: 'start', description: 'Start of the collection', type: String })
-  @ApiImplicitParam({ name: 'end', description: 'End of the collection', type: String })
-  @Get(':start/:end')
-  findSome(@Param() start: HandlerComics,
-           @Param() end: HandlerComics): Observable<ComicsEntity[] | void> {
-    return this._comicsService.findSome(start._id, end._id);
+  @ApiImplicitParam({ name: 'start', description: 'Start of the collection', type: Number })
+  @ApiImplicitParam({ name: 'nb', description: 'Number of comics the collection', type: Number })
+  @Get('/:start/:nb')
+  findSome(@Param('start') start: number, @Param('nb') nb: number): Observable<ComicsEntity[] | void> {
+    return this._comicsService.findSome(parseInt(start.toString()), parseInt(nb.toString()));
   }
 
   /**

@@ -37,9 +37,10 @@ export class ComicsService {
    * @param e index de fin
    * @returns Observable<ComicsEntity[] | void>
    */
-  findSome(s: string, e: string): Observable<ComicsEntity[] | void> {
-    //return of(this._comics.slice(+s, +e));
-    return this._comicsDao.find().pipe(
+  //findSome(s: string, e: string): Observable<ComicsEntity[] | void> {
+  //return of(this._comics.slice());
+  findSome(start: number, nb: number): Observable<ComicsEntity[] | void> {
+    return this._comicsDao.findSome(start, nb).pipe(
         map(_ => (!!_ && !!_.length) ? _.map(__ => new ComicsEntity(__)) : undefined),
     );
   }
