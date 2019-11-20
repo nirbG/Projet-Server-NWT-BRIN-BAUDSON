@@ -21,7 +21,9 @@ Then create the heros index by running the script contained in scripts/indexHero
 
 ## Running the app
 
-$ nest start
+```bash
+nest start
+```
 
 ## Documentation 
 
