@@ -13,10 +13,9 @@ const class_validator_1 = require("class-validator");
 class HandlerHeros {
 }
 __decorate([
-    class_validator_1.IsMongoId(),
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)
-], HandlerHeros.prototype, "id", void 0);
+], HandlerHeros.prototype, "_id", void 0);
 exports.HandlerHeros = HandlerHeros;
 //# sourceMappingURL=handler-heros.js.map

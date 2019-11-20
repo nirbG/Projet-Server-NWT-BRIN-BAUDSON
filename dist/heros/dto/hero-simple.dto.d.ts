@@ -1,5 +1,5 @@
 export declare class HeroSimpleDto {
-    id: string;
+    _id: string;
     photo?: string;
     name: string;
 }

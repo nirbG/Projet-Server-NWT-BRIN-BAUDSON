@@ -23,9 +23,9 @@ __decorate([
     class_transformer_1.Expose(),
     class_transformer_1.Type(() => String),
     __metadata("design:type", String)
-], HerosEntity.prototype, "id", void 0);
+], HerosEntity.prototype, "_id", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'Photo', example: 'superboy.jpg' }),
+    swagger_1.ApiModelProperty({ description: 'Photo', example: 'default.jpg' }),
     class_transformer_1.Expose(),
     class_transformer_1.Type(() => String),
     __metadata("design:type", String)
@@ -44,9 +44,9 @@ __decorate([
 ], HerosEntity.prototype, "pouvoir", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: "Hero's ennemies", example: [{
-                "id": "5",
-                "photo": "joker.jpg",
-                "name": "Joker"
+                _id: "5",
+                photo: "joker.jpg",
+                name: "Joker"
             }] }),
     class_transformer_1.Expose(),
     class_validator_1.IsInstance(hero_simple_dto_1.HeroSimpleDto, { each: true }),
@@ -55,7 +55,7 @@ __decorate([
 ], HerosEntity.prototype, "ennemi", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: "Hero's allies", example: [{
-                id: '3',
+                _id: '3',
                 photo: 'batman.jpg',
                 name: 'Batman',
             }] }),

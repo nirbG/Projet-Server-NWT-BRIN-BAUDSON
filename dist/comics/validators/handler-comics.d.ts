@@ -1,3 +1,3 @@
 export declare class HandlerComics {
-    isbn: string;
+    _id: string;
 }

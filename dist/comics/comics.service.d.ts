@@ -8,11 +8,11 @@ export declare class ComicsService {
     private _comics;
     constructor(_comicsDao: ComicsDao);
     findAll(): Observable<ComicsEntity[] | void>;
-    findSome(s: string, e: string): Observable<ComicsEntity[] | void>;
-    findOne(isbn: string): Observable<ComicsEntity>;
+    findSome(start: number, nb: number): Observable<ComicsEntity[] | void>;
+    findOne(_id: string): Observable<ComicsEntity>;
     create(body: CreateComicsDto): Observable<ComicsEntity>;
-    update(isbn: string, body: UpdateComicsDto): Observable<ComicsEntity>;
-    delete(isbn: string): Observable<void>;
+    update(_id: string, body: UpdateComicsDto): Observable<ComicsEntity>;
+    delete(_id: string): Observable<void>;
     private _addComics;
     private _findComicsIndexOfList;
 }

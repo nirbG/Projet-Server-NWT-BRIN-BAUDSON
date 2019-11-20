@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose = require("mongoose");
 exports.ComicsSchema = new mongoose.Schema({
-    isbn: {
+    _id: {
         type: String,
         required: true
     },
@@ -15,32 +15,26 @@ exports.ComicsSchema = new mongoose.Schema({
         required: true
     },
     mainHeros: {
-        id: {
+        _id: {
             type: String,
-            required: true
         },
         photo: {
             type: String,
-            required: true
         },
         name: {
             type: String,
-            required: true
-        }
+        },
     },
     otherHeros: [{
-            id: {
+            _id: {
                 type: String,
-                required: true
             },
             photo: {
                 type: String,
-                required: true
             },
             name: {
                 type: String,
-                required: true
-            }
+            },
         }],
     price: {
         type: Number,

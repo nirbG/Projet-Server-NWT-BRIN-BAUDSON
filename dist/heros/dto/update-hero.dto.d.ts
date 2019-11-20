@@ -1,6 +1,6 @@
 import { HeroSimpleDto } from "./hero-simple.dto";
 export declare class UpdateHeroDto {
-    id?: string;
+    _id?: string;
     photo?: string;
     name?: string;
     pouvoir: string;

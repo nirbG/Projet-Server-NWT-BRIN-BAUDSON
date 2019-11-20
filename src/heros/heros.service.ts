@@ -1,7 +1,7 @@
 import {ConflictException, Injectable, NotFoundException, UnprocessableEntityException} from '@nestjs/common';
 import { Hero } from './interfaces/heros.interfaces';
 import { from, Observable, of, throwError } from 'rxjs';
-import {catchError, filter, find, findIndex, flatMap, map, tap} from 'rxjs/operators';
+import {catchError, findIndex, flatMap, map, tap} from 'rxjs/operators';
 import { CreateHeroDto } from './dto/create-hero.dto';
 import { UpdateHeroDto } from './dto/update-hero.dto';
 import {HeroSimple} from "./interfaces/heroSimple.interfaces";
@@ -27,26 +27,24 @@ export class HerosService {
   findAll(): Observable<HerosEntity[] |void> {
     return this._herosDao.find().pipe(
       map(_ => (!!_ && !!_.length) ? _.map(__ => new HerosEntity(__)) : undefined),
-      //map(_ => !!_ ? _.map(__ => new HerosEntity(__)) : undefined),
     );
   }
 
   /**
-   * returns some heros
+   * Returns some heros
    *
    * @param start index de debut
    * @param nb number of heros returned
    * @returns Observable<HerosEntity[] | void>
    */
   findSome(start: number, nb: number): Observable<HerosEntity[] | void> {
-    //return of(this._heros.slice(+start, +end));
     return this._herosDao.findSome(start, nb).pipe(
         map(_ => (!!_ && !!_.length) ? _.map(__ => new HerosEntity(__)) : undefined),
     );
   }
 
   /**
-   * returns one hero
+   * Returns one hero
    *
    * @param id: string
    * @returns Observable<HerosEntity>
@@ -62,7 +60,7 @@ export class HerosService {
   }
 
   /**
-   * return the hero created
+   * Returns the created hero
    *
    * @param body: CreateHeroDto
    * @returns Observable<HerosEntity>
@@ -71,8 +69,7 @@ export class HerosService {
     return this._addHeros(body).pipe(
       flatMap(_ => this._herosDao.create(_)),
       catchError(e => e.code = 11000 ? throwError(
-        //new ConflictException(`Hero with id '${body._id}' already exists`),):
-        new ConflictException(`Hero with id already exists`),):
+        new ConflictException(`Hero with name '${body.name}' already exists`),):
         throwError(new UnprocessableEntityException(e.message)),
       ),
         map(_ => new HerosEntity(_)),
@@ -80,7 +77,7 @@ export class HerosService {
   }
 
   /**
-   * Retourne le hero modifie
+   * Returns the updated hero
    *
    * @param id: string
    * @param body: UpdateHeroDto
@@ -99,7 +96,7 @@ export class HerosService {
   }
 
   /**
-   * Supprimer le hero
+   * Delete the hero
    *
    * @param _id: string
    * @returns Observable<void>
@@ -117,7 +114,7 @@ export class HerosService {
   /************************************************ PRIVATE METHODS ******************/
 
   /**
-   * ajoute le hero
+   * Add the hero
    *
    * @param body: CreateHeroDto
    * @private
@@ -138,7 +135,7 @@ export class HerosService {
   }
 
   /**
-   * return l'index du heros
+   * return the hero's index
    * @param id
    * @private
    */

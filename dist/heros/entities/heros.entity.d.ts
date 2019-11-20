@@ -1,6 +1,6 @@
 import { HeroSimpleDto } from "../dto/hero-simple.dto";
 export declare class HerosEntity {
-    id: string;
+    _id: string;
     photo?: string;
     name: string;
     pouvoir: string;

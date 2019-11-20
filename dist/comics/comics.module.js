@@ -18,7 +18,7 @@ ComicsModule = __decorate([
     common_1.Module({
         imports: [mongoose_1.MongooseModule.forFeature([{ name: 'Comics', schema: comics_schema_1.ComicsSchema }])],
         controllers: [comics_controller_1.ComicsController],
-        providers: [comics_service_1.ComicsService, comics_dao_1.ComicsDao],
+        providers: [comics_service_1.ComicsService, common_1.Logger, comics_dao_1.ComicsDao],
     })
 ], ComicsModule);
 exports.ComicsModule = ComicsModule;

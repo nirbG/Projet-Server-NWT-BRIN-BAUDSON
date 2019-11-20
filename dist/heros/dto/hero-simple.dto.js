@@ -18,9 +18,9 @@ __decorate([
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)
-], HeroSimpleDto.prototype, "id", void 0);
+], HeroSimpleDto.prototype, "_id", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'Photo', example: 'superboy.jpg' }),
+    swagger_1.ApiModelProperty({ description: 'Photo', example: 'default.jpg' }),
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)

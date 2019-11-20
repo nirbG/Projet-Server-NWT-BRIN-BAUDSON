@@ -16,17 +16,17 @@ async function bootstrap(config: AppConfig) {
 
 
   const options = new DocumentBuilder()
-      .setTitle('titre temporaire')
-      .setDescription('description temporaire')
+      .setTitle('Bibliothèque de comics')
+      .setDescription('La meilleur bibliothèque de comics disponible à Vandoeuvre')
       .setVersion('1.0')
-      .addTag('tag temporaire')
+      .addTag('Comics et Heros')
       .build();
   // create swagger document
   const document = SwaggerModule.createDocument(app, options, {
     include: [ ComicsModule, HerosModule ],
   });
   // setup swagger module
-  SwaggerModule.setup('temp', app, document);
+  SwaggerModule.setup('documentation', app, document);
 
 
   //Auto-Validation

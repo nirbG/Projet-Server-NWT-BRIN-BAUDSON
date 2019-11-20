@@ -33,12 +33,10 @@ export class ComicsService {
   /**
    * returns some comics
    *
-   * @param s index de debut
-   * @param e index de fin
+   * @param start starting index
+   * @param nb number of comics returned
    * @returns Observable<ComicsEntity[] | void>
    */
-  //findSome(s: string, e: string): Observable<ComicsEntity[] | void> {
-  //return of(this._comics.slice());
   findSome(start: number, nb: number): Observable<ComicsEntity[] | void> {
     return this._comicsDao.findSome(start, nb).pipe(
         map(_ => (!!_ && !!_.length) ? _.map(__ => new ComicsEntity(__)) : undefined),
@@ -46,7 +44,7 @@ export class ComicsService {
   }
 
   /**
-   * return one comics
+   * Returns one comics
    *
    * @param _id: string
    * @returns Observable<ComicsEntity>
@@ -62,7 +60,7 @@ export class ComicsService {
   }
 
   /**
-   * Retourne the comics created
+   * Returns the comics created
    *
    * @param body: CreateComicsDto
    * @returns Observable<ComicsEntity>
@@ -79,7 +77,7 @@ export class ComicsService {
   }
 
   /**
-   * Retourne le comics modifie
+   * Returns the updated comics
    *
    * @param _id: string
    * @param body: UpdateComicsDto
@@ -94,7 +92,7 @@ export class ComicsService {
   }
 
   /**
-   * Supprimer le comics
+   * Delete the comics
    *
    * @param _id: string
    * @returns Observable<void>
@@ -111,7 +109,7 @@ export class ComicsService {
   /************************************************ PRIVATE METHODS ******************/
 
   /**
-   * ajoute le comics
+   * Add the comics to the list
    *
    * @param body: CreateComicsDto
    * @private
@@ -121,7 +119,6 @@ export class ComicsService {
     return of(body).pipe(
       map( _ =>
         Object.assign(_, {
-          //photo: _._id + '.jpg',
           mainHeros: {_id: 'none',
           name: 'none',
           photo: 'none.jpg'} as HeroSimple,
@@ -135,7 +132,8 @@ export class ComicsService {
   }
 
   /**
-   * return l'index du comics
+   * returns the comics'index
+   *
    * @param _id
    * @private
    */

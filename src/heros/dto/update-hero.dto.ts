@@ -1,5 +1,4 @@
 
-import {HeroSimple} from "../interfaces/heroSimple.interfaces";
 import {IsBoolean, IsInstance, IsNotEmpty, IsOptional, IsString, ValidateNested} from "class-validator";
 import {Type} from "class-transformer";
 import {ApiModelProperty} from "@nestjs/swagger";

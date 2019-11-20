@@ -19,13 +19,14 @@ let ComicsEntity = class ComicsEntity {
     }
 };
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'ISBN number', example: '1082365773' }),
+    swagger_1.ApiModelProperty({ description: 'ISBN number', example: '2365773545' }),
     class_transformer_1.Expose(),
-    class_transformer_1.Type(() => String),
+    class_validator_1.IsString(),
+    class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)
-], ComicsEntity.prototype, "isbn", void 0);
+], ComicsEntity.prototype, "_id", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'Photo', example: '1082365773.jpg' }),
+    swagger_1.ApiModelProperty({ description: 'Photo', example: 'default.jpg' }),
     class_transformer_1.Expose(),
     class_transformer_1.Type(() => String),
     __metadata("design:type", String)

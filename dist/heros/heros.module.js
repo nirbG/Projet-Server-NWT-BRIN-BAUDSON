@@ -18,7 +18,7 @@ HerosModule = __decorate([
     common_1.Module({
         imports: [mongoose_1.MongooseModule.forFeature([{ name: 'Heros', schema: heros_schema_1.HerosSchema }])],
         controllers: [heros_controller_1.HerosController],
-        providers: [heros_service_1.HerosService, heros_dao_1.HerosDao],
+        providers: [heros_service_1.HerosService, common_1.Logger, heros_dao_1.HerosDao],
     })
 ], HerosModule);
 exports.HerosModule = HerosModule;

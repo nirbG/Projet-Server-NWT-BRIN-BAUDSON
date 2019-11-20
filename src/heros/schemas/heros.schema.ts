@@ -19,29 +19,23 @@ export const HerosSchema = new mongoose.Schema({
     ennemi: [{
         _id: {
             type: String,
-            //required: true
         },
         photo: {
             type: String,
-            //required: true
         },
         name: {
             type: String,
-            //required: true
         }
     }],
     allie: [{
         _id: {
             type: String,
-            //required: true
         },
         photo: {
             type: String,
-            //required: true
         },
         name: {
             type: String,
-            //required: true
         }
     }],
     isHumain: {

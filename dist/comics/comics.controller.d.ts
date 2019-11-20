@@ -8,8 +8,8 @@ export declare class ComicsController {
     private readonly _comicsService;
     constructor(_comicsService: ComicsService);
     findAll(): Observable<ComicsEntity[] | void>;
-    findSome(start: string, end: string): Observable<ComicsEntity[] | void>;
-    findByIsbn(params: HandlerComics): Observable<ComicsEntity | void>;
+    findSome(start: number, nb: number): Observable<ComicsEntity[] | void>;
+    findById(params: HandlerComics): Observable<ComicsEntity | void>;
     create(createComicsDto: CreateComicsDto): Observable<ComicsEntity>;
     update(params: HandlerComics, updateComicsDto: UpdateComicsDto): Observable<ComicsEntity>;
     delete(params: HandlerComics): Observable<void>;

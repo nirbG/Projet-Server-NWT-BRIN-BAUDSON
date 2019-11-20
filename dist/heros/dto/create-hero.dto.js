@@ -14,13 +14,7 @@ const swagger_1 = require("@nestjs/swagger");
 class CreateHeroDto {
 }
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'ID', example: '85' }),
-    class_validator_1.IsString(),
-    class_validator_1.IsNotEmpty(),
-    __metadata("design:type", String)
-], CreateHeroDto.prototype, "id", void 0);
-__decorate([
-    swagger_1.ApiModelProperty({ description: 'Photo', example: 'superboy.jpg' }),
+    swagger_1.ApiModelProperty({ description: 'Photo', example: 'default.jpg' }),
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)

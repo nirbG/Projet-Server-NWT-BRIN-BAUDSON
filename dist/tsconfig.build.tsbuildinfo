@@ -1130,16 +1130,12 @@
         "signature": "17f6a65bfa8efa1d7ff8b7a9db60cc1e7ee65b3f99bccab1b5840f45ddfc6720"
       },
       "../src/heros/interfaces/heroSimple.interfaces.ts": {
-        "version": "6da80a640cee776f30110b321a596e767d70ac4ea2bf4950d424969676aed26d",
-        "signature": "d5b0590a78dc2be486de91fd90022d6f41ef6eb6aa910e536a302d18b1d2c55c"
+        "version": "ff3adaf0c1f1d3fbaccc9efe2d44fb9704429e1dbbe46861575ba66f3bb0020f",
+        "signature": "641d4a8df0249bbd99447f9cb03eee1cabc786c96e5ba7625ac42d79d7de2afd"
       },
       "../src/comics/interfaces/comics.interface.ts": {
-        "version": "dbc00f53bc4fc688c032a87792102c17d9c6fc3a567a8a51c12d692397c3d9d0",
-        "signature": "5de592b331a4c56486fd4d43938ad731dcab3c4e170a5fb672d0a05bbed52b30"
-      },
-      "../src/data/comics.ts": {
-        "version": "9a221d8f69f1623b2f90d9e897ae886004274eab715f997e9920c0334a81e889",
-        "signature": "85a9688857881fcaad363c2c9a03dbd8c3457aabc5150513dc04c02307216274"
+        "version": "e2225cdeba768b0ea11596fdd02fd50a70f1b4e57990a151111df566299dbbb9",
+        "signature": "0aede096bdeb6dcdbcef2e05d284e2b930adf42919a7fa6e8c1ab0e2bdcd1612"
       },
       "../node_modules/rxjs/internal/operators/audit.d.ts": {
         "version": "fe936a68d281ccc2060f8c3de69a0682a807c8fd1b8abccc0a91b83195ca0f94",
@@ -1730,8 +1726,8 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "../src/comics/dto/create-comics.dto.ts": {
-        "version": "34bf242b3d157586c8880127eb3116726fd428dda4ebc8ad5e736202120d410c",
-        "signature": "cc78591ce9c013e10453b8bdf0d1f1c7f5a9a54581e6e0a3e9487f6681ff0d02"
+        "version": "9413d031ce8f2ec04d6f166afd5606b28f0a0d6bdd3a7ae692f7ad172374fb31",
+        "signature": "92700651449c917fa108c928bbb2047212fba0d2aa6218d703234c0f4d61ff18"
       },
       "../node_modules/class-transformer/ClassTransformOptions.d.ts": {
         "version": "d89af0c250e1424959162beae79f2c2745c729d6ab8028503d322395d96d3a2b",
@@ -1762,16 +1758,16 @@
         "signature": "097d4bf3331df1e138ffdcf92e1117f6841bc8337170d927fd955d5ee8a1674b"
       },
       "../src/heros/dto/hero-simple.dto.ts": {
-        "version": "ae626452acae23e509d83b993fd568541e89721492561ff40bc327040a19b06f",
-        "signature": "d8a96fcf456d3aef26c87972eed8bf67812d9f128be2c3d8d04c53d047cb24f9"
+        "version": "67994a6ba3ad2321bb27897a4652a4f9bb07906d9c1ea1e78d4a3c4855d74593",
+        "signature": "931805117bdf264cd50d83ba410e1a0cc5df9665e757cb89301276055a11a927"
       },
       "../src/comics/dto/update-comics.dto.ts": {
-        "version": "2f5b4e4a9657823ea18b143f8c63f32e80c1a04a4ef456034e900ca6ba4e3999",
-        "signature": "c168ebe4b80cfe84785ed7a86dc189fee6b7c0a3879a3dd52705d49ff0fa03b6"
+        "version": "808f630956d581a775af1c46926d660d6a0d89a60bbef6b426a1f73d6fbc22da",
+        "signature": "c72cccd3455af208db7478a37d8126a6ccf8869d644a3086dddf00d19a575ded"
       },
       "../src/comics/entities/comics.entity.ts": {
-        "version": "303f1bfae6e3992645e6a4b4372b0f91726397890b7d8c22574fafe1a799aa13",
-        "signature": "a6ded39cbcd697b44c2e0bd9c00f93bb05b49a6551334e2baa238cf16ffdcff3"
+        "version": "f6620e033a4fcb80bc386956def73187b7fe730e12e827cd5595eb137ad7c020",
+        "signature": "cb14e5b181f5d88c8ae33cc9f0dfb3bc42d82f955022b7a99032fa75e343c72c"
       },
       "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": {
         "version": "120fe6ff3f553b3d2a0e065b6fea421698be40a802273652871273338085873c",
@@ -1806,71 +1802,67 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "../src/comics/dao/comics.dao.ts": {
-        "version": "240c69ddc4b03935043d1e165acdf2abe3f79b63de43bde6580fabb070ab6b49",
-        "signature": "c31403e9b5e887b84d4e387647617178fb1369c8d69348ee678e6a379be769f9"
+        "version": "352beb626fb5a9d4e09148d57d6785c2d259b7185fdcf5d8234d7cfc99a1f761",
+        "signature": "10ce7f9faa78b609e43791f13a60c48980b8d262bccf0acb1f5e7c7566ba68c4"
       },
       "../src/comics/comics.service.ts": {
-        "version": "776519bbebda20edb3fa4e4a7a8a57adf0c65a3bcd27ed63802fffbbfb226851",
-        "signature": "7ff4a9548417c2c72d8eb8c97046fe3a6b897423575e8939b867d65cd85f2eb5"
+        "version": "643739f0abd2a3ce47da3b7c067affbfc9479cc7f519d921843a0aaaacff1475",
+        "signature": "dc6e3689f740f367a9f8866b17e2941636b225b7ecc97095d26f2f0038f988b7"
       },
       "../src/comics/validators/handler-comics.ts": {
-        "version": "4e449ec5d2d3fca7265b1f8ccf52a8fe9becd1cd29a27cf8dace17428129d127",
-        "signature": "f8307bb111d58173c0bb36cbfec238d6cda4cc732c7adcee358e42538254231d"
+        "version": "7920e8ca0061aafab5ab79b4867db763e8087e521e551c7968fc2d14b9b2d27e",
+        "signature": "aa7a72edf6f6edf9f5c1b7cd3aa058a5f35ddff2f8f4b1597b084c92c67947da"
       },
       "../src/comics/comics.controller.ts": {
-        "version": "b305d0ef28cfe669933bad7c3578f253680e3f1db93cd9c632fe443d527d5e98",
-        "signature": "673493c67952857b643d76123bc9ab38390de31f337070880179d91b4fe9aa73"
+        "version": "829d2fb57e2e4a566788f817e67a2bce6d4a86f1ed77839ef0bd7bb5d57335db",
+        "signature": "c156140766b4aef14aa93d148225567e645e19bc41e929c57f86545ae8e1a8bf"
       },
       "../src/comics/schemas/comics.schema.ts": {
-        "version": "c4c6825776ea001189c0d00801d9a25e54235000b38a23b9e64750c48d8af16b",
+        "version": "eb1659b6139c042834ffb7e5542ddce0d983094d01552ab834249f9a5bc54244",
         "signature": "62883cd56de7cc65964915732ba55557c6e681fd5a1f2348788d7ceb4b49b94a"
       },
       "../src/comics/comics.module.ts": {
-        "version": "810bad1b857fea4c424d6b475d2aeef97fc5737f355bd3ef4f49b62d7ace8915",
+        "version": "82c8b02460b05c2e3d39febdd85d102608ea890aa79db228ad9065dcad8bd0cc",
         "signature": "d155714d55a7ba0001523be48af758195e05c9fda9d0247244ebf4614e16a7f9"
       },
       "../src/heros/interfaces/heros.interfaces.ts": {
-        "version": "68e8e787262b55b2e893cf00d893240eb5c3bb63969accf505e3f61e38fa223a",
-        "signature": "d543632bdccb85be0058799be84ab5e50db2d6a741d2887e5276765e795a1a6b"
-      },
-      "../src/data/heros.ts": {
-        "version": "9b75b8f4a77004886958bf8f6f842ce518407a28dddb9b6a413d01d74fa5b8a1",
-        "signature": "214b90ff87fb211d8f557d59b2c8291744046451513a9316942336f7054f2f1d"
+        "version": "10045dc6a0b1ba946c40ec3e2013e3ec3d726adc6428239d37d8433744c974ba",
+        "signature": "401bb49b59276038477e05d7278e1022b082d8e4c06d39d24dcbbd0f0d9ce8cf"
       },
       "../src/heros/dto/create-hero.dto.ts": {
-        "version": "adf6c3c5e2f6f744427da9b1b1a52391398346422483a0bd9d38ab9be7e82497",
-        "signature": "fc581f1a881462c2a58e5a9561950901359afc167ec8b26e6c49ef58be9b253f"
+        "version": "be750b15c092d3f01bbb276bbc600f3c5085ba313935879ec6c8be5f923c3be5",
+        "signature": "96616b0e40a5b2c5c7bf6c8254fc5ca549fec572d46b4baf120235543ed9f3e9"
       },
       "../src/heros/dto/update-hero.dto.ts": {
-        "version": "1b788d964da79b66aa45fa5be979d4396990566a1a37bca6f536b40c49912ba6",
-        "signature": "2dcc4f6de24b223f648f7190e9ae235abe97e987c80323dd27ad57fadfb49a15"
+        "version": "956ca7f4221127e3bd284afea54f56e5d389df8ea7819a7732202d629a983796",
+        "signature": "4697873785d47926dd1ecf782cc53006a4814740613d371e11bedb270b610746"
       },
       "../src/heros/entities/heros.entity.ts": {
-        "version": "ff447a60a9017524135f1ba29b782dbb0999346eff83632997d14afaad94c561",
-        "signature": "878de3b55e828ecc7d69935eb2a363bf9a609a0ab2cbd1dc49fcbefefac43be5"
+        "version": "ff932a8f309bd056da273124694f4ecf742c3d3efca9099374d6f351ff89dca2",
+        "signature": "6c3842c517278bc575bb1bd74c1b15f5064c0257fc9a47e83247732033a2f697"
       },
       "../src/heros/dao/heros.dao.ts": {
-        "version": "86e98290ae20932afffacc6905e08b70d40ee8e661bd7ff3fe2d9ef285405577",
-        "signature": "c12bef36756c39947c680f37655c37bc3b6c51ebaa502ae7992201a47f1c82fd"
+        "version": "fd556e86a9d12335937677c3d12fe2327a8af1cdeed21201538613c68874126e",
+        "signature": "3ad96c41b4223339fcfbffa09621c64ba5e73fabee801becfbed6e6e976b7939"
       },
       "../src/heros/heros.service.ts": {
-        "version": "f8d6f970758f436421a3e927238a0fa8e876098dee802f60500eaa9b5bc00654",
-        "signature": "43a1c8fdbd154bfafb29c22c4f8cac7453b901eed414378e13bafefd1f6f288d"
+        "version": "4ec762ac002eeb4d219713d09c43427145f493854dfdb1b3a5ec0ddf7dcb0de9",
+        "signature": "5e02df0da71ba4300f08a1ff0d4817c292929d0448b62a74c91ccf3b24a1c607"
       },
       "../src/heros/validators/handler-heros.ts": {
-        "version": "08ee9a365e2adf10e5ee4e407a5714d9e58a83f860d7abeb50cf7722e4bda569",
-        "signature": "a36e8d4fd6ef4853e1d79ed66e0f2321c24f8f8ad8de277c8e71c30bbb2a0008"
+        "version": "f916be46da819721eb06baca66bb7b4221ca0491819f2cb4b27d7eb19e90e2d7",
+        "signature": "2475dee5f2a2bf496023755d1875ff20d2fdbd00e015011d0699da4b29cf156b"
       },
       "../src/heros/heros.controller.ts": {
-        "version": "c7c05241f100af7111261fbd4509c235d602975ff7596f9916049fc32d76f239",
-        "signature": "f3f4ecca36b5711e6103892a44245763bb2ff2246bf0034af806b029f7358305"
+        "version": "60afc1a5982d4f2f5c2ab5a3da3301ec39f08222bfe57d25b97ca93c08f06f3a",
+        "signature": "2870cadcb7530fb2ace2060f4199c80376f339ae9abdc108438f0efde14c6c9d"
       },
       "../src/heros/schemas/heros.schema.ts": {
-        "version": "489328867c3ebae413163bdf005eea0ce145270e8b3691295690cf5afc4988fe",
+        "version": "cb75727e926a9d7017f58924e40fa325a9b496269ff202febd5c1bb705f59288",
         "signature": "78e4569a518d1d730cc52894387ff6816de2e4f901b652b1f12aea2f0563f0d1"
       },
       "../src/heros/heros.module.ts": {
-        "version": "1fdf6014ca083661684169498f934eeebfb49b2e7ba0d1bd0dbdb70113cb2b68",
+        "version": "fb9086a1f00922b90448d35e5fb676ffca893795caff39db4aa96935bf319905",
         "signature": "17c9fa5e2612fa961ab390d7612e6a7503b9ee2c1836ca848528f4062621c456"
       },
       "../src/app.module.ts": {
@@ -2018,12 +2010,24 @@
         "signature": "1526c4260fa14e247f2abfcf26d76fd0c1e3d01ee69007424073c9da4f526b33"
       },
       "../src/main.ts": {
-        "version": "820e935d1bc39d06a7ada731dae2cd2d7b605b1eef1b31db5c1dfbb76ee172d3",
+        "version": "031dceaccf419b41b777c15cff316f24e150636ce760a395c6e2947578ce88fa",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "../src/comics/interceptors/comics.interceptor.ts": {
-        "version": "fb5a2f05aaf1cff103118cd67b7ca706f47fcdb86e05d405df813a9fdd7802d7",
+        "version": "a8cafb77865601af40f504bf6444ee424e90e62b3db7a0de314c092201b959c7",
         "signature": "4f4169369c5c874988a94a325d36ed657654b5165867e296b04c97b84a309d78"
+      },
+      "../src/data/comics.ts": {
+        "version": "9a221d8f69f1623b2f90d9e897ae886004274eab715f997e9920c0334a81e889",
+        "signature": "85a9688857881fcaad363c2c9a03dbd8c3457aabc5150513dc04c02307216274"
+      },
+      "../src/data/heros.ts": {
+        "version": "9b75b8f4a77004886958bf8f6f842ce518407a28dddb9b6a413d01d74fa5b8a1",
+        "signature": "214b90ff87fb211d8f557d59b2c8291744046451513a9316942336f7054f2f1d"
+      },
+      "../src/heros/interceptors/heros.interceptor.ts": {
+        "version": "f5d4033c3fb13c771920548a4029040301e28b03cd381865382dc05aba92cca6",
+        "signature": "a36f098e34d854bb29e2f9e3525be3018612fdbb270e7fea9268444ad4aee9d7"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -4402,13 +4406,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/data/comics.ts": [
-        "../src/heros/interfaces/heroSimple.interfaces.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/rxjs/internal/operators/audit.d.ts": [
         "../node_modules/rxjs/internal/types.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -5699,7 +5696,6 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/comics/dto/update-comics.dto.ts": [
-        "../src/heros/interfaces/heroSimple.interfaces.ts",
         "../node_modules/class-validator/index.d.ts",
         "../node_modules/class-transformer/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
@@ -5710,7 +5706,6 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/comics/entities/comics.entity.ts": [
-        "../src/heros/interfaces/heroSimple.interfaces.ts",
         "../node_modules/class-transformer/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
         "../src/heros/dto/hero-simple.dto.ts",
@@ -5797,7 +5792,6 @@
       "../src/comics/comics.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/comics/interfaces/comics.interface.ts",
-        "../src/data/comics.ts",
         "../node_modules/rxjs/index.d.ts",
         "../node_modules/rxjs/operators/index.d.ts",
         "../src/comics/dto/create-comics.dto.ts",
@@ -5833,7 +5827,6 @@
       ],
       "../src/comics/schemas/comics.schema.ts": [
         "../node_modules/@types/mongoose/index.d.ts",
-        "../src/heros/dto/hero-simple.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5859,13 +5852,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/data/heros.ts": [
-        "../src/heros/interfaces/heroSimple.interfaces.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../src/heros/dto/create-hero.dto.ts": [
         "../node_modules/class-validator/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
@@ -5875,7 +5861,6 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/heros/dto/update-hero.dto.ts": [
-        "../src/heros/interfaces/heroSimple.interfaces.ts",
         "../node_modules/class-validator/index.d.ts",
         "../node_modules/class-transformer/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
@@ -5887,7 +5872,6 @@
       ],
       "../src/heros/entities/heros.entity.ts": [
         "../node_modules/class-transformer/index.d.ts",
-        "../src/heros/interfaces/heroSimple.interfaces.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
         "../src/heros/dto/hero-simple.dto.ts",
         "../node_modules/class-validator/index.d.ts",
@@ -5913,7 +5897,6 @@
       "../src/heros/heros.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/heros/interfaces/heros.interfaces.ts",
-        "../src/data/heros.ts",
         "../node_modules/rxjs/index.d.ts",
         "../node_modules/rxjs/operators/index.d.ts",
         "../src/heros/dto/create-hero.dto.ts",
@@ -5921,7 +5904,6 @@
         "../src/heros/interfaces/heroSimple.interfaces.ts",
         "../src/heros/entities/heros.entity.ts",
         "../src/heros/dao/heros.dao.ts",
-        "../src/comics/entities/comics.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5950,8 +5932,6 @@
       ],
       "../src/heros/schemas/heros.schema.ts": [
         "../node_modules/@types/mongoose/index.d.ts",
-        "../src/heros/interfaces/heroSimple.interfaces.ts",
-        "../src/heros/dto/hero-simple.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -6308,6 +6288,31 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/comics/interceptors/comics.interceptor.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/rxjs/index.d.ts",
+        "../node_modules/rxjs/operators/index.d.ts",
+        "../node_modules/@types/node/http.d.ts",
+        "../node_modules/fastify/fastify.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/data/comics.ts": [
+        "../src/heros/interfaces/heroSimple.interfaces.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/data/heros.ts": [
+        "../src/heros/interfaces/heroSimple.interfaces.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/heros/interceptors/heros.interceptor.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/rxjs/index.d.ts",
         "../node_modules/rxjs/operators/index.d.ts",
@@ -8745,9 +8750,6 @@
         "../node_modules/@types/mongoose/index.d.ts",
         "../src/heros/interfaces/heroSimple.interfaces.ts"
       ],
-      "../src/data/comics.ts": [
-        "../src/heros/interfaces/heroSimple.interfaces.ts"
-      ],
       "../node_modules/rxjs/internal/operators/audit.d.ts": [
         "../node_modules/rxjs/internal/types.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -10116,9 +10118,6 @@
         "../node_modules/@types/mongoose/index.d.ts",
         "../src/heros/interfaces/heroSimple.interfaces.ts"
       ],
-      "../src/data/heros.ts": [
-        "../src/heros/interfaces/heroSimple.interfaces.ts"
-      ],
       "../src/heros/dto/update-hero.dto.ts": [
         "../src/heros/dto/hero-simple.dto.ts"
       ],
@@ -10463,6 +10462,16 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/comics/interceptors/comics.interceptor.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/rxjs/index.d.ts"
+      ],
+      "../src/data/comics.ts": [
+        "../src/heros/interfaces/heroSimple.interfaces.ts"
+      ],
+      "../src/data/heros.ts": [
+        "../src/heros/interfaces/heroSimple.interfaces.ts"
+      ],
+      "../src/heros/interceptors/heros.interceptor.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/rxjs/index.d.ts"
       ],
@@ -11103,7 +11112,6 @@
       "../node_modules/@nestjs/platform-fastify/interfaces/nest-fastify-application.interface.d.ts",
       "../node_modules/@nestjs/platform-fastify/interfaces/index.d.ts",
       "../node_modules/@nestjs/platform-fastify/index.d.ts",
-      "../src/comics/interceptors/comics.interceptor.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",

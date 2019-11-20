@@ -1,15 +1,4 @@
-import {
-  Body,
-  ClassSerializerInterceptor,
-  Controller,
-  Delete,
-  Get,
-  Logger,
-  Param,
-  Post,
-  Put,
-  UseInterceptors
-} from '@nestjs/common';
+import {Body, ClassSerializerInterceptor, Controller, Delete, Get, Logger, Param, Post, Put, UseInterceptors} from '@nestjs/common';
 import { Observable, of } from 'rxjs';
 import { ComicsService } from './comics.service';
 import { CreateComicsDto } from './dto/create-comics.dto';
@@ -29,7 +18,6 @@ import {HandlerComics} from "./validators/handler-comics";
 @Controller('comics')
 @UseInterceptors(ClassSerializerInterceptor)
 export class ComicsController {
-  private readonly logger = new Logger(ComicsController.name);
 
   /**
    * Class constructor
@@ -39,7 +27,7 @@ export class ComicsController {
   }
 
   /**
-   * findAll
+   * Returns all comics
    *
    * @returns Observable<ComicsEntity[] | void>
    */
@@ -52,10 +40,10 @@ export class ComicsController {
   }
 
   /**
-   * findSome
+   * Returns a part of all comics
    *
-   * @param start
-   * @param nb
+   * @param start: number
+   * @param nb: number
    * @returns Observable<ComicsEntity[] | void>
    */
   @ApiOkResponse({ description: 'Returns some comics', type: ComicsEntity, isArray: true })
@@ -70,9 +58,9 @@ export class ComicsController {
   }
 
   /**
-   * findById
+   * Returns one comics
    *
-   * @param params
+   * @param params: HandlerComics
    * @returns Observable<ComicsEntity | void>
    */
   @ApiOkResponse({ description: 'Returns the comics for the given "id"', type: ComicsEntity })
@@ -86,9 +74,9 @@ export class ComicsController {
   }
 
   /**
-   * create
+   * Add one comics to the list
    *
-   * @param createComicsDto
+   * @param createComicsDto: CreateComicsDto
    * @returns Observable<ComicsEntity>
    */
   @ApiCreatedResponse({ description: 'The comics has been successfully created', type: ComicsEntity })
@@ -102,10 +90,10 @@ export class ComicsController {
   }
 
   /**
-   * update
+   * Update one of the comics
    *
-   * @param params
-   * @param updateComicsDto
+   * @param params: HandlerComics
+   * @param updateComicsDto: UpdateComicsDto
    * @returns Observable<ComicsEntity>
    */
   @ApiOkResponse({ description: 'The comics has been successfully updated', type: ComicsEntity })
@@ -120,9 +108,9 @@ export class ComicsController {
   }
 
   /**
-   * delete
+   * Delete one of the comics from the list
    *
-   * @param params
+   * @param params: HandlerComics
    * @returns Observable<void>
    */
   @ApiNoContentResponse({ description: 'The comics has been successfully deleted' })

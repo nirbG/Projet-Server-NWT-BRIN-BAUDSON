@@ -26,7 +26,7 @@ export class HerosController {
   }
 
   /**
-   * findAll
+   * Returns all heros
    *
    * @returns Observable<HerosEntity[] | void>
    */
@@ -39,10 +39,10 @@ export class HerosController {
   }
 
   /**
-   * findSome
+   * Returns a part of all heros
    *
-   * @param start
-   * @param nb
+   * @param start: number
+   * @param nb: number
    * @returns Observable<HerossEntity[] | void>
    */
   @ApiOkResponse({ description: 'Returns some heros', type: HerosEntity })
@@ -57,9 +57,9 @@ export class HerosController {
   }
 
   /**
-   * findOne
+   * Returns one hero
    *
-   * @param params
+   * @param params: HandlerHeros
    * @returns Observable<HerosEntity | void>
    */
   @ApiOkResponse({ description: 'Returns the hero for the given "id"', type: HerosEntity })
@@ -73,9 +73,9 @@ export class HerosController {
   }
 
   /**
-   * create
+   * Add a hero to the list
    *
-   * @param createHerosDto
+   * @param createHerosDto: CreateHeroDto
    * @returns Observable<HerosEntity>
    */
   @ApiCreatedResponse({ description: 'The hero has been successfully created', type: HerosEntity })
@@ -89,10 +89,10 @@ export class HerosController {
   }
 
   /**
-   * update
+   * Update a hero
    *
-   * @param params
-   * @param updateHerosDto
+   * @param params: HandlerHeros
+   * @param updateHerosDto: UpdateHeroDto
    * @returns Observable<HerosEntity>
    */
   @ApiOkResponse({ description: 'The hero has been successfully updated', type: HerosEntity })
@@ -107,9 +107,9 @@ export class HerosController {
   }
 
   /**
-   * delete
+   * Delete a hero from the list
    *
-   * @param params
+   * @param params: HandlerHeros
    * @returns Observable<void>
    */
   @ApiNoContentResponse({ description: 'The hero has been successfully deleted' })

@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const rxjs_1 = require("rxjs");
 const operators_1 = require("rxjs/operators");
-let ComicsInterceptor = class ComicsInterceptor {
+let HerosInterceptor = class HerosInterceptor {
     constructor(_logger) {
         this._logger = _logger;
     }
@@ -20,13 +20,13 @@ let ComicsInterceptor = class ComicsInterceptor {
         const cls = context.getClass();
         const handler = context.getHandler();
         const response = context.switchToHttp().getResponse();
-        const logCtx = `ComicsInterceptor => ${cls.name}.${handler.name}`;
+        const logCtx = `HerosInterceptor => ${cls.name}.${handler.name}`;
         return next.handle().pipe(operators_1.map(_ => rxjs_1.of(_)), operators_1.flatMap((obs) => rxjs_1.merge(obs.pipe(operators_1.filter(_ => !!_), operators_1.map(_ => _)), obs.pipe(operators_1.filter(_ => !_), operators_1.tap(_ => response.status(204)), operators_1.map(_ => _)))), operators_1.tap(_ => this._logger.log(!!_ ? _ : 'NO CONTENT', logCtx), _ => this._logger.error(_.message, JSON.stringify(_), logCtx)));
     }
 };
-ComicsInterceptor = __decorate([
+HerosInterceptor = __decorate([
     common_1.Injectable(),
     __metadata("design:paramtypes", [common_1.Logger])
-], ComicsInterceptor);
-exports.ComicsInterceptor = ComicsInterceptor;
-//# sourceMappingURL=comics.interceptor.js.map
+], HerosInterceptor);
+exports.HerosInterceptor = HerosInterceptor;
+//# sourceMappingURL=heros.interceptor.js.map

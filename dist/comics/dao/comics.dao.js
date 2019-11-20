@@ -24,17 +24,20 @@ let ComicsDao = class ComicsDao {
     find() {
         return rxjs_1.from(this._comicsModel.find({})).pipe(operators_1.map((docs) => (!!docs && docs.length > 0) ? docs.map(_ => _.toJSON()) : undefined));
     }
+    findSome(start, nb) {
+        return rxjs_1.from(this._comicsModel.find({}).skip(start).limit(nb)).pipe(operators_1.map((docs) => (!!docs && docs.length > 0) ? docs.map(_ => _.toJSON()) : undefined));
+    }
     findById(id) {
         return rxjs_1.from(this._comicsModel.findById(id)).pipe(operators_1.map((doc) => !!doc ? doc.toJSON() : undefined));
     }
     create(comics) {
         return rxjs_1.from(this._comicsModel.create(comics)).pipe(operators_1.map((doc) => doc.toJSON()));
     }
-    findByIdAndUpdate(isbn, body) {
-        return rxjs_1.from(this._comicsModel.findByIdAndUpdate(isbn, body, { new: true })).pipe(operators_1.map((doc) => !!doc ? doc.toJSON() : undefined));
+    findByIdAndUpdate(_id, body) {
+        return rxjs_1.from(this._comicsModel.findByIdAndUpdate(_id, body, { new: true })).pipe(operators_1.map((doc) => !!doc ? doc.toJSON() : undefined));
     }
-    findByIdAndRemove(isbn) {
-        return rxjs_1.from(this._comicsModel.findByIdAndRemove(isbn)).pipe(operators_1.map((doc) => !!doc ? doc.toJSON() : undefined));
+    findByIdAndRemove(_id) {
+        return rxjs_1.from(this._comicsModel.findByIdAndRemove(_id)).pipe(operators_1.map((doc) => !!doc ? doc.toJSON() : undefined));
     }
 };
 ComicsDao = __decorate([

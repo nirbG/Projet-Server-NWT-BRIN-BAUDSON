@@ -1,6 +1,6 @@
 import { Document } from 'mongoose';
 export interface HeroSimple extends Document {
-    id: string;
+    _id: string;
     photo?: string;
     name: string;
 }

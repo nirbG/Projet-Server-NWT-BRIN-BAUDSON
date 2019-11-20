@@ -16,14 +16,14 @@ const hero_simple_dto_1 = require("../../heros/dto/hero-simple.dto");
 class UpdateComicsDto {
 }
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'ISBN number', example: '1082365773' }),
+    swagger_1.ApiModelProperty({ description: 'ISBN number', example: '2365773545' }),
     class_validator_1.IsOptional(),
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)
-], UpdateComicsDto.prototype, "isbn", void 0);
+], UpdateComicsDto.prototype, "_id", void 0);
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'Photo', example: '1082365773.jpg' }),
+    swagger_1.ApiModelProperty({ description: 'Photo', example: 'default.jpg' }),
     class_validator_1.IsOptional(),
     class_validator_1.IsString(),
     __metadata("design:type", String)
@@ -37,7 +37,7 @@ __decorate([
 ], UpdateComicsDto.prototype, "title", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: 'Main hero', example: {
-            id: '3',
+            _id: '3',
             photo: 'batman.jpg',
             name: 'Batman',
         } }),
@@ -49,14 +49,14 @@ __decorate([
 ], UpdateComicsDto.prototype, "mainHeros", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: 'Supporting heroes or ennemies', example: [{
-                "id": "85",
-                "photo": "superboy.jpg",
-                "name": "Superboy"
+                _id: "85",
+                photo: "superboy.jpg",
+                name: "Superboy"
             },
             {
-                "id": "5",
-                "photo": "joker.jpg",
-                "name": "Joker"
+                _id: "5",
+                photo: "joker.jpg",
+                name: "Joker"
             }] }),
     class_validator_1.IsOptional(),
     class_validator_1.IsInstance(hero_simple_dto_1.HeroSimpleDto, { each: true }),

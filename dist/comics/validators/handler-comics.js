@@ -13,10 +13,9 @@ const class_validator_1 = require("class-validator");
 class HandlerComics {
 }
 __decorate([
-    class_validator_1.IsMongoId(),
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)
-], HandlerComics.prototype, "isbn", void 0);
+], HandlerComics.prototype, "_id", void 0);
 exports.HandlerComics = HandlerComics;
 //# sourceMappingURL=handler-comics.js.map

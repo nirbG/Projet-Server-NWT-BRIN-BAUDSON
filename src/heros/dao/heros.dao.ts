@@ -19,7 +19,7 @@ export class HerosDao {
     }
 
     /**
-     * Return all Heros or undefined
+     * Returns all Heros or undefined
      *
      * @returns Observable<Heros[] | void>
      */
@@ -30,7 +30,7 @@ export class HerosDao {
     }
 
     /**
-     * Return some Heros or undefined
+     * Returns some Heros or undefined
      *
      * @returns Observable<Heros[] | void>
      */
@@ -42,7 +42,7 @@ export class HerosDao {
     }
 
     /**
-     * Return one Hero found by id or undefined
+     * Returns one Hero found by id or undefined
      *
      * @param id: string
      * @returns Observable<Hero | void>

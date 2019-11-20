@@ -1,5 +1,6 @@
 export declare class CreateComicsDto {
-    isbn?: string;
+    _id?: string;
+    photo?: string;
     title?: string;
     price?: number;
 }

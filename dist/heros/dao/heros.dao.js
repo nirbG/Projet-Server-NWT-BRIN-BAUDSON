@@ -24,17 +24,20 @@ let HerosDao = class HerosDao {
     find() {
         return rxjs_1.from(this._heroModel.find({})).pipe(operators_1.map((docs) => (!!docs && docs.length > 0) ? docs.map(_ => _.toJSON()) : undefined));
     }
+    findSome(start, nb) {
+        return rxjs_1.from(this._heroModel.find({}).skip(parseInt(start.toString())).limit(parseInt(nb.toString()))).pipe(operators_1.map((docs) => (!!docs && docs.length > 0) ? docs.map(_ => _.toJSON()) : undefined));
+    }
     findById(id) {
         return rxjs_1.from(this._heroModel.findById(id)).pipe(operators_1.map((doc) => !!doc ? doc.toJSON() : undefined));
     }
-    create(person) {
-        return rxjs_1.from(this._heroModel.create(person)).pipe(operators_1.map((doc) => doc.toJSON()));
+    create(heros) {
+        return rxjs_1.from(this._heroModel.create(heros)).pipe(operators_1.map((doc) => doc.toJSON()));
     }
-    findByIdAndUpdate(id, body) {
-        return rxjs_1.from(this._heroModel.findByIdAndUpdate(id, body, { new: true })).pipe(operators_1.map((doc) => !!doc ? doc.toJSON() : undefined));
+    findByIdAndUpdate(_id, body) {
+        return rxjs_1.from(this._heroModel.findByIdAndUpdate(_id, body, { new: true })).pipe(operators_1.map((doc) => !!doc ? doc.toJSON() : undefined));
     }
-    findByIdAndRemove(id) {
-        return rxjs_1.from(this._heroModel.findByIdAndRemove(id)).pipe(operators_1.map((doc) => !!doc ? doc.toJSON() : undefined));
+    findByIdAndRemove(_id) {
+        return rxjs_1.from(this._heroModel.findByIdAndRemove(_id)).pipe(operators_1.map((doc) => !!doc ? doc.toJSON() : undefined));
     }
 };
 HerosDao = __decorate([

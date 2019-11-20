@@ -1,5 +1,4 @@
 import {Exclude, Expose, Type} from "class-transformer";
-import {HeroSimple} from "../interfaces/heroSimple.interfaces";
 import {ApiModelProperty} from "@nestjs/swagger";
 import {HeroSimpleDto} from "../dto/hero-simple.dto";
 import {IsInstance} from "class-validator";

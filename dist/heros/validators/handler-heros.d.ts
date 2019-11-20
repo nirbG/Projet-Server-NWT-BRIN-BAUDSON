@@ -1,3 +1,3 @@
 export declare class HandlerHeros {
-    id: string;
+    _id: string;
 }

@@ -14,11 +14,17 @@ const swagger_1 = require("@nestjs/swagger");
 class CreateComicsDto {
 }
 __decorate([
-    swagger_1.ApiModelProperty({ description: 'ISBN number', example: '1082365773' }),
+    swagger_1.ApiModelProperty({ description: 'ISBN number', example: '2365773545' }),
     class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)
-], CreateComicsDto.prototype, "isbn", void 0);
+], CreateComicsDto.prototype, "_id", void 0);
+__decorate([
+    swagger_1.ApiModelProperty({ description: 'Photo', example: 'default.jpg' }),
+    class_validator_1.IsString(),
+    class_validator_1.IsNotEmpty(),
+    __metadata("design:type", String)
+], CreateComicsDto.prototype, "photo", void 0);
 __decorate([
     swagger_1.ApiModelProperty({ description: 'Title', example: 'Batman: Of Bats and Rats' }),
     class_validator_1.IsString(),

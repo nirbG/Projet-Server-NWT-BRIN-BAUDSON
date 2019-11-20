@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose = require("mongoose");
 exports.HerosSchema = new mongoose.Schema({
-    id: {
+    _id: {
         type: String,
         required: true
     },
@@ -18,35 +18,29 @@ exports.HerosSchema = new mongoose.Schema({
         type: String,
     },
     ennemi: [{
-            id: {
+            _id: {
                 type: String,
-                required: true
             },
             photo: {
                 type: String,
-                required: true
             },
             name: {
                 type: String,
-                required: true
             }
         }],
     allie: [{
-            id: {
+            _id: {
                 type: String,
-                required: true
             },
             photo: {
                 type: String,
-                required: true
             },
             name: {
                 type: String,
-                required: true
             }
         }],
     isHumain: {
-        type: String,
+        type: Boolean,
         required: true
     }
 }, {

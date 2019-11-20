@@ -3,10 +3,6 @@ import {ApiModelProperty} from "@nestjs/swagger";
 
 export class CreateHeroDto {
 
-  /*@ApiModelProperty({ description: 'ID', example: '85'})
-  @IsString()
-  @IsNotEmpty()
-  _id?: string;*/
 
   @ApiModelProperty({ description: 'Photo', example: 'default.jpg'})
   @IsString()

@@ -11,15 +11,15 @@ const heros_module_1 = require("./heros/heros.module");
 async function bootstrap(config) {
     const app = await core_1.NestFactory.create(app_module_1.AppModule, new platform_fastify_1.FastifyAdapter({ logger: true }));
     const options = new swagger_1.DocumentBuilder()
-        .setTitle('titre temporaire')
-        .setDescription('description temporaire')
+        .setTitle('Bibliothèque de comics')
+        .setDescription('La meilleur bibliothèque de comics disponible à Vandoeuvre')
         .setVersion('1.0')
-        .addTag('tag temporaire')
+        .addTag('Comics et Heros')
         .build();
     const document = swagger_1.SwaggerModule.createDocument(app, options, {
         include: [comics_module_1.ComicsModule, heros_module_1.HerosModule],
     });
-    swagger_1.SwaggerModule.setup('temp', app, document);
+    swagger_1.SwaggerModule.setup('documentation', app, document);
     app.useGlobalPipes(new common_1.ValidationPipe({
         whitelist: true,
         forbidNonWhitelisted: true,

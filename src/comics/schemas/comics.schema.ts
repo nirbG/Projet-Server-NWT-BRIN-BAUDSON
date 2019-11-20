@@ -16,29 +16,23 @@ export const ComicsSchema = new mongoose.Schema({
     mainHeros:{
         _id: {
             type: String,
-            //required: true
         },
         photo: {
             type: String,
-            //required: true
         },
         name: {
             type: String,
-            //required: true
         },
     },
     otherHeros:  [{
         _id: {
             type: String,
-            //required: true
         },
         photo: {
             type: String,
-            //required: true
         },
         name: {
             type: String,
-            //required: true
         },
     }],
     price: {

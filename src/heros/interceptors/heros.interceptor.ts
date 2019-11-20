@@ -6,6 +6,7 @@ import { FastifyReply } from 'fastify';
 
 @Injectable()
 export class HerosInterceptor implements NestInterceptor {
+
     /**
      * Class constructor
      * @param _logger

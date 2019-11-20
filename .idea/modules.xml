@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Projet-NWT-BRIN-BAUDSON/.idea/Projet-NWT-BRIN-BAUDSON.iml" filepath="$PROJECT_DIR$/../Projet-NWT-BRIN-BAUDSON/.idea/Projet-NWT-BRIN-BAUDSON.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Projet-Server-NWT-BRIN-BAUDSON.iml" filepath="$PROJECT_DIR$/.idea/Projet-Server-NWT-BRIN-BAUDSON.iml" />
     </modules>
   </component>
