@@ -1,13 +1,11 @@
 ## Installation
 
 ```bash
-$ git clone https://github.com/nirbG/Projet-Server-NWT-BRIN-BAUDSON
+git clone https://github.com/nirbG/Projet-Server-NWT-BRIN-BAUDSON
 
-$ cd Projet-Server-NWT-BRIN-BAUDSON
+cd Projet-Server-NWT-BRIN-BAUDSON
 
-$ npm install
-
-$ yarn install
+yarn install
 ```
 
 ## Database
