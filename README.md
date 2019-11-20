@@ -22,7 +22,7 @@ Then create the heros index by running the script contained in scripts/indexHero
 ## Running the app
 
 ```bash
-nest start
+yarn run start
 ```
 
 ## Documentation 
